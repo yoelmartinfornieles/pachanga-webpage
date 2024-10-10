@@ -13,7 +13,7 @@ These instructions will help you set up the project on your local machine.
 
 ### Installation
 
-1. Clone repository:
+1. Clone the repository:
     ```
     git clone https://github.com/yoelmartinfornieles/your-repo-name.git
     ```
