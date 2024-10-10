@@ -8,15 +8,15 @@ These instructions will help you set up the project on your local machine.
 
 ### Prerequisites
 
-- [Cursor](https://cursor.sh/)
-- Git
+-   [Cursor](https://cursor.sh/)
+-   Git
 
 ### Installation
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yoelmartinfornieles/your-repo-name.git
-   ```
+1. Clone repository:
+    ```
+    git clone https://github.com/yoelmartinfornieles/your-repo-name.git
+    ```
 2. Open the project in Cursor.
 
 ## Usage
