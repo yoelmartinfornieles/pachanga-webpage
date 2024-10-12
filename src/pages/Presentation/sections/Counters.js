@@ -25,39 +25,45 @@ import MKBox from "components/MKBox";
 import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
 
 function Counters() {
-  return (
-    <MKBox component="section" py={3}>
-      <Container>
-        <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
-          <Grid item xs={12} md={4}>
-            <DefaultCounterCard
-              count={70}
-              suffix="+"
-              title="Coded Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
-            />
-          </Grid>
-          <Grid item xs={12} md={4} display="flex">
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
-            <DefaultCounterCard
-              count={15}
-              suffix="+"
-              title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
-            />
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <DefaultCounterCard
-              count={4}
-              title="Pages"
-              description="Save 3-4 weeks of work when you use our pre-made pages for your website"
-            />
-          </Grid>
-        </Grid>
-      </Container>
-    </MKBox>
-  );
+    return (
+        <MKBox component="section" py={3}>
+            <Container>
+                <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
+                    <Grid item xs={12} md={4}>
+                        <DefaultCounterCard
+                            count={110}
+                            suffix="+"
+                            title="Jugadores"
+                            description="Desde casuals a profesionales, pasando por streamers y commanderos, está to pagao, Diego"
+                        />
+                    </Grid>
+                    <Grid item xs={12} md={4} display="flex">
+                        <Divider
+                            orientation="vertical"
+                            sx={{ display: { xs: "none", md: "block" }, mx: 0 }}
+                        />
+                        <DefaultCounterCard
+                            count={3}
+                            title="Días de torneo"
+                            description="Desde el viernes hasta el domingo, con diferentes paralelos y eventos, un no parar de partidas"
+                        />
+                        <Divider
+                            orientation="vertical"
+                            sx={{ display: { xs: "none", md: "block" }, ml: 0 }}
+                        />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <DefaultCounterCard
+                            count={8}
+                            suffix="+"
+                            title="Actividades Paralelas"
+                            description="Ilustradores, firmas, tiendas invitadas, streamers, cosplayers, partidas de rol, Pool Party, Dj... y sorpresas sorpresas sorpresas hasta el final"
+                        />
+                    </Grid>
+                </Grid>
+            </Container>
+        </MKBox>
+    );
 }
 
 export default Counters;

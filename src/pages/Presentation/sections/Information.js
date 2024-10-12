@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -27,79 +12,163 @@ import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 // Images
-import bgFront from "assets/images/rotating-card-bg-front.jpeg";
-import bgBack from "assets/images/rotating-card-bg-back.jpeg";
+import {
+    pachangaRotatingCardBgFront,
+    pachangaRotatingCardBgBack,
+    paradiseRotatingCardBgFront,
+    paradiseRotatingCardBgBack,
+} from "assets/images";
+
+// Icons
+import DrawOutlinedIcon from "@mui/icons-material/DrawOutlined";
+import LiveTvOutlinedIcon from "@mui/icons-material/LiveTvOutlined";
+import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
+import LuggageOutlinedIcon from "@mui/icons-material/LuggageOutlined";
+
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { styled } from "@mui/material/styles"; // Import styled from Material-UI
+
+// Create a styled Link component
+const StyledLink = styled(Link)(({ theme }) => ({
+    textDecoration: "none",
+    color: "inherit",
+    transition: "text-shadow 0.3s ease", // Smooth transition for the shadow effect
+    "&:hover": {
+        textShadow: `0 0 5px ${theme.palette.info.main}, 0 0 10px ${theme.palette.info.main}`, // Shadow effect on hover
+    },
+}));
 
 function Information() {
-  return (
-    <MKBox component="section" py={6} my={6}>
-      <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
-              <RotatingCardFront
-                image={bgFront}
-                icon="touch_app"
-                title={
-                  <>
-                    Feel the
-                    <br />
-                    Material Kit
-                  </>
-                }
-                description="All the MUI components that you need in a development have been re-design with the new look."
-              />
-              <RotatingCardBack
-                image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
-                }}
-              />
-            </RotatingCard>
-          </Grid>
-          <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
-                />
-              </Grid>
-            </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
-                />
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Container>
-    </MKBox>
-  );
+    return (
+        <MKBox component="section" py={6} my={6}>
+            <Container>
+                <Grid
+                    container
+                    item
+                    xs={11}
+                    spacing={3}
+                    alignItems="center"
+                    sx={{ mx: "auto" }}
+                >
+                    <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+                        <Grid container spacing={5}>
+                            {" "}
+                            <Grid item xs={12}>
+                                <RotatingCard>
+                                    <RotatingCardFront
+                                        image={pachangaRotatingCardBgFront}
+                                        icon="touch_app"
+                                        title={<>Pachanga Tournament</>}
+                                        description="10+ rondas de Modern into Top16, con premios a los 32 mejores jugadores."
+                                    />
+                                    <RotatingCardBack
+                                        image={pachangaRotatingCardBgBack}
+                                        title={<>Descubre Más</>}
+                                        description="Disfruta en una ubicación de ensueño de un evento de Magic the Gathering en el que disfrutan tanto los jugadores como sus familiares y amigos."
+                                        action={{
+                                            type: "internal",
+                                            route: "/sections/page-sections/page-headers",
+                                            label: "Todos los detalles del torneo",
+                                        }}
+                                    />
+                                </RotatingCard>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <RotatingCard>
+                                    <RotatingCardFront
+                                        image={paradiseRotatingCardBgFront}
+                                        icon="touch_app"
+                                        title={<>Commander Paradise</>}
+                                        description="Battle Royal de 4 jugadores, con premios a los 32 mejores jugadores."
+                                    />
+                                    <RotatingCardBack
+                                        image={paradiseRotatingCardBgBack}
+                                        title={<>Descubre Más</>}
+                                        description="¿Construido de 60 cartas? Nah, esto es EDH en estado puro. En tu Command Zone va a pegar el solete. "
+                                        action={{
+                                            type: "internal",
+                                            route: "/sections/page-sections/page-headers",
+                                            label: "Todos los detalles del torneo",
+                                        }}
+                                    />
+                                </RotatingCard>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
+                        <Grid container spacing={3}>
+                            <Grid item xs={12} md={6}>
+                                <DefaultInfoCard
+                                    icon={
+                                        <DrawOutlinedIcon
+                                            sx={{ color: "info.main" }}
+                                        />
+                                    }
+                                    title={
+                                        <StyledLink to="/your-internal-route">
+                                            Sirviente del pintor
+                                        </StyledLink>
+                                    }
+                                    description="A los jugadores de MTG nos gusta el arte de las cartas, y por eso contamos con ilustradores de renombre para que te sorprendan con sus creaciones exclusivas para los torneos y te firmen esas cartitas tan chulas que llevas en la baraja."
+                                />
+                            </Grid>
+                            <Grid item xs={12} md={6}>
+                                <DefaultInfoCard
+                                    icon={
+                                        <LiveTvOutlinedIcon
+                                            sx={{ color: "info.main" }}
+                                        />
+                                    }
+                                    title={
+                                        <StyledLink to="/your-internal-route">
+                                            Muestra y Explica
+                                        </StyledLink>
+                                    }
+                                    description="Ivan Ojeda (Modern State Of Mind) retransmite el Pachanga Tournament en directo para que no te pierdas ninguno de los momentos más emocionantes... ni las antxoas más gordas."
+                                />
+                            </Grid>
+                        </Grid>
+                        <Grid
+                            container
+                            spacing={3}
+                            sx={{ mt: { xs: 0, md: 6 } }}
+                        >
+                            <Grid item xs={12} md={6}>
+                                <DefaultInfoCard
+                                    icon={
+                                        <HandshakeOutlinedIcon
+                                            sx={{ color: "info.main" }}
+                                        />
+                                    }
+                                    title={
+                                        <StyledLink to="/your-internal-route">
+                                            Abrir la Armería
+                                        </StyledLink>
+                                    }
+                                    description="Tanto Pachanga Tournament como Commander Paradise cuentan con el apoyo de varias LGS, para que no te falte nada a la hora de competir y te pegues esos caprichitos que tanto te gustan."
+                                />
+                            </Grid>
+                            <Grid item xs={12} md={6}>
+                                <DefaultInfoCard
+                                    icon={
+                                        <LuggageOutlinedIcon
+                                            sx={{ color: "info.main" }}
+                                        />
+                                    }
+                                    title={
+                                        <StyledLink to="/your-internal-route">
+                                            Una oferta que no podrás rechazar
+                                        </StyledLink>
+                                    }
+                                    description="Los torneos se llevan a cabo en un hotel de la isla de Gran Canaria, y diversos negocios locales se han aliado con nosotros para que la experiencia sea inolvidable."
+                                />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Container>
+        </MKBox>
+    );
 }
 
 export default Information;
