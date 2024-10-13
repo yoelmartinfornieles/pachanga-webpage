@@ -204,12 +204,12 @@ function Presentation() {
                             sx={{ height: "100%" }}
                         >
                             <MKBox
-                                height="100%"
+                                height={{ xs: "50vh", sm: "70vh", md: "100vh" }}
                                 width="100%"
                                 sx={{
                                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${item.image})`,
-                                    backgroundSize: "cover",
-                                    backgroundPosition: "top",
+                                    backgroundSize: "contain",
+                                    backgroundPosition: "center",
                                     display: "flex",
                                     flexDirection: "column",
                                     justifyContent: "center",
@@ -232,9 +232,10 @@ function Presentation() {
                                                     breakpoints,
                                                     typography: { size },
                                                 }) => ({
-                                                    fontSize: size["5xl"],
-                                                    [breakpoints.down("md")]: {
-                                                        fontSize: size["3xl"],
+                                                    fontSize: {
+                                                        xs: size["3xl"], // Smaller size for extra small screens
+                                                        sm: size["4xl"], // Medium size for small screens
+                                                        md: size["5xl"], // Larger size for medium screens
                                                     },
                                                 })}
                                                 textAlign="center"
@@ -251,9 +252,10 @@ function Presentation() {
                                                     breakpoints,
                                                     typography: { size },
                                                 }) => ({
-                                                    fontSize: size["lg"],
-                                                    [breakpoints.down("md")]: {
-                                                        fontSize: size["md"],
+                                                    fontSize: {
+                                                        xs: size["md"], // Smaller size for extra small screens
+                                                        sm: size["lg"], // Medium size for small screens
+                                                        md: size["lg"], // Keep the same size for medium and larger screens
                                                     },
                                                 })}
                                             >
