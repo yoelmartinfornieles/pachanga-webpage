@@ -71,13 +71,55 @@ const carouselItems = [
     },
     {
         image: "https://pachangatournament.com/images/2024/gallery-7.jpg",
-        title: "Competición y Diversión",
+        title: (
+            <>
+                <MKTypography
+                    variant="h1"
+                    sx={{
+                        textShadow: "2px 2px 4px black",
+                        textAlign: "center", // Center the text
+                        maxWidth: "90%", // Limit width to fit within the carousel
+                        width: "100%", // Ensure it takes full width
+                        mb: 1, // Margin bottom for spacing
+                        fontSize: {
+                            xs: "4rem", // Adjust size for extra small screens
+                            sm: "5rem", // Adjust size for small screens
+                            md: "6rem", // Adjust size for medium screens
+                        },
+                    }}
+                    color="white.main"
+                >
+                    Competición y Diversión
+                </MKTypography>{" "}
+            </>
+        ),
         description:
             "Disfruta de intensas partidas y conoce a otros apasionados del juego. ¡Demuestra tus habilidades y estrategias!",
     },
     {
         image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/5d/a9/0d/lopesan-costa-meloneras.jpg?w=1100&h=-1&s=1",
-        title: "Alójate como dios",
+        title: (
+            <>
+                <MKTypography
+                    variant="h1"
+                    sx={{
+                        textShadow: "2px 2px 4px black",
+                        textAlign: "center",
+                        maxWidth: "90%",
+                        width: "100%",
+                        mb: 1,
+                        fontSize: {
+                            xs: "4rem",
+                            sm: "5rem",
+                            md: "6rem",
+                        },
+                    }}
+                    color="white.main"
+                >
+                    Alójate como dios
+                </MKTypography>{" "}
+            </>
+        ),
         description: `Enchúfate cócteles hasta reventar disfrutando de un clima espectacular. Gafas de sol 24/7.`,
     },
     {
@@ -103,12 +145,54 @@ const carouselItems = [
     },
     {
         image: carouselImage4,
-        title: "Manquea con estilo",
+        title: (
+            <>
+                <MKTypography
+                    variant="h1"
+                    sx={{
+                        textShadow: "2px 2px 4px black",
+                        textAlign: "center",
+                        maxWidth: "90%",
+                        width: "100%",
+                        mb: 1,
+                        fontSize: {
+                            xs: "4rem",
+                            sm: "5rem",
+                            md: "6rem",
+                        },
+                    }}
+                    color="white.main"
+                >
+                    Manquea con estilo
+                </MKTypography>{" "}
+            </>
+        ),
         description: `Las derrotas nunca supieron mejor. Si pierdes descuida, disfrutarás tanto  como si ganaras. ¡No te preocupes por perder, solo por ganar!`,
     },
     {
         image: carouselImage5,
-        title: "Disfruta del Gathering",
+        title: (
+            <>
+                <MKTypography
+                    variant="h1"
+                    sx={{
+                        textShadow: "2px 2px 4px black",
+                        textAlign: "center",
+                        maxWidth: "90%",
+                        width: "100%",
+                        mb: 1,
+                        fontSize: {
+                            xs: "4rem",
+                            sm: "5rem",
+                            md: "6rem",
+                        },
+                    }}
+                    color="white.main"
+                >
+                    Disfruta del Gathering
+                </MKTypography>{" "}
+            </>
+        ),
         description: `Porque tenemos claro que no todo es competir. Relájate con nuestro coctelero o juégate unas partiditas nocturnas con los demás participantes, y al día siguiente vacila de tu victoria o descarga tu venganza en la piscina.`,
     },
 ];
