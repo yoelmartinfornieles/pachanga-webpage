@@ -41,6 +41,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
 function Information() {
     return (
         <MKBox component="section" py={6} my={6}>
+            {" "}
             <Container>
                 <Grid
                     container
@@ -84,7 +85,7 @@ function Information() {
                                     <RotatingCardBack
                                         image={paradiseRotatingCardBgBack}
                                         title={<>Descubre Más</>}
-                                        description="¿Construido de 60 cartas? Nah, esto es EDH en estado puro. En tu Command Zone va a pegar el solete. "
+                                        description="¿Construído de 60 cartas? Nah, esto es EDH en estado puro. En tu Command Zone va a pegar el solete. "
                                         action={{
                                             type: "internal",
                                             route: "/sections/page-sections/page-headers",
@@ -105,7 +106,10 @@ function Information() {
                                         />
                                     }
                                     title={
-                                        <StyledLink to="/your-internal-route">
+                                        <StyledLink
+                                            sx={{ color: "white.main" }}
+                                            to="/your-internal-route"
+                                        >
                                             Sirviente del pintor
                                         </StyledLink>
                                     }
@@ -120,7 +124,10 @@ function Information() {
                                         />
                                     }
                                     title={
-                                        <StyledLink to="/your-internal-route">
+                                        <StyledLink
+                                            sx={{ color: "white.main" }}
+                                            to="/your-internal-route"
+                                        >
                                             Muestra y Explica
                                         </StyledLink>
                                     }
@@ -141,7 +148,10 @@ function Information() {
                                         />
                                     }
                                     title={
-                                        <StyledLink to="/your-internal-route">
+                                        <StyledLink
+                                            to="/your-internal-route"
+                                            sx={{ color: "white.main" }}
+                                        >
                                             Abrir la Armería
                                         </StyledLink>
                                     }
@@ -156,7 +166,10 @@ function Information() {
                                         />
                                     }
                                     title={
-                                        <StyledLink to="/your-internal-route">
+                                        <StyledLink
+                                            to="/your-internal-route"
+                                            sx={{ color: "white.main" }}
+                                        >
                                             Una oferta que no podrás rechazar
                                         </StyledLink>
                                     }

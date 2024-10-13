@@ -1,19 +1,3 @@
-/* eslint-disable no-param-reassign */
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import { Fragment, useState, useEffect } from "react";
 
 // react-router components
@@ -43,6 +27,10 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 // Material Kit 2 React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
+import {
+    pachangaGreyLogo,
+    paradiseGreyLogo,
+} from "../../../assets/images/logos";
 function DefaultNavbar({
     brand,
     routes,
@@ -107,7 +95,7 @@ function DefaultNavbar({
                     }
                 }}
                 onMouseLeave={() => collapse && setDropdown(null)}
-                light={light}
+                light="false"
             />
         )
     );
@@ -157,6 +145,7 @@ function DefaultNavbar({
                                                 py={1}
                                                 px={0.5}
                                                 mt={index !== 0 ? 2 : 0}
+                                                color="white"
                                             >
                                                 {col.name}
                                             </MKTypography>
@@ -192,13 +181,17 @@ function DefaultNavbar({
                                                     minWidth="11.25rem"
                                                     display="block"
                                                     variant="button"
-                                                    color="text"
+                                                    color="secondary"
                                                     textTransform="capitalize"
                                                     fontWeight="regular"
                                                     py={0.625}
                                                     px={2}
                                                     sx={({
-                                                        palette: { grey, dark },
+                                                        palette: {
+                                                            grey,
+                                                            dark,
+                                                            black,
+                                                        },
                                                         borders: {
                                                             borderRadius,
                                                         },
@@ -270,7 +263,7 @@ function DefaultNavbar({
                             py={item.description ? 1 : 0.625}
                             px={2}
                             sx={({
-                                palette: { grey, dark },
+                                palette: { grey, dark, black },
                                 borders: { borderRadius },
                             }) => ({
                                 borderRadius: borderRadius.md,
@@ -367,7 +360,12 @@ function DefaultNavbar({
                     {...TransitionProps}
                     sx={{
                         transformOrigin: "left top",
-                        background: ({ palette: { white } }) => white.main,
+                        backgroundColor: ({
+                            palette: { black },
+                            functions: { rgba },
+                        }) => rgba(black.main, 0.8),
+                        backdropFilter: "saturate(200%) blur(30px)",
+                        boxShadow: ({ boxShadows: { xxl } }) => xxl,
                     }}
                 >
                     <MKBox borderRadius="lg">
@@ -545,15 +543,12 @@ function DefaultNavbar({
                 left={0}
                 zIndex={3}
                 sx={({
-                    palette: { transparent: transparentColor, white },
+                    palette: { transparent: transparentColor, black, white },
                     functions: { rgba },
                 }) => ({
-                    backgroundColor: transparent
-                        ? transparentColor.main
-                        : rgba(white.main, 0.8),
-                    backdropFilter: transparent
-                        ? "none"
-                        : `saturate(200%) blur(30px)`,
+                    backgroundColor: rgba(black.main, 0.8),
+                    backdropFilter: `saturate(200%) blur(30px)`,
+                    boxShadow: ({ boxShadows: { xxl } }) => xxl,
                 })}
             >
                 <MKBox
@@ -658,7 +653,7 @@ function DefaultNavbar({
 DefaultNavbar.defaultProps = {
     brand: (
         <img
-            src="https://pachangatournament.com/images/logo.png"
+            src={pachangaGreyLogo}
             alt="Pachanga Tournament"
             style={{ height: "60px" }}
         />
@@ -693,6 +688,7 @@ DefaultNavbar.propTypes = {
                 "light",
                 "default",
                 "white",
+                "black",
             ]),
             label: PropTypes.string.isRequired,
         }),
