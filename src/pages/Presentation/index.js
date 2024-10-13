@@ -20,7 +20,6 @@ import Information from "pages/Presentation/sections/Information";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
 
 // Images
 import { carouselImage3, carouselImage4, carouselImage5 } from "assets/images";
@@ -35,8 +34,16 @@ const carouselItems = [
                     variant="h1"
                     sx={{
                         fontFamily: "'Permanent Marker'",
-                        fontSize: "5rem",
                         textShadow: "2px 2px 4px black",
+                        textAlign: "center", // Center the text
+                        maxWidth: "90%", // Limit width to fit within the carousel
+                        width: "100%", // Ensure it takes full width
+                        mb: 1, // Margin bottom for spacing
+                        fontSize: {
+                            xs: "4rem", // Adjust size for extra small screens
+                            sm: "5rem", // Adjust size for small screens
+                            md: "6rem", // Adjust size for medium screens
+                        },
                     }}
                     color="white.main"
                 >
@@ -44,10 +51,17 @@ const carouselItems = [
                 </MKTypography>
                 <MKTypography
                     variant="h6"
-                    sx={{
-                        fontSize: "1.5rem",
-                    }}
                     color="white.main"
+                    sx={{
+                        textAlign: "center", // Center the subtitle
+                        maxWidth: "90%", // Limit width to fit within the carousel
+                        width: "100%", // Ensure it takes full width
+                        fontSize: {
+                            xs: "1.5rem", // Adjust size for extra small screens
+                            sm: "2rem", // Adjust size for small screens
+                            md: "2.5rem", // Adjust size for medium screens
+                        },
+                    }}
                 >
                     03/10/2025
                 </MKTypography>
@@ -74,20 +88,13 @@ const carouselItems = [
                     variant="h1"
                     sx={{
                         fontFamily: "'Cinzel'",
-                        fontSize: "4rem",
                         textShadow: "2px 2px 4px black",
                     }}
                     color="white.main"
                 >
                     Commander Paradise by Pachanga, 2nd Round
                 </MKTypography>
-                <MKTypography
-                    variant="h6"
-                    sx={{
-                        fontSize: "1.5rem",
-                    }}
-                    color="white.main"
-                >
+                <MKTypography variant="h6" color="white.main">
                     21/02/2025
                 </MKTypography>
             </>
@@ -113,7 +120,7 @@ function Presentation() {
             {
                 nombre: "Pachanga Tournament IV",
                 fecha: new Date("2025-10-03"),
-                tweet: "Pachanga Tournament IV cada día está más cerca. ¿Te lo vas a perder? Compra ya tu entrada en www.pachangatournament.com #pachangaTournamentIV, @pachangaTorneo",
+                tweet: "Pachanga Tournament IV cada da está más cerca. ¿Te lo vas a perder? Compra ya tu entrada en www.pachangatournament.com #pachangaTournamentIV, @pachangaTorneo",
             },
             {
                 nombre: "Commander Paradise by Pachanga - 2nd Round",
@@ -204,16 +211,17 @@ function Presentation() {
                             sx={{ height: "100%" }}
                         >
                             <MKBox
-                                height={{ xs: "50vh", sm: "70vh", md: "100vh" }}
+                                height="100%"
                                 width="100%"
                                 sx={{
                                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${item.image})`,
-                                    backgroundSize: "contain",
-                                    backgroundPosition: "center",
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "top",
                                     display: "flex",
                                     flexDirection: "column",
                                     justifyContent: "center",
                                     alignItems: "center",
+                                    paddingTop: "100px", // Add top padding to avoid navbar overlap
                                 }}
                             >
                                 <Container>
@@ -233,14 +241,35 @@ function Presentation() {
                                                     typography: { size },
                                                 }) => ({
                                                     fontSize: {
-                                                        xs: size["3xl"], // Smaller size for extra small screens
-                                                        sm: size["4xl"], // Medium size for small screens
-                                                        md: size["5xl"], // Larger size for medium screens
+                                                        xs: size["5xl"], // Larger size for extra small screens
+                                                        sm: size["6xl"], // Even larger for small screens
+                                                        md: size["7xl"], // Largest size for medium screens
                                                     },
+                                                    textAlign: "center",
+                                                    maxWidth: "90%", // Limit width to fit within the carousel
+                                                    width: "100%", // Ensure it takes full width
                                                 })}
-                                                textAlign="center"
                                             >
                                                 {item.title}
+                                            </MKTypography>
+                                            <MKTypography
+                                                variant="h6"
+                                                color="white"
+                                                sx={({
+                                                    breakpoints,
+                                                    typography: { size },
+                                                }) => ({
+                                                    fontSize: {
+                                                        xs: size["md"], // Smaller size for extra small screens
+                                                        sm: size["lg"], // Medium size for small screens
+                                                        md: size["lg"], // Keep the same size for medium and larger screens
+                                                    },
+                                                    textAlign: "center",
+                                                    maxWidth: "90%", // Limit width to fit within the carousel
+                                                })}
+                                            >
+                                                {item.subtitle}{" "}
+                                                {/* Ensure subtitle is rendered correctly */}
                                             </MKTypography>
                                             <MKTypography
                                                 variant="body1"
@@ -257,6 +286,7 @@ function Presentation() {
                                                         sm: size["lg"], // Medium size for small screens
                                                         md: size["lg"], // Keep the same size for medium and larger screens
                                                     },
+                                                    maxWidth: "90%", // Limit width to fit within the carousel
                                                 })}
                                             >
                                                 {item.description}
