@@ -10,14 +10,9 @@ import MKBox from "components/MKBox";
 import {
     Banner,
     Counters,
-    Footer,
     Information,
-    Navbar,
     Social,
 } from "pages/Presentation/sections";
-
-// Routes
-import routes from "routes";
 
 function Presentation() {
     return (
@@ -28,18 +23,8 @@ function Presentation() {
                 minHeight: "100vh",
             }}
         >
-            <Navbar
-                routes={routes}
-                action={{
-                    type: "external",
-                    route: "https://www.twitter.com",
-                    label: "comprar tickets",
-                    color: "info",
-                }}
-                sticky
-            />
             <Banner />
-            <Container maxWidth="lg" sx={{ p: 0, m: 0 }}>
+            <Container maxWidth="lg" sx={{ p: 0, m: 0, ml: 0 }}>
                 <Card
                     sx={{
                         p: 0,
@@ -61,19 +46,6 @@ function Presentation() {
                     <Social />
                 </Card>
             </Container>
-            <MKBox
-                pt={0}
-                px={1}
-                mt={6}
-                sx={{
-                    backgroundColor: "#212529",
-                    opacity: 0.98,
-                    backdropFilter: "saturate(200%) blur(30px)",
-                    boxShadow: ({ boxShadows: { xxl } }) => xxl,
-                }}
-            >
-                <Footer />
-            </MKBox>
         </MKBox>
     );
 }

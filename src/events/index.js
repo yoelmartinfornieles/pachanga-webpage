@@ -1,3 +1,4 @@
+// images
 import { pachangaIV, paradise2ndRound } from "./images";
 
 const events = [

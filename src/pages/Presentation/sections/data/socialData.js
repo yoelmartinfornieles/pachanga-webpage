@@ -2,13 +2,24 @@ import events from "../../../../events";
 
 const getTweetText = () => {
     const currentDate = new Date();
-    const upcomingEvents = events.filter((events) => events.date > currentDate);
+    const upcomingEvents = events.filter(
+        (event) =>
+            event.date !== null &&
+            event.tweet !== null &&
+            new Date(event.date) > currentDate
+    );
+
     if (upcomingEvents.length === 0) {
         return "Todos los eventos han pasado. ¡Mantente atento para futuros eventos en www.pachangatournament.com! @pachangaTorneo";
     }
+
     const closestEvent = upcomingEvents.reduce((prev, curr) => {
-        return curr.date - currentDate < prev.date - currentDate ? curr : prev;
+        return new Date(curr.date) - currentDate <
+            new Date(prev.date) - currentDate
+            ? curr
+            : prev;
     });
+
     return closestEvent.tweet;
 };
 

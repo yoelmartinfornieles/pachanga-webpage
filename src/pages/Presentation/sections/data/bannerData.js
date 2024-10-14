@@ -1,10 +1,14 @@
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
-
 import events from "../../../../events";
 import { carouselImage4, carouselImage5 } from "assets/images";
 
-const [firstEvent, secondEvent] = events;
+const sortedEvents = events
+    .filter(
+        (event) =>
+            event.date !== null && event.image !== null && event.name !== null
+    )
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
 
 const commonStyles = {
     textShadow: "2px 2px 4px black",
@@ -47,17 +51,12 @@ const createEventTitle = (event, fontFamily) => (
             sx={{ ...subtitleStyles, fontFamily }}
             color="white"
         >
-            {event.date.toLocaleDateString()}
+            {new Date(event.date).toLocaleDateString()}
         </MKTypography>
     </>
 );
 
-const carouselItems = [
-    {
-        image: firstEvent.image,
-        title: createEventTitle(firstEvent, firstEvent.fontFamily),
-        description: firstEvent.description,
-    },
+const nonEventSlides = [
     {
         image: "https://pachangatournament.com/images/2024/gallery-7.jpg",
         title: (
@@ -77,11 +76,6 @@ const carouselItems = [
         ),
         description:
             "Enchúfate cócteles hasta reventar disfrutando de un clima espectacular. Gafas de sol 24/7.",
-    },
-    {
-        image: secondEvent.image,
-        title: createEventTitle(secondEvent, secondEvent.fontFamily),
-        description: secondEvent.description,
     },
     {
         image: carouselImage4,
@@ -104,6 +98,37 @@ const carouselItems = [
             "Porque tenemos claro que no todo es competir. Relájate con nuestro coctelero o juégate unas partiditas nocturnas con los demás participantes, y al día siguiente vacila de tu victoria o descarga tu venganza en la piscina.",
     },
 ];
+
+// Shuffle non-event slides
+const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+};
+
+shuffleArray(nonEventSlides);
+
+const carouselItems = [];
+let eventIndex = 0;
+let nonEventIndex = 0;
+
+for (
+    let i = 0;
+    eventIndex < sortedEvents.length || nonEventIndex < nonEventSlides.length;
+    i++
+) {
+    if (i % 3 === 0 && eventIndex < sortedEvents.length) {
+        const event = sortedEvents[eventIndex++];
+        carouselItems.push({
+            image: event.image,
+            title: createEventTitle(event, event.fontFamily),
+            description: event.description,
+        });
+    } else if (nonEventIndex < nonEventSlides.length) {
+        carouselItems.push(nonEventSlides[nonEventIndex++]);
+    }
+}
 
 const bannerData = { carouselItems };
 

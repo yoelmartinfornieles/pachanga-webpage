@@ -40,8 +40,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
 
 function Information() {
     return (
-        <MKBox component="section" py={6} my={6}>
-            {" "}
+        <MKBox component="section" py={6} my={6} sx={{ ml: -3 }}>
             <Container>
                 <Grid
                     container
@@ -53,7 +52,6 @@ function Information() {
                 >
                     <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
                         <Grid container spacing={5}>
-                            {" "}
                             <Grid item xs={12}>
                                 <RotatingCard>
                                     <RotatingCardFront
@@ -96,7 +94,13 @@ function Information() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
+                    <Grid
+                        item
+                        xs={12}
+                        lg={7}
+                        sx={{ ml: "auto" }}
+                        alignItems="center"
+                    >
                         <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                                 <DefaultInfoCard

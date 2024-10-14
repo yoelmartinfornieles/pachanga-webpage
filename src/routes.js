@@ -55,7 +55,7 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
     {
-        name: "pachanga tournament",
+        name: "pachanga tournament IV",
         icon: <Icon>dashboard</Icon>,
         columns: 1,
         rowsPerColumn: 2,
@@ -146,7 +146,7 @@ const routes = [
         ],
     },
     {
-        name: "commander paradise by pachanga",
+        name: "commander paradise by pachanga: 2nd round",
         icon: <FortOutlinedIcon />,
         columns: 1,
         rowsPerColumn: 2,
