@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.js": "/pachanga-webpage/static/js/main.214c72bb.js",
+    "main.js": "/pachanga-webpage/static/js/main.bc694dff.js",
     "static/media/pachanga-rotating-card-bg-back.jpeg": "/pachanga-webpage/static/media/pachanga-rotating-card-bg-back.89c54405854557d71066.jpeg",
     "static/media/carousel-5.png": "/pachanga-webpage/static/media/carousel-5.d39805ed3f62ad9e22d3.png",
     "static/media/carousel-4.jpeg": "/pachanga-webpage/static/media/carousel-4.079199faecc2665ebb2b.jpeg",
-    "static/media/macbook.png": "/pachanga-webpage/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
-    "static/media/bg-coworking.jpeg": "/pachanga-webpage/static/media/bg-coworking.06bccc47fe6ae5366bf8.jpeg",
     "static/media/bg-sign-in-basic.jpeg": "/pachanga-webpage/static/media/bg-sign-in-basic.f327db1d0e4b00ba3c81.jpeg",
     "static/media/city-profile.jpg": "/pachanga-webpage/static/media/city-profile.4d64bba97c3d1757379e.jpg",
     "static/media/paradise2ndRound.webp": "/pachanga-webpage/static/media/paradise2ndRound.b06973045b96cc01c28d.webp",
@@ -14,25 +12,17 @@
     "static/media/blog-9-4.jpg": "/pachanga-webpage/static/media/blog-9-4.de736e0b751f453415a5.jpg",
     "static/media/illustration-reset.jpg": "/pachanga-webpage/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
     "static/media/blog2.jpg": "/pachanga-webpage/static/media/blog2.aba7a3cb94805e9557d1.jpg",
-    "static/media/bg-about-us.jpg": "/pachanga-webpage/static/media/bg-about-us.cf9a123e2a3d371d53da.jpg",
     "static/media/pachangaIV.jpg": "/pachanga-webpage/static/media/pachangaIV.62896c0094d9c45a6bfa.jpg",
     "static/media/pachanga-rotating-card-bg-front.jpeg": "/pachanga-webpage/static/media/pachanga-rotating-card-bg-front.cb45ab6efd87b3ff818f.jpeg",
     "static/media/paradise-rotating-card-bg-back.jpg": "/pachanga-webpage/static/media/paradise-rotating-card-bg-back.78985e6d56f49a6519ba.jpg",
     "static/media/logo-commander.png": "/pachanga-webpage/static/media/logo-commander.4183488f5fcf42564cca.png",
     "static/media/testimonial-6-2.jpg": "/pachanga-webpage/static/media/testimonial-6-2.21f2048f0b89919090f0.jpg",
     "static/media/testimonial-6-3.jpg": "/pachanga-webpage/static/media/testimonial-6-3.d35bef0d65354442d063.jpg",
-    "static/media/team-1.jpg": "/pachanga-webpage/static/media/team-1.0fd36e0ee93dcfacdef8.jpg",
     "static/media/bruce-mars.jpg": "/pachanga-webpage/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
-    "static/media/team-5.jpg": "/pachanga-webpage/static/media/team-5.d59ab7b9f95f1169cf83.jpg",
-    "static/media/team-2.jpg": "/pachanga-webpage/static/media/team-2.13ae2ce3e12f4cfed420.jpg",
-    "static/media/team-3.jpg": "/pachanga-webpage/static/media/team-3.0ef0be95e6850814c79e.jpg",
-    "static/media/ivana-square.jpg": "/pachanga-webpage/static/media/ivana-square.f7bc23b269d1d2509c82.jpg",
-    "static/media/ivana-squares.jpg": "/pachanga-webpage/static/media/ivana-squares.3c555b856b04c2ab921b.jpg",
-    "static/media/team-4.jpg": "/pachanga-webpage/static/media/team-4.85c82b6e60178804017f.jpg",
     "index.html": "/pachanga-webpage/index.html",
-    "main.214c72bb.js.map": "/pachanga-webpage/static/js/main.214c72bb.js.map"
+    "main.bc694dff.js.map": "/pachanga-webpage/static/js/main.bc694dff.js.map"
   },
   "entrypoints": [
-    "static/js/main.214c72bb.js"
+    "static/js/main.bc694dff.js"
   ]
 }

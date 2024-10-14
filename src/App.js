@@ -1,19 +1,4 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -29,14 +14,17 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "assets/theme";
 import { Footer, Navbar } from "shared/sections"; // Adjust the import path as necessary
 import Presentation from "layouts/pages/presentation";
-import PachangaIV from "pages/PachangaIV/MainEvent"; // Import your other pages
+import { MainEvent as pachangaIVMainEvent } from "layouts/pages/pachangaIV/mainEvent"; // Import your other pages
 import routes from "routes";
 
 export default function App() {
     const { pathname } = useLocation();
+    const [navbarOpen, setNavbarOpen] = useState(false);
 
-    // Setting page scroll to 0 when changing the route
     useEffect(() => {
+        // Close the navbar when the route changes
+        setNavbarOpen(false);
+        // Scroll to the top of the page
         document.documentElement.scrollTop = 0;
         document.scrollingElement.scrollTop = 0;
     }, [pathname]);
@@ -71,8 +59,8 @@ export default function App() {
                     minHeight: "100vh",
                 }}
             >
-                {" "}
                 <Navbar
+                    key={pathname} // This will remount the Navbar on route change
                     routes={routes}
                     action={{
                         type: "external",
@@ -81,11 +69,16 @@ export default function App() {
                         color: "info",
                     }}
                     sticky
+                    open={navbarOpen}
+                    onToggle={() => setNavbarOpen(!navbarOpen)}
                 />
                 <Routes>
                     {getRoutes(routes)}
                     <Route path="/presentation" element={<Presentation />} />
-                    <Route path="/pachangaIV" element={<PachangaIV />} />{" "}
+                    <Route
+                        path="/pachangaIV/main-event"
+                        element={<pachangaIVMainEvent />}
+                    />{" "}
                     {/* Add your other routes here */}
                     <Route path="*" element={<Navigate to="/presentation" />} />
                 </Routes>

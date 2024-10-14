@@ -17,8 +17,11 @@ function Banner() {
             sx={{
                 position: "relative",
                 overflow: "hidden",
-                height: "100vh",
+                height: "92vh",
                 mt: -8,
+                "@media (max-height: 600px)": {
+                    height: "600px",
+                },
             }}
         >
             <Carousel
