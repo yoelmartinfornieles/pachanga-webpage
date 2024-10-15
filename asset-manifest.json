@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/pachanga-webpage/static/js/main.98ca790c.js",
+    "main.js": "/pachanga-webpage/static/js/main.911361b9.js",
     "static/media/pachanga-rotating-card-bg-back.jpeg": "/pachanga-webpage/static/media/pachanga-rotating-card-bg-back.89c54405854557d71066.jpeg",
     "static/media/carousel-5.png": "/pachanga-webpage/static/media/carousel-5.d39805ed3f62ad9e22d3.png",
     "static/media/purchase-banner.jpg": "/pachanga-webpage/static/media/purchase-banner.75a14295419e402621f9.jpg",
@@ -13,6 +13,7 @@
     "static/media/blog-9-4.jpg": "/pachanga-webpage/static/media/blog-9-4.de736e0b751f453415a5.jpg",
     "static/media/illustration-reset.jpg": "/pachanga-webpage/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
     "static/media/blog2.jpg": "/pachanga-webpage/static/media/blog2.aba7a3cb94805e9557d1.jpg",
+    "static/media/dataProtectionPolicy-banner.jpg": "/pachanga-webpage/static/media/dataProtectionPolicy-banner.a928fca90e0c0040f930.jpg",
     "static/media/pachangaIV.jpg": "/pachanga-webpage/static/media/pachangaIV.62896c0094d9c45a6bfa.jpg",
     "static/media/pachanga-rotating-card-bg-front.jpeg": "/pachanga-webpage/static/media/pachanga-rotating-card-bg-front.cb45ab6efd87b3ff818f.jpeg",
     "static/media/paradise-rotating-card-bg-back.jpg": "/pachanga-webpage/static/media/paradise-rotating-card-bg-back.78985e6d56f49a6519ba.jpg",
@@ -21,9 +22,9 @@
     "static/media/testimonial-6-3.jpg": "/pachanga-webpage/static/media/testimonial-6-3.d35bef0d65354442d063.jpg",
     "static/media/bruce-mars.jpg": "/pachanga-webpage/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
     "index.html": "/pachanga-webpage/index.html",
-    "main.98ca790c.js.map": "/pachanga-webpage/static/js/main.98ca790c.js.map"
+    "main.911361b9.js.map": "/pachanga-webpage/static/js/main.911361b9.js.map"
   },
   "entrypoints": [
-    "static/js/main.98ca790c.js"
+    "static/js/main.911361b9.js"
   ]
 }
