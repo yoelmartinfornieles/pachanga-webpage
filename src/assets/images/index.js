@@ -4,6 +4,7 @@ import pachangaRotatingCardBgFront from "./pachanga-rotating-card-bg-front.jpeg"
 import pachangaRotatingCardBgBack from "./pachanga-rotating-card-bg-back.jpeg";
 import paradiseRotatingCardBgFront from "./paradise-rotating-card-bg-front.jpg";
 import paradiseRotatingCardBgBack from "./paradise-rotating-card-bg-back.jpg";
+import purchaseBanner from "./purchase-banner.jpg";
 export {
     carouselImage4,
     carouselImage5,
@@ -11,4 +12,5 @@ export {
     pachangaRotatingCardBgBack,
     paradiseRotatingCardBgFront,
     paradiseRotatingCardBgBack,
+    purchaseBanner,
 };

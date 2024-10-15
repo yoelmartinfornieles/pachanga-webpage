@@ -13,8 +13,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 // Material Kit 2 React themes
 import theme from "assets/theme";
 import { Footer, Navbar } from "shared/sections"; // Adjust the import path as necessary
-import Presentation from "layouts/pages/presentation";
-import { MainEvent as pachangaIVMainEvent } from "layouts/pages/pachangaIV/mainEvent"; // Import your other pages
+import { Purchase, Presentation, PachangaIVMainEvent } from "layouts/pages";
 import routes from "routes";
 
 export default function App() {
@@ -63,9 +62,9 @@ export default function App() {
                     key={pathname} // This will remount the Navbar on route change
                     routes={routes}
                     action={{
-                        type: "external",
-                        route: "https://www.twitter.com",
-                        label: "comprar tickets",
+                        type: "internal",
+                        route: "/purchase",
+                        label: "comprar entradas",
                         color: "info",
                     }}
                     sticky
@@ -77,9 +76,9 @@ export default function App() {
                     <Route path="/presentation" element={<Presentation />} />
                     <Route
                         path="/pachangaIV/main-event"
-                        element={<pachangaIVMainEvent />}
-                    />{" "}
-                    {/* Add your other routes here */}
+                        element={<PachangaIVMainEvent />}
+                    />
+                    <Route path="/purchase" element={<Purchase />} />
                     <Route path="*" element={<Navigate to="/presentation" />} />
                 </Routes>
                 <Footer />
