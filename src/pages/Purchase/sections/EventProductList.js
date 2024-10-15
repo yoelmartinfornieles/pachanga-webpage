@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
 
-import { TransparentCard } from "../../../shared/components";
+import { TransparentCard } from "../../../components";
 
 function EventProductList({ event, eventIndex }) {
     return (

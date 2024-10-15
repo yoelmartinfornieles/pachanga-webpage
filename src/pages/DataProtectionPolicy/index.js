@@ -1,7 +1,7 @@
 // @mui material components
 import Card from "@mui/material/Card";
 
-import { Statement, Header } from "../../shared/sections";
+import { Statement, Header } from "../../sections";
 import dataProtectionPolicyStatement from "./sections/data/dataProtectionPolicyStatement";
 import { dataProtectionPolicyBanner } from "../../assets/images";
 

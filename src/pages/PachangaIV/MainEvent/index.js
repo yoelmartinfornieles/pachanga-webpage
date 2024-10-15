@@ -1,7 +1,36 @@
 import Card from "@mui/material/Card";
-import { Foundations } from "../../../shared/sections";
-import { Header } from "../../../shared/sections";
+import { Foundations, Team } from "../../../sections";
+import { Header } from "../../../sections";
 import events from "../../../events";
+
+const teamMembers = [
+    {
+        image: null,
+        name: "Emma Roberts",
+        position: { color: "info", label: "UI Designer" },
+        description:
+            "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    },
+    {
+        image: null,
+        name: "Bruce Mars",
+        position: { color: "info", label: "Web Developer" },
+        description:
+            "Web Developer with a passion for creating beautiful and functional websites.",
+    },
+    {
+        image: null,
+        name: "Ivana Square",
+        position: { color: "info", label: "Graphic Designer" },
+        description: "Graphic Designer who loves to create stunning visuals.",
+    },
+    {
+        image: null,
+        name: "John Doe",
+        position: { color: "info", label: "Project Manager" },
+        description: "Project Manager with a knack for keeping teams on track.",
+    },
+];
 
 const event = events.find((event) => event.name === "Pachanga Tournament IV");
 
@@ -29,6 +58,7 @@ function MainEvent() {
                 }}
             >
                 <Foundations foundations={event.foundations} />
+                <Team teamMembers={teamMembers} />
             </Card>
         </>
     );

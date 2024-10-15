@@ -4,7 +4,7 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "assets/theme";
-import { Footer, Navbar } from "shared/sections";
+import { Footer, Navbar } from "./sections";
 import {
     PurchasePage,
     PurchaseSuccessPage,

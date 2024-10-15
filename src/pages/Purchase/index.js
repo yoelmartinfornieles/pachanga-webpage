@@ -1,7 +1,7 @@
 import Card from "@mui/material/Card";
 import Container from "@mui/material/Container";
 import MKBox from "components/MKBox";
-import { Header } from "../../shared/sections";
+import { Header } from "../../sections";
 import { EventProductList } from "./sections";
 import events from "../../events";
 import { purchaseBanner } from "../../assets/images";
