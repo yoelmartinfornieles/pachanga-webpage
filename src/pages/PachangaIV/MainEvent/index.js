@@ -1,10 +1,8 @@
-// @mui material components
 import Card from "@mui/material/Card";
-
-import { Contact, Posts } from "./sections";
 import { Foundations } from "../../../shared/sections";
 import { Header } from "../../../shared/sections";
 import events from "../../../events";
+
 const event = events.find((event) => event.name === "Pachanga Tournament IV");
 
 function MainEvent() {
@@ -31,8 +29,6 @@ function MainEvent() {
             >
                 <Foundations foundations={event.foundations} />
             </Card>
-            <Posts />
-            <Contact />
         </>
     );
 }

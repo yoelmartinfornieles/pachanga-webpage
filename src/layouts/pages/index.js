@@ -1,5 +1,11 @@
-import Presentation from "layouts/pages/presentation";
-import { default as PachangaIVMainEvent } from "layouts/pages/pachangaIV/mainEvent";
-import Purchase from "layouts/pages/purchase";
+import PresentationPage from "layouts/pages/presentation";
+import { default as PachangaIVMainEventPage } from "layouts/pages/pachangaIV/mainEvent";
+import PurchasePage from "layouts/pages/purchase";
+import DataProtectionPolicyPage from "./data-protection-policy";
 
-export { PachangaIVMainEvent, Presentation, Purchase };
+export {
+    PresentationPage,
+    PachangaIVMainEventPage,
+    PurchasePage,
+    DataProtectionPolicyPage,
+};

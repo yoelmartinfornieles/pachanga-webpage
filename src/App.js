@@ -1,19 +1,16 @@
 import { useEffect, useState } from "react";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
-
-// react-router components
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-
-// @mui material components
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-
-// Material Kit 2 React themes
 import theme from "assets/theme";
-import { Footer, Navbar } from "shared/sections"; // Adjust the import path as necessary
-import { Purchase, Presentation, PachangaIVMainEvent } from "layouts/pages";
+import { Footer, Navbar } from "shared/sections";
+import {
+    PurchasePage,
+    PresentationPage,
+    PachangaIVMainEventPage,
+    DataProtectionPolicyPage,
+} from "layouts/pages";
 import routes from "routes";
 
 export default function App() {
@@ -21,9 +18,7 @@ export default function App() {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     useEffect(() => {
-        // Close the navbar when the route changes
         setNavbarOpen(false);
-        // Scroll to the top of the page
         document.documentElement.scrollTop = 0;
         document.scrollingElement.scrollTop = 0;
     }, [pathname]);
@@ -44,7 +39,6 @@ export default function App() {
                     />
                 );
             }
-
             return null;
         });
 
@@ -59,7 +53,7 @@ export default function App() {
                 }}
             >
                 <Navbar
-                    key={pathname} // This will remount the Navbar on route change
+                    key={pathname}
                     routes={routes}
                     action={{
                         type: "internal",
@@ -73,12 +67,19 @@ export default function App() {
                 />
                 <Routes>
                     {getRoutes(routes)}
-                    <Route path="/presentation" element={<Presentation />} />
+                    <Route
+                        path="/presentation"
+                        element={<PresentationPage />}
+                    />
                     <Route
                         path="/pachangaIV/main-event"
-                        element={<PachangaIVMainEvent />}
+                        element={<PachangaIVMainEventPage />}
                     />
-                    <Route path="/purchase" element={<Purchase />} />
+                    <Route path="/purchase" element={<PurchasePage />} />
+                    <Route
+                        path="/data-protection-policy"
+                        element={<DataProtectionPolicyPage />}
+                    />
                     <Route path="*" element={<Navigate to="/presentation" />} />
                 </Routes>
                 <Footer />

@@ -29,7 +29,7 @@ import breakpoints from "assets/theme/base/breakpoints";
 
 import { pachangaGreyLogo } from "../../../assets/images/logos";
 
-function DefaultNavbar({
+function Navbar({
     brand,
     routes,
     transparent,
@@ -86,7 +86,6 @@ function DefaultNavbar({
                     }
                 }}
                 onMouseLeave={() => collapse && setDropdown(null)}
-                light="false"
             />
         )
     );
@@ -632,7 +631,7 @@ function DefaultNavbar({
     );
 }
 
-DefaultNavbar.defaultProps = {
+Navbar.defaultProps = {
     brand: (
         <img
             src={pachangaGreyLogo}
@@ -648,8 +647,8 @@ DefaultNavbar.defaultProps = {
     center: false,
 };
 
-DefaultNavbar.propTypes = {
-    brand: PropTypes.string,
+Navbar.propTypes = {
+    brand: PropTypes.node,
     routes: PropTypes.arrayOf(PropTypes.shape).isRequired,
     transparent: PropTypes.bool,
     light: PropTypes.bool,
@@ -679,4 +678,4 @@ DefaultNavbar.propTypes = {
     center: PropTypes.bool,
 };
 
-export default DefaultNavbar;
+export default Navbar;

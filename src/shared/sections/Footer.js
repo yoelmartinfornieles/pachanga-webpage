@@ -111,7 +111,7 @@ CenteredFooter.defaultProps = {
             name: "Sponsors",
         },
         {
-            href: "https://www.pachangatournament.com/data-protection-policy",
+            href: "/data-protection-policy",
             name: "Data protection policy",
         },
     ],
@@ -132,7 +132,6 @@ CenteredFooter.defaultProps = {
     light: false,
 };
 
-// Typechecking props for the CenteredFooter
 CenteredFooter.propTypes = {
     company: PropTypes.objectOf(PropTypes.string),
     links: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),

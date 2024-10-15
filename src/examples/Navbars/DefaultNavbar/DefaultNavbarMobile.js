@@ -56,7 +56,6 @@ function DefaultNavbarMobile({ routes, open, light }) {
                 href={href}
                 route={route}
                 collapse={Boolean(navCollapse)}
-                light="false"
             >
                 <MKBox
                     sx={{
@@ -207,7 +206,7 @@ DefaultNavbarMobile.propTypes = {
 };
 
 DefaultNavbarMobile.defaultProps = {
-    light: "false", // Default value for light prop
+    light: false, // Default value for light prop
 };
 
 export default DefaultNavbarMobile;

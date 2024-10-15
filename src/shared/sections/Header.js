@@ -46,9 +46,11 @@ function Header({ fontFamily, title, image }) {
         </MKBox>
     );
 }
+Header.defaultProps = {
+    fontFamily: "'Roboto'",
+};
 
 Header.propTypes = {
-    fontFamily: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
 };

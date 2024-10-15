@@ -95,7 +95,6 @@ function DefaultNavbar({
                     }
                 }}
                 onMouseLeave={() => collapse && setDropdown(null)}
-                light="false"
             />
         )
     );
