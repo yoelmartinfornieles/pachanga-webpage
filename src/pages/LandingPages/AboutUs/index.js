@@ -160,11 +160,17 @@ function AboutUs() {
             </MKBox>
             <Card
                 sx={{
-                    p: 2,
+                    p: 4, // Increased padding for better spacing
                     mx: { xs: 2, lg: 3 },
-                    mt: -8,
+                    mt: -5,
                     mb: 4,
-                    boxShadow: ({ boxShadows: { xxl } }) => xxl,
+                    backgroundColor: ({
+                        palette: { black },
+                        functions: { rgba },
+                    }) => rgba(black.main, 0.8),
+                    backdropFilter: "saturate(200%) blur(30px)",
+                    boxShadow: `0 20px 40px rgba(0, 0, 0, 0.3)`, // Increased shadow for depth
+                    borderRadius: "16px", // Rounded corners for the card
                 }}
             >
                 <Information />

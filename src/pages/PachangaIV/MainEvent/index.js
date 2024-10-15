@@ -15,16 +15,17 @@ function MainEvent() {
             />
             <Card
                 sx={{
-                    p: 2,
+                    p: 4,
                     mx: { xs: 2, lg: 3 },
                     mt: -5,
                     mb: 4,
                     backgroundColor: ({
-                        palette: { white, black },
+                        palette: { black },
                         functions: { rgba },
                     }) => rgba(black.main, 0.8),
                     backdropFilter: "saturate(200%) blur(30px)",
-                    boxShadow: ({ boxShadows: { xxl } }) => xxl,
+                    boxShadow: `0 20px 40px rgba(0, 0, 0, 0.3)`,
+                    borderRadius: "16px",
                 }}
             >
                 <Foundations foundations={event.foundations} />

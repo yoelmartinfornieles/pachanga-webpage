@@ -7,6 +7,7 @@ import theme from "assets/theme";
 import { Footer, Navbar } from "shared/sections";
 import {
     PurchasePage,
+    PurchaseSuccessPage,
     PresentationPage,
     PachangaIVMainEventPage,
     DataProtectionPolicyPage,
@@ -75,7 +76,11 @@ export default function App() {
                         path="/pachangaIV/main-event"
                         element={<PachangaIVMainEventPage />}
                     />
-                    <Route path="/purchase" element={<PurchasePage />} />
+                    <Route path="/purchase" element={<PurchasePage />} />{" "}
+                    <Route
+                        path="/purchase-success"
+                        element={<PurchaseSuccessPage />}
+                    />
                     <Route
                         path="/data-protection-policy"
                         element={<DataProtectionPolicyPage />}

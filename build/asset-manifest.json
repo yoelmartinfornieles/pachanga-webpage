@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/pachanga-webpage/static/js/main.8413558e.js",
+    "main.js": "/pachanga-webpage/static/js/main.a2663400.js",
     "static/media/pachanga-rotating-card-bg-back.jpeg": "/pachanga-webpage/static/media/pachanga-rotating-card-bg-back.89c54405854557d71066.jpeg",
     "static/media/pachangaIV-general-ticket.png": "/pachanga-webpage/static/media/pachangaIV-general-ticket.69c11613bec1960b3f47.png",
+    "static/media/purchaseSuccess-banner.png": "/pachanga-webpage/static/media/purchaseSuccess-banner.734ed44d4e5b735b8e9e.png",
+    "static/media/paradise2ndRound-general-ticket.png": "/pachanga-webpage/static/media/paradise2ndRound-general-ticket.edb985570cc35ba8685b.png",
     "static/media/pachangaIV-vip-ticket.png": "/pachanga-webpage/static/media/pachangaIV-vip-ticket.f9cebd56c00f979ebc80.png",
-    "static/media/paradise2ndRound-general-ticket.png": "/pachanga-webpage/static/media/paradise2ndRound-general-ticket.edb5ec0811cff4f2791c.png",
     "static/media/carousel-5.png": "/pachanga-webpage/static/media/carousel-5.d39805ed3f62ad9e22d3.png",
     "static/media/purchase-banner.jpg": "/pachanga-webpage/static/media/purchase-banner.75a14295419e402621f9.jpg",
     "static/media/carousel-4.jpeg": "/pachanga-webpage/static/media/carousel-4.079199faecc2665ebb2b.jpeg",
@@ -25,9 +26,9 @@
     "static/media/testimonial-6-3.jpg": "/pachanga-webpage/static/media/testimonial-6-3.d35bef0d65354442d063.jpg",
     "static/media/bruce-mars.jpg": "/pachanga-webpage/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
     "index.html": "/pachanga-webpage/index.html",
-    "main.8413558e.js.map": "/pachanga-webpage/static/js/main.8413558e.js.map"
+    "main.a2663400.js.map": "/pachanga-webpage/static/js/main.a2663400.js.map"
   },
   "entrypoints": [
-    "static/js/main.8413558e.js"
+    "static/js/main.a2663400.js"
   ]
 }

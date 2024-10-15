@@ -6,6 +6,7 @@ import paradiseRotatingCardBgFront from "./paradise-rotating-card-bg-front.jpg";
 import paradiseRotatingCardBgBack from "./paradise-rotating-card-bg-back.jpg";
 import purchaseBanner from "./purchase-banner.jpg";
 import dataProtectionPolicyBanner from "./dataProtectionPolicy-banner.jpg";
+import purchaseSuccessBanner from "./purchaseSuccess-banner.png";
 
 export {
     carouselImage4,
@@ -15,5 +16,6 @@ export {
     paradiseRotatingCardBgFront,
     paradiseRotatingCardBgBack,
     purchaseBanner,
+    purchaseSuccessBanner,
     dataProtectionPolicyBanner,
 };
