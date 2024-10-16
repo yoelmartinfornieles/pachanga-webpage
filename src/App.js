@@ -76,7 +76,7 @@ export default function App() {
                         path="/pachangaIV/main-event"
                         element={<PachangaIVMainEventPage />}
                     />
-                    <Route path="/purchase" element={<PurchasePage />} />{" "}
+                    <Route path="/purchase" element={<PurchasePage />} />
                     <Route
                         path="/purchase-success"
                         element={<PurchaseSuccessPage />}

@@ -1,10 +1,5 @@
-// @mui material components
 import Icon from "@mui/material/Icon";
-
-// @mui icons
 import FortOutlinedIcon from "@mui/icons-material/FortOutlined";
-
-// Pages
 import PachangaMainEvent from "layouts/pages/pachangaIV/mainEvent";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
@@ -38,17 +33,17 @@ const routes = [
                 collapse: [
                     createCollapseItem(
                         "bases",
-                        "/pages/pachanga-iv/main-event",
+                        "/pachangaIV/main-event#foundations",
                         <PachangaMainEvent />
                     ),
                     createCollapseItem(
                         "premios",
-                        "/pages/pachanga-iv/main-event",
+                        "/pachangaIV/main-event#prizes",
                         <PachangaMainEvent />
                     ),
                     createCollapseItem(
                         "equipo de arbitros",
-                        "/pages/pachanga-iv/main-event",
+                        "/pachangaIV/main-event#referee-team",
                         <PachangaMainEvent />
                     ),
                 ],

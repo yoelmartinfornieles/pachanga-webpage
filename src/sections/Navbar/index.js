@@ -151,37 +151,15 @@ function Navbar({
                                             {col.collapse.map((item) => (
                                                 <MKTypography
                                                     key={item.name}
-                                                    component={
-                                                        item.route
-                                                            ? Link
-                                                            : MuiLink
-                                                    }
-                                                    to={
-                                                        item.route
-                                                            ? item.route
-                                                            : ""
-                                                    }
-                                                    href={
-                                                        item.href
-                                                            ? item.href
-                                                            : (e) =>
-                                                                  e.preventDefault()
-                                                    }
-                                                    target={
-                                                        item.href
-                                                            ? "_blank"
-                                                            : ""
-                                                    }
-                                                    rel={
-                                                        item.href
-                                                            ? "noreferrer"
-                                                            : "noreferrer"
-                                                    }
-                                                    minWidth="11.25rem"
-                                                    display="block"
+                                                    component={Link}
+                                                    to={item.route}
+                                                    display="flex"
+                                                    justifyContent="space-between"
+                                                    alignItems="center"
                                                     variant="button"
-                                                    color="secondary"
                                                     textTransform="capitalize"
+                                                    minWidth="11.25rem"
+                                                    color="secondary"
                                                     fontWeight="regular"
                                                     py={0.625}
                                                     px={2}

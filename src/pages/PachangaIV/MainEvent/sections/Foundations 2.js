@@ -1,8 +1,12 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+
+// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+
+// Images
 import { pachangaGreyLogo } from "assets/images/logos";
 
 function Foundations({ foundations }) {

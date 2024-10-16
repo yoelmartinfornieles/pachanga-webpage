@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom"; // Import useLocation
 import Card from "@mui/material/Card";
 import { Foundations, Team } from "../../../sections";
 import { Header } from "../../../sections";
@@ -35,6 +37,35 @@ const teamMembers = [
 const event = events.find((event) => event.name === "Pachanga Tournament IV");
 
 function MainEvent() {
+    const location = useLocation(); // Get the current location
+
+    useEffect(() => {
+        const hash = window.location.hash;
+        console.log("Current hash:", hash); // Log the current hash
+        if (hash) {
+            requestAnimationFrame(() => {
+                const element = document.getElementById(hash.substring(1)); // Remove the '#' from the hash
+                console.log("Element found:", element); // Log the found element
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                } else {
+                    console.log("Element not found for hash:", hash); // Log if the element is not found
+                }
+            });
+        }
+    }, [location]); // Add location as a dependency
+
+    // Check for hash on initial mount
+    useEffect(() => {
+        const initialHash = window.location.hash;
+        if (initialHash) {
+            const element = document.getElementById(initialHash.substring(1));
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, []); // Run only on initial mount
+
     return (
         <>
             <Header
@@ -59,14 +90,14 @@ function MainEvent() {
                     flexDirection: "column",
                 }}
             >
-                <Foundations foundations={event.foundations} />
-                <Team
-                    id="referee-team"
-                    title="Equipo de árbitros"
-                    description="Porque este equipazo de árbitros lo tienes que conocer"
-                    teamMembers={teamMembers}
-                    sx={{ width: "100%" }}
-                />
+                <Foundations id="foundations" foundations={event.foundations} />
+                <div id="referee-team">
+                    <Team // Ensure this ID matches the hash
+                        title="Equipo de árbitros"
+                        description="Porque este equipazo de árbitros lo tienes que conocer"
+                        teamMembers={teamMembers}
+                    />
+                </div>
             </Card>
         </>
     );
