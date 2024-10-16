@@ -22,7 +22,7 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
-import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
+import HorizontalTeamCard from "../components/HorizontalTeamCard";
 
 function Team({ title, description, teamMembers }) {
     return (
@@ -33,7 +33,7 @@ function Team({ title, description, teamMembers }) {
             position="relative"
             py={6}
             px={{ xs: 2, lg: 0 }}
-            mx={-2}
+            mx={-4}
         >
             <Container>
                 <Grid container>

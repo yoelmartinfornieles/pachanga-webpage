@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.js": "/static/js/main.9cab4ed2.js",
+    "static/media/pachanga-rotating-card-bg-back.jpeg": "/static/media/pachanga-rotating-card-bg-back.89c54405854557d71066.jpeg",
+    "static/media/pachangaIV-general-ticket.png": "/static/media/pachangaIV-general-ticket.69c11613bec1960b3f47.png",
+    "static/media/purchaseSuccess-banner.png": "/static/media/purchaseSuccess-banner.734ed44d4e5b735b8e9e.png",
+    "static/media/paradise2ndRound-general-ticket.png": "/static/media/paradise2ndRound-general-ticket.edb985570cc35ba8685b.png",
+    "static/media/pachangaIV-vip-ticket.png": "/static/media/pachangaIV-vip-ticket.f9cebd56c00f979ebc80.png",
+    "static/media/carousel-5.png": "/static/media/carousel-5.d39805ed3f62ad9e22d3.png",
+    "static/media/purchase-banner.jpg": "/static/media/purchase-banner.75a14295419e402621f9.jpg",
+    "static/media/carousel-4.jpeg": "/static/media/carousel-4.079199faecc2665ebb2b.jpeg",
+    "static/media/bg-sign-in-basic.jpeg": "/static/media/bg-sign-in-basic.f327db1d0e4b00ba3c81.jpeg",
+    "static/media/city-profile.jpg": "/static/media/city-profile.4d64bba97c3d1757379e.jpg",
+    "static/media/paradise2ndRound.webp": "/static/media/paradise2ndRound.b06973045b96cc01c28d.webp",
+    "static/media/logo-pachanga.png": "/static/media/logo-pachanga.34005d37653c6f4645f7.png",
+    "static/media/paradise-rotating-card-bg-front.jpg": "/static/media/paradise-rotating-card-bg-front.4c06499933ece338b76c.jpg",
+    "static/media/blog-9-4.jpg": "/static/media/blog-9-4.de736e0b751f453415a5.jpg",
+    "static/media/illustration-reset.jpg": "/static/media/illustration-reset.c5f36c0c2262b9ad6165.jpg",
+    "static/media/blog2.jpg": "/static/media/blog2.aba7a3cb94805e9557d1.jpg",
+    "static/media/dataProtectionPolicy-banner.jpg": "/static/media/dataProtectionPolicy-banner.a928fca90e0c0040f930.jpg",
+    "static/media/pachangaIV.jpg": "/static/media/pachangaIV.62896c0094d9c45a6bfa.jpg",
+    "static/media/pachanga-rotating-card-bg-front.jpeg": "/static/media/pachanga-rotating-card-bg-front.cb45ab6efd87b3ff818f.jpeg",
+    "static/media/paradise-rotating-card-bg-back.jpg": "/static/media/paradise-rotating-card-bg-back.78985e6d56f49a6519ba.jpg",
+    "static/media/logo-commander.png": "/static/media/logo-commander.4183488f5fcf42564cca.png",
+    "static/media/testimonial-6-2.jpg": "/static/media/testimonial-6-2.21f2048f0b89919090f0.jpg",
+    "static/media/pachanga-blue-logo.png": "/static/media/pachanga-blue-logo.d3a49bac50b933444aa1.png",
+    "static/media/testimonial-6-3.jpg": "/static/media/testimonial-6-3.d35bef0d65354442d063.jpg",
+    "static/media/bruce-mars.jpg": "/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
+    "index.html": "/index.html",
+    "static/media/pachanga-white-logo.svg": "/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
+    "main.9cab4ed2.js.map": "/static/js/main.9cab4ed2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9cab4ed2.js"
+  ]
+}

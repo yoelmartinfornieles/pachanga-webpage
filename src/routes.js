@@ -43,13 +43,13 @@ const routes = [
                     ),
                     createCollapseItem(
                         "premios",
-                        "/pages/landing-pages/author",
-                        <Author />
+                        "/pages/pachanga-iv/main-event",
+                        <PachangaMainEvent />
                     ),
                     createCollapseItem(
                         "equipo de arbitros",
-                        "/pages/landing-pages/author",
-                        <Author />
+                        "/pages/pachanga-iv/main-event",
+                        <PachangaMainEvent />
                     ),
                 ],
             },

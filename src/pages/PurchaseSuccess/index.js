@@ -14,6 +14,14 @@ const StyledHeading = styled(MKTypography)(({ theme }) => ({
     color: theme.palette.white.main,
 }));
 
+// Constants for text
+const SUCCESS_TITLE =
+    "¡Felicidades, estás un paso más cerca de disfrutar del evento más jarto de MTG!";
+const THANK_YOU_MESSAGE =
+    "¡Gracias por tu compra! Verás un cargo en tu cuenta en los próximos días.";
+const EMAIL_CONFIRMATION_MESSAGE =
+    "Hemos enviado también un email de confirmación a tu dirección de correo electrónico. Si no lo encuentras, asegúrate de que no haya caído en la carpeta de No Deseados. Que nos conocemos.";
+
 function PurchaseSuccess() {
     const theme = useTheme();
 
@@ -130,9 +138,8 @@ function PurchaseSuccess() {
                     animate="visible"
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <StyledHeading variant="h4" color="text" mt={2} mb={2}>
-                        ¡Felicidades, estás un paso más cerca de disfrutar del
-                        evento más jarto de MTG!
+                    <StyledHeading variant="h4" color="white" mt={2} mb={2}>
+                        {SUCCESS_TITLE}
                     </StyledHeading>
                 </motion.div>
 
@@ -143,8 +150,7 @@ function PurchaseSuccess() {
                     transition={{ duration: 0.5, delay: 0.5 }}
                 >
                     <MKTypography variant="body1" color="text" mb={2}>
-                        ¡Gracias por tu compra! Verás un cargo en tu cuenta en
-                        los próximos días.
+                        {THANK_YOU_MESSAGE}
                     </MKTypography>
                 </motion.div>
 
@@ -155,10 +161,7 @@ function PurchaseSuccess() {
                     transition={{ duration: 0.5, delay: 0.7 }}
                 >
                     <MKTypography variant="body1" color="text" mb={4}>
-                        Hemos enviado también un email de confirmación a tu
-                        dirección de correo electrónico. Si no lo encuentras,
-                        asegúrate de que no haya caído en la carpeta de No
-                        Deseados. Que nos conocemos.
+                        {EMAIL_CONFIRMATION_MESSAGE}
                     </MKTypography>
                 </motion.div>
 

@@ -40,7 +40,7 @@ export default {
 
     black: {
         light: "#495057",
-        main: "#212529",
+        main: "#1A1A1A",
         focus: "#000000",
     },
 

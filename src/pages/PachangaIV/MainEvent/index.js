@@ -3,32 +3,32 @@ import { Foundations, Team } from "../../../sections";
 import { Header } from "../../../sections";
 import events from "../../../events";
 
+import kepaRefereePhoto from "../../../assets/images/bruce-mars.jpg";
+
 const teamMembers = [
     {
-        image: null,
-        name: "Emma Roberts",
-        position: { color: "info", label: "UI Designer" },
-        description:
-            "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+        image: kepaRefereePhoto,
+        name: "Kepa",
+        position: { color: "info", label: "Head Judge" },
+        description: "Le gustan los chuletunes mas que a un tonto un pirulí.",
     },
     {
-        image: null,
-        name: "Bruce Mars",
-        position: { color: "info", label: "Web Developer" },
-        description:
-            "Web Developer with a passion for creating beautiful and functional websites.",
+        image: kepaRefereePhoto,
+        name: "Kepa",
+        position: { color: "info", label: "Head Judge" },
+        description: "Le gustan los chuletunes mas que a un tonto un pirulí.",
     },
     {
-        image: null,
-        name: "Ivana Square",
-        position: { color: "info", label: "Graphic Designer" },
-        description: "Graphic Designer who loves to create stunning visuals.",
+        image: kepaRefereePhoto,
+        name: "Kepa",
+        position: { color: "info", label: "Head Judge" },
+        description: "Le gustan los chuletunes mas que a un tonto un pirulí.",
     },
     {
-        image: null,
-        name: "John Doe",
-        position: { color: "info", label: "Project Manager" },
-        description: "Project Manager with a knack for keeping teams on track.",
+        image: kepaRefereePhoto,
+        name: "Kepa",
+        position: { color: "info", label: "Head Judge" },
+        description: "Le gustan los chuletunes mas que a un tonto un pirulí.",
     },
 ];
 
@@ -55,10 +55,18 @@ function MainEvent() {
                     backdropFilter: "saturate(200%) blur(30px)",
                     boxShadow: `0 20px 40px rgba(0, 0, 0, 0.3)`,
                     borderRadius: "16px",
+                    display: "flex",
+                    flexDirection: "column",
                 }}
             >
                 <Foundations foundations={event.foundations} />
-                <Team teamMembers={teamMembers} />
+                <Team
+                    id="referee-team"
+                    title="Equipo de árbitros"
+                    description="Porque este equipazo de árbitros lo tienes que conocer"
+                    teamMembers={teamMembers}
+                    sx={{ width: "100%" }}
+                />
             </Card>
         </>
     );

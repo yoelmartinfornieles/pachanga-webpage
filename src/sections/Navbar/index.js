@@ -52,6 +52,17 @@ function Navbar({
     const openMobileNavbar = () => setMobileNavbar(!mobileNavbar);
 
     useEffect(() => {
+        console.log("Navbar Props:", {
+            brand,
+            routes,
+            transparent,
+            light,
+            action,
+            sticky,
+            relative,
+            center,
+        });
+
         function displayMobileNavbar() {
             if (window.innerWidth < breakpoints.values.lg) {
                 setMobileView(true);
