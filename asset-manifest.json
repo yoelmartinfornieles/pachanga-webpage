@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.9cab4ed2.js",
+    "main.js": "/static/js/main.16a53294.js",
     "static/media/pachanga-rotating-card-bg-back.jpeg": "/static/media/pachanga-rotating-card-bg-back.89c54405854557d71066.jpeg",
     "static/media/pachangaIV-general-ticket.png": "/static/media/pachangaIV-general-ticket.69c11613bec1960b3f47.png",
     "static/media/purchaseSuccess-banner.png": "/static/media/purchaseSuccess-banner.734ed44d4e5b735b8e9e.png",
@@ -28,9 +28,9 @@
     "static/media/bruce-mars.jpg": "/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
     "index.html": "/index.html",
     "static/media/pachanga-white-logo.svg": "/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
-    "main.9cab4ed2.js.map": "/static/js/main.9cab4ed2.js.map"
+    "main.16a53294.js.map": "/static/js/main.16a53294.js.map"
   },
   "entrypoints": [
-    "static/js/main.9cab4ed2.js"
+    "static/js/main.16a53294.js"
   ]
 }
