@@ -57,15 +57,29 @@ function MainEvent() {
                 }}
             >
                 <div id="foundations">
-                    <Foundations foundations={event.foundations} />{" "}
+                    <Foundations
+                        foundations={event.foundations}
+                        backgroundColor1="black"
+                        backgroundColor2="cerulean"
+                        opacity1={0}
+                        opacity2={0.5}
+                        gradient1={98}
+                        gradient2={100}
+                        gradientAngle={180}
+                    />
                 </div>
                 <div id="referee-team">
                     <Team // Ensure this ID matches the hash
                         title="Equipo de árbitros"
                         description="Porque este equipazo de árbitros lo tienes que conocer"
                         teamMembers={event.refereeTeam}
-                        backgroundColor1="info"
+                        backgroundColor1="cerulean"
                         backgroundColor2="black"
+                        opacity1={0.5}
+                        opacity2={0}
+                        gradient1={60}
+                        gradient2={90}
+                        gradientAngle={180}
                     />
                 </div>
                 <div id="prizes">

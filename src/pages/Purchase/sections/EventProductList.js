@@ -11,7 +11,7 @@ function EventProductList({ event, eventIndex }) {
         <div key={eventIndex} style={{ marginBottom: "0px" }}>
             <Grid container item xs={12}>
                 <MKTypography
-                    variant="h3"
+                    variant="h2"
                     mb={6}
                     color="white"
                     sx={{ fontFamily: event.fontFamily }}
@@ -36,7 +36,11 @@ function EventProductList({ event, eventIndex }) {
                     >
                         <TransparentCard
                             image={ticket.image}
-                            title={ticket.name}
+                            title={
+                                <MKTypography color="warning" variant="h3">
+                                    {ticket.name}
+                                </MKTypography>
+                            }
                             description={
                                 <MKTypography
                                     variant="body2"

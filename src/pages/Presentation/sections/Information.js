@@ -106,7 +106,7 @@ function Information() {
                                 <DefaultInfoCard
                                     icon={
                                         <DrawOutlinedIcon
-                                            sx={{ color: "info.main" }}
+                                            sx={{ color: "warning.main" }}
                                         />
                                     }
                                     title={
@@ -124,7 +124,7 @@ function Information() {
                                 <DefaultInfoCard
                                     icon={
                                         <LiveTvOutlinedIcon
-                                            sx={{ color: "info.main" }}
+                                            sx={{ color: "warning.main" }}
                                         />
                                     }
                                     title={
@@ -148,7 +148,7 @@ function Information() {
                                 <DefaultInfoCard
                                     icon={
                                         <HandshakeOutlinedIcon
-                                            sx={{ color: "info.main" }}
+                                            sx={{ color: "warning.main" }}
                                         />
                                     }
                                     title={
@@ -166,7 +166,7 @@ function Information() {
                                 <DefaultInfoCard
                                     icon={
                                         <LuggageOutlinedIcon
-                                            sx={{ color: "info.main" }}
+                                            sx={{ color: "warning.main" }}
                                         />
                                     }
                                     title={

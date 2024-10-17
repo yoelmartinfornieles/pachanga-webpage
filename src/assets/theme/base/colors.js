@@ -1,24 +1,3 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-/**
- * The base colors for the Material Kit 2 React.
- * You can add new color using this file.
- * You can customized the colors for the entire Material Kit 2 React using thie file.
- */
-
 export default {
     background: {
         default: "#272B2E",
@@ -55,23 +34,23 @@ export default {
     },
 
     info: {
-        main: "#1A73E8",
-        focus: "#1662C4",
+        main: "#007096", // Cerulean color
+        focus: "#005f7a", // Adjusted focus color for cerulean
     },
 
     success: {
-        main: "#4CAF50",
-        focus: "#67bb6a",
+        main: "#126D68", // Caribbean color
+        focus: "#0E5B54", // Adjusted focus color
     },
 
     warning: {
-        main: "#fb8c00",
-        focus: "#fc9d26",
+        main: "#E18E04", // HarvestGold color
+        focus: "#B37403", // Adjusted focus color for harvestGold
     },
 
     error: {
-        main: "#F44335",
-        focus: "#f65f53",
+        main: "#8C0027", // Burgundy color
+        focus: "#6A001F", // Adjusted focus color
     },
 
     light: {
@@ -96,6 +75,61 @@ export default {
         900: "#212529",
     },
 
+    webOrange: {
+        main: "#FCB632",
+    },
+    syracuseRed: {
+        main: "#DD4111",
+    },
+    burgundy: {
+        main: "#8C0027", // Burgundy color
+    },
+    jungleGreen: {
+        main: "#2BAF90",
+    },
+    celadon: {
+        main: "#A1D4B1",
+    },
+    cerulean: {
+        main: "#007096", // Cerulean color
+    },
+    lightOrange: {
+        main: "#FBD0A6",
+    },
+    pumpkin: {
+        main: "#F37022",
+    },
+    mikadoYellow: {
+        main: "#FFC31B", // Mikado Yellow color
+    },
+    bone: {
+        main: "#E7DCC9",
+    },
+    sunset: {
+        main: "#FACA78", // Sunset color
+    },
+    goldenrod: {
+        main: "#DAA520", // Goldenrod color
+    },
+    harvestGold: {
+        main: "#E18E04", // HarvestGold color
+    },
+    orangePeel: {
+        main: "#FD9A02",
+    },
+    verdigris: {
+        main: "#1DB7B9",
+    },
+    caribbean: {
+        main: "#126D68", // Caribbean color
+    },
+    darkSlateGrey: {
+        main: "#325A64",
+    },
+    prussianBlue: {
+        main: "#06394D",
+    },
+
     gradients: {
         primary: {
             main: "#EC407A",
@@ -108,23 +142,23 @@ export default {
         },
 
         info: {
-            main: "#49a3f1",
-            state: "#1A73E8",
+            main: "#007096", // Adjusted gradient main color to match cerulean
+            state: "#005f7a", // Adjusted state color to match focus color
         },
 
         success: {
-            main: "#66BB6A",
-            state: "#43A047",
+            main: "#1DB7B9", // Adjusted gradient main color to match caribbean
+            state: "#126D68", // Adjusted state color to caribbean
         },
 
         warning: {
-            main: "#FFA726",
-            state: "#FB8C00",
+            main: "#E18E04", // Adjusted gradient main color to match harvestGold
+            state: "#B37403", // Adjusted state color to match focus color
         },
 
         error: {
-            main: "#EF5350",
-            state: "#E53935",
+            main: "#A52A2A", // Adjusted gradient main color to match burgundy
+            state: "#8C0027", // Adjusted state color to burgundy
         },
 
         light: {
@@ -135,6 +169,49 @@ export default {
         dark: {
             main: "#42424a",
             state: "#191919",
+        },
+    },
+
+    // Backup for success and info colors
+    backupColors: {
+        success: {
+            main: "#126D68", // Backup main color for caribbean
+            focus: "#0E5B54", // Backup focus color
+            gradient: {
+                main: "#1DB7B9", // Backup gradient main color
+                state: "#126D68", // Backup state color
+            },
+            badge: {
+                background: "#b2e0e0", // Adjusted badge background
+                text: "#0A4B4B", // Adjusted badge text color
+            },
+            coloredShadow: "#1DB7B9", // Adjusted colored shadow
+        },
+        info: {
+            main: "#007096", // Backup main color for cerulean
+            focus: "#005f7a", // Backup focus color
+            gradient: {
+                main: "#007096", // Backup gradient main color
+                state: "#005f7a", // Backup state color
+            },
+            badge: {
+                background: "#A1D4E0", // Adjusted badge background for cerulean
+                text: "#004d63", // Adjusted badge text color for cerulean
+            },
+            coloredShadow: "#007096", // Adjusted colored shadow for cerulean
+        },
+        error: {
+            main: "#8C0027", // Backup main color for burgundy
+            focus: "#6A001F", // Backup focus color
+            gradient: {
+                main: "#A52A2A", // Backup gradient main color
+                state: "#8C0027", // Backup state color
+            },
+            badge: {
+                background: "#fcd3d0", // Adjusted badge background for burgundy
+                text: "#f61200", // Adjusted badge text color for burgundy
+            },
+            coloredShadow: "#6A001F", // Adjusted colored shadow for burgundy
         },
     },
 
@@ -212,23 +289,23 @@ export default {
         },
 
         info: {
-            background: "#aecef7",
-            text: "#095bc6",
+            background: "#A1D4E0", // Adjusted badge background for cerulean
+            text: "#004d63", // Adjusted badge text color for cerulean
         },
 
         success: {
-            background: "#bce2be",
-            text: "#339537",
-        },
-
-        warning: {
-            background: "#ffd59f",
-            text: "#c87000",
+            background: "#b2e0e0", // Adjusted badge background for caribbean
+            text: "#0A4B4B", // Adjusted badge text color for caribbean
         },
 
         error: {
-            background: "#fcd3d0",
-            text: "#f61200",
+            background: "#fcd3d0", // Adjusted badge background for burgundy
+            text: "#f61200", // Adjusted badge text color for burgundy
+        },
+
+        warning: {
+            background: "#F3C16B", // Adjusted badge background for harvestGold
+            text: "#B37403", // Adjusted badge text color for harvestGold
         },
 
         light: {
@@ -245,10 +322,10 @@ export default {
     coloredShadows: {
         primary: "#e91e62",
         secondary: "#110e0e",
-        info: "#00bbd4",
-        success: "#4caf4f",
-        warning: "#ff9900",
-        error: "#f44336",
+        info: "#007096", // Adjusted to match cerulean
+        success: "#1DB7B9", // Adjusted to match caribbean
+        error: "#6A001F", // Adjusted to match burgundy
+        warning: "#E18E04", // Adjusted to match harvestGold
         light: "#adb5bd",
         dark: "#404040",
     },

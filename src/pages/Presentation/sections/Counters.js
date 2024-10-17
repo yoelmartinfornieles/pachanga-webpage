@@ -31,6 +31,7 @@ function Counters() {
                 <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
                     <Grid item xs={12} md={4}>
                         <DefaultCounterCard
+                            color="warning"
                             count={110}
                             suffix="+"
                             title="Jugadores"
@@ -43,6 +44,7 @@ function Counters() {
                             sx={{ display: { xs: "none", md: "block" }, mx: 0 }}
                         />
                         <DefaultCounterCard
+                            color="warning"
                             count={3}
                             title="Días de torneo"
                             description="Desde el viernes hasta el domingo, con diferentes paralelos y eventos, un no parar de partidas"
@@ -54,6 +56,7 @@ function Counters() {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <DefaultCounterCard
+                            color="warning"
                             count={8}
                             suffix="+"
                             title="Actividades Paralelas"

@@ -178,7 +178,6 @@ function TransparentCard({ image, title, price, description, link, action }) {
 
 TransparentCard.propTypes = {
     image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
     description: PropTypes.node.isRequired,
     price: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,

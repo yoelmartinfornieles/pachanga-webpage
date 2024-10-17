@@ -65,7 +65,7 @@ function Prizes({ prizes }) {
                             description="No es fácil ser el mejor. Y menos en el Pachanga, donde las distracciones y el entretenimiento nos tientan a todas horas. ¿Serás tú el que se mantenga firme y se alce con la victoria en esta edición?"
                             image={prizesImage}
                             color="black"
-                            opacity="0"
+                            opacity={0}
                         />
                     </Grid>
                 </Grid>

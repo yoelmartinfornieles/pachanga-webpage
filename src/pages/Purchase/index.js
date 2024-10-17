@@ -11,7 +11,7 @@ const sortedEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date));
 function Purchase() {
     return (
         <>
-            <Header title="Comprar Entradas" image={purchaseBanner} />
+            <Header title="Tienda" image={purchaseBanner} />
             <Card
                 sx={{
                     p: 4,
@@ -36,6 +36,7 @@ function Purchase() {
                             )
                             .map((event, eventIndex) => (
                                 <EventProductList
+                                    color="warning.main"
                                     event={event}
                                     eventIndex={eventIndex}
                                     key={event.name}
