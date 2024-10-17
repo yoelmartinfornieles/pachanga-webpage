@@ -37,13 +37,13 @@ const routes = [
                         <PachangaMainEvent />
                     ),
                     createCollapseItem(
-                        "premios",
-                        "/pachangaIV/main-event#prizes",
+                        "equipo de arbitros",
+                        "/pachangaIV/main-event#referee-team",
                         <PachangaMainEvent />
                     ),
                     createCollapseItem(
-                        "equipo de arbitros",
-                        "/pachangaIV/main-event#referee-team",
+                        "premios",
+                        "/pachangaIV/main-event#prizes",
                         <PachangaMainEvent />
                     ),
                 ],

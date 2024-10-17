@@ -6,7 +6,7 @@ import {
     pachangaIVVIPticket,
     paradise2ndRoundGeneralTicket,
 } from "./images";
-// foundations
+import kepaRefereePhoto from "../assets/images/bruce-mars.jpg";
 import { pachangaIVFoundations } from "./foundations";
 const events = [
     {
@@ -36,7 +36,64 @@ const events = [
                 stripeLink: "https://buy.stripe.com/test_fZe3eX2WlbXy6887st",
             },
         ],
+        refereeTeam: [
+            {
+                image: kepaRefereePhoto,
+                name: "Kepa",
+                position: { color: "info", label: "Head Judge" },
+                description:
+                    "Le gustan los chuletunes mas que a un tonto un pirulí.",
+            },
+            {
+                image: kepaRefereePhoto,
+                name: "Kepa",
+                position: { color: "info", label: "Head Judge" },
+                description:
+                    "Le gustan los chuletunes mas que a un tonto un pirulí.",
+            },
+            {
+                image: kepaRefereePhoto,
+                name: "Kepa",
+                position: { color: "info", label: "Head Judge" },
+                description:
+                    "Le gustan los chuletunes mas que a un tonto un pirulí.",
+            },
+            {
+                image: kepaRefereePhoto,
+                name: "Kepa",
+                position: { color: "info", label: "Head Judge" },
+                description:
+                    "Le gustan los chuletunes mas que a un tonto un pirulí.",
+            },
+        ],
+        prizes: [
+            {
+                name: "Trofeo PachangaIV Modern Champion",
+                description:
+                    "Este trofeo quedaría increíble en tu aparador, ¿no crees?",
+                icon: "public",
+            },
+            {
+                name: "Trofeo PachangaIV Modern Champion",
+                description:
+                    "Este trofeo quedaría increíble en tu aparador, ¿no crees?",
+                icon: "public",
+            },
+            {
+                name: "Trofeo PachangaIV Modern Champion",
+                description:
+                    "Este trofeo quedaría increíble en tu aparador, ¿no crees?",
+                icon: "public",
+            },
+            {
+                name: "Trofeo PachangaIV Modern Champion",
+                description:
+                    "Este trofeo quedaría increíble en tu aparador, ¿no crees?",
+                icon: "public",
+            },
+        ],
     },
+
     {
         name: "Commander Paradise by Pachanga: 2nd Round",
         description:

@@ -16,6 +16,7 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import { useTheme } from "@mui/material/styles";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -24,16 +25,42 @@ import MKTypography from "components/MKTypography";
 // Material Kit 2 React examples
 import HorizontalTeamCard from "../components/HorizontalTeamCard";
 
-function Team({ title, description, teamMembers }) {
+function Team({
+    title,
+    description,
+    teamMembers,
+    backgroundColor1,
+    backgroundColor2,
+    opacity1 = 0.8,
+    opacity2 = 0.1,
+    gradient1 = 1,
+    gradient2 = 75,
+    gradientAngle = 185,
+}) {
+    const theme = useTheme();
+    const color1 = theme.palette[backgroundColor1]
+        ? theme.palette[backgroundColor1].main
+        : backgroundColor1;
+    const color2 = theme.palette[backgroundColor2]
+        ? theme.palette[backgroundColor2].main
+        : backgroundColor2;
+
     return (
         <MKBox
             component="section"
-            variant="gradient"
-            bgColor="dark"
             position="relative"
             py={6}
             px={{ xs: 2, lg: 0 }}
             mx={-4}
+            sx={{
+                background: `linear-gradient(${gradientAngle}deg, ${theme.functions.rgba(
+                    color1,
+                    opacity1
+                )} ${gradient1}%, ${theme.functions.rgba(
+                    color2,
+                    opacity2
+                )} ${gradient2}%)`,
+            }}
         >
             <Container>
                 <Grid container>
