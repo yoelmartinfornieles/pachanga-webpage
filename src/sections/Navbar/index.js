@@ -1,12 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
-
-// react-router components
-import { Link } from "react-router-dom";
-
-// prop-types is a library for typechecking of props.
+import { Link, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
-
-// @mui material components
 import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
 import Popper from "@mui/material/Popper";
@@ -14,19 +8,12 @@ import Grow from "@mui/material/Grow";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MuiLink from "@mui/material/Link";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
-
-// Material Kit 2 React example components
 import NavbarDropdown from "./NavbarDropdown";
 import NavbarMobile from "./NavbarMobile";
-
-// Material Kit 2 React base styles
 import breakpoints from "assets/theme/base/breakpoints";
-
 import { pachangaGreyLogo } from "../../assets/images/logos";
 
 function Navbar({
@@ -39,6 +26,7 @@ function Navbar({
     relative,
     center,
 }) {
+    const location = useLocation();
     const [dropdown, setDropdown] = useState("");
     const [dropdownEl, setDropdownEl] = useState("");
     const [dropdownName, setDropdownName] = useState("");
@@ -52,17 +40,6 @@ function Navbar({
     const openMobileNavbar = () => setMobileNavbar(!mobileNavbar);
 
     useEffect(() => {
-        console.log("Navbar Props:", {
-            brand,
-            routes,
-            transparent,
-            light,
-            action,
-            sticky,
-            relative,
-            center,
-        });
-
         function displayMobileNavbar() {
             if (window.innerWidth < breakpoints.values.lg) {
                 setMobileView(true);
@@ -79,6 +56,14 @@ function Navbar({
 
         return () => window.removeEventListener("resize", displayMobileNavbar);
     }, []);
+
+    useEffect(() => {
+        if (mobileNavbar || dropdown || nestedDropdown) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+    }, [mobileNavbar, dropdown, nestedDropdown]);
 
     const renderNavbarItems = routes.map(
         ({ name, icon, href, route, collapse }) => (
@@ -209,8 +194,6 @@ function Navbar({
                         })}
                     </Grid>
                 );
-
-                // Render the dropdown menu that should be display as list items
             } else if (collapse && name === dropdownName) {
                 template = collapse.map((item) => {
                     const linkComponent = {
@@ -257,14 +240,14 @@ function Navbar({
                                 },
                             })}
                             onMouseEnter={({ currentTarget }) => {
-                                if (item.dropdown) {
+                                if (item.collapse) {
                                     setNestedDropdown(currentTarget);
                                     setNestedDropdownEl(currentTarget);
                                     setNestedDropdownName(item.name);
                                 }
                             }}
                             onMouseLeave={() => {
-                                if (item.dropdown) {
+                                if (item.collapse) {
                                     setNestedDropdown(null);
                                 }
                             }}
@@ -554,41 +537,47 @@ function Navbar({
                         {renderNavbarItems}
                     </MKBox>
                     <MKBox ml={{ xs: "auto", lg: 0 }}>
-                        {action &&
-                            (action.type === "internal" ? (
-                                <MKButton
-                                    component={Link}
-                                    to={action.route}
-                                    variant={
-                                        action.color === "white" ||
-                                        action.color === "default"
-                                            ? "contained"
-                                            : "gradient"
-                                    }
-                                    color={action.color ? action.color : "info"}
-                                    size="small"
-                                >
-                                    {action.label}
-                                </MKButton>
-                            ) : (
-                                <MKButton
-                                    component="a"
-                                    href={action.route}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    variant={
-                                        action.color === "white" ||
-                                        action.color === "default"
-                                            ? "contained"
-                                            : "gradient"
-                                    }
-                                    color={action.color ? action.color : "info"}
-                                    size="small"
-                                >
-                                    {action.label}
-                                </MKButton>
-                            ))}
+                        <MKButton
+                            component={action?.type === "internal" ? Link : "a"}
+                            to={
+                                action?.type === "internal"
+                                    ? action.route
+                                    : undefined
+                            }
+                            href={
+                                action?.type === "external"
+                                    ? action.route
+                                    : undefined
+                            }
+                            target={
+                                action?.type === "external"
+                                    ? "_blank"
+                                    : undefined
+                            }
+                            rel={
+                                action?.type === "external"
+                                    ? "noreferrer"
+                                    : undefined
+                            }
+                            variant={
+                                action?.color === "white" ||
+                                action?.color === "default"
+                                    ? "contained"
+                                    : "gradient"
+                            }
+                            color={action?.color ? action.color : "info"}
+                            size="small"
+                            sx={{
+                                visibility:
+                                    location.pathname !== "/purchase"
+                                        ? "visible"
+                                        : "hidden",
+                            }}
+                        >
+                            {action?.label || ""}
+                        </MKButton>
                     </MKBox>
+
                     <MKBox
                         display={{ xs: "inline-block", lg: "none" }}
                         lineHeight={0}

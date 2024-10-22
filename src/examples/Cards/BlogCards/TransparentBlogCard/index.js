@@ -154,7 +154,7 @@ function TransparentBlogCard({
                 target="_blank"
                 rel="noreferrer"
                 variant="contained"
-                color="info"
+                color="warning"
                 size="medium"
                 sx={{
                     mt: 2,

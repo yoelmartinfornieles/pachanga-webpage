@@ -127,7 +127,7 @@ function TransparentCard({ image, title, price, description, link, action }) {
                                 whiteSpace: "nowrap",
                                 width: "100%",
                             }}
-                            color="info"
+                            color="warning"
                         >
                             {title}
                         </MKTypography>
@@ -165,7 +165,7 @@ function TransparentCard({ image, title, price, description, link, action }) {
                     target="_blank"
                     rel="noreferrer"
                     variant="contained"
-                    color="info"
+                    color="warning"
                     size="medium"
                     sx={{ mt: 1, mb: 0, width: "100%" }}
                 >

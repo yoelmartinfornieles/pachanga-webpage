@@ -69,7 +69,7 @@ function MainEvent() {
                     />
                 </div>
                 <div id="referee-team">
-                    <Team // Ensure this ID matches the hash
+                    <Team
                         title="Equipo de árbitros"
                         description="Porque este equipazo de árbitros lo tienes que conocer"
                         teamMembers={event.refereeTeam}

@@ -5,22 +5,6 @@ import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
 
-const createCollapseItem = (
-    name,
-    route,
-    component,
-    description,
-    dropdown,
-    href
-) => ({
-    name,
-    route,
-    component,
-    description,
-    dropdown,
-    href,
-});
-
 const routes = [
     {
         name: "pachanga tournament IV",
@@ -31,96 +15,86 @@ const routes = [
             {
                 name: "main event",
                 collapse: [
-                    createCollapseItem(
-                        "bases",
-                        "/pachangaIV/main-event#foundations",
-                        <PachangaMainEvent />
-                    ),
-                    createCollapseItem(
-                        "equipo de arbitros",
-                        "/pachangaIV/main-event#referee-team",
-                        <PachangaMainEvent />
-                    ),
-                    createCollapseItem(
-                        "premios",
-                        "/pachangaIV/main-event#prizes",
-                        <PachangaMainEvent />
-                    ),
-                ],
-            },
-            {
-                name: "paralelos",
-                collapse: [
-                    createCollapseItem(
-                        "organizador",
-                        "/pages/authentication/sign-in",
-                        <SignIn />
-                    ),
+                    {
+                        name: "bases",
+                        route: "/pachangaIV/main-event#foundations",
+                        component: <PachangaMainEvent />,
+                    },
+                    {
+                        name: "equipo de arbitros",
+                        route: "/pachangaIV/main-event#referee-team",
+                        component: <PachangaMainEvent />,
+                    },
+                    {
+                        name: "premios",
+                        route: "/pachangaIV/main-event#prizes",
+                        component: <PachangaMainEvent />,
+                    },
                 ],
             },
             {
                 name: "ilustradores",
                 collapse: [
-                    createCollapseItem(
-                        "dibujante nocturno",
-                        null,
-                        null,
-                        "See all sections",
-                        true
-                    ),
-                    createCollapseItem(
-                        "charro",
-                        null,
-                        null,
-                        "See all input areas",
-                        true
-                    ),
-                    createCollapseItem(
-                        "joshua cairos",
-                        null,
-                        null,
-                        "See all examples",
-                        true
-                    ),
+                    {
+                        name: "dibujante nocturno",
+                        route: "/ilustradores/dibujante-nocturno",
+                        component: null,
+                    },
+                    {
+                        name: "charro",
+                        route: "/ilustradores/charro",
+                        component: null,
+                    },
+                    {
+                        name: "joshua cairos",
+                        route: "/ilustradores/joshua-cairos",
+                        component: null,
+                    },
+                    {
+                        name: "edgar sánchez hidalgo",
+                        route: "/ilustradores/edgar-sanchez-hidalgo",
+                        component: null,
+                    },
+                    {
+                        name: "josu solano",
+                        route: "/ilustradores/josu-solano",
+                        component: null,
+                    },
                 ],
             },
             {
                 name: "stream",
                 collapse: [
-                    createCollapseItem(
-                        "iván ojeda - Modern State Of Mind",
-                        null,
-                        null,
-                        "All about overview, quick start, license and contents",
-                        false,
-                        "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/"
-                    ),
+                    {
+                        name: "iván ojeda - Modern State Of Mind",
+                        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+                        component: null,
+                    },
+                    {
+                        name: "unknown - unknown",
+                        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+                        component: null,
+                    },
                 ],
             },
             {
                 name: "tiendas colaboradoras",
                 collapse: [
-                    createCollapseItem(
-                        "",
-                        null,
-                        null,
-                        "All about overview, quick start, license and contents",
-                        false,
-                        "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/"
-                    ),
+                    {
+                        name: "tienda 1",
+                        href: "https://example.com/tienda1",
+                        component: null,
+                    },
                 ],
             },
             {
                 name: "alojamiento y logistica",
                 collapse: [
-                    createCollapseItem(
-                        "",
-                        null,
-                        null,
-                        "All about overview, quick start, license and contents",
-                        false,
-                        "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/"
-                    ),
+                    {
+                        name: "hotel 1",
+                        href: "https://example.com/hotel1",
+                        component: null,
+                    },
                 ],
             },
         ],
@@ -134,57 +108,44 @@ const routes = [
             {
                 name: "main event",
                 collapse: [
-                    createCollapseItem(
-                        "bases",
-                        "/pages/landing-pages/contact-us",
-                        <ContactUs />
-                    ),
-                    createCollapseItem(
-                        "premios",
-                        "/pages/landing-pages/author",
-                        <Author />
-                    ),
-                    createCollapseItem(
-                        "equipo de arbitros",
-                        "/pages/landing-pages/author",
-                        <Author />
-                    ),
+                    {
+                        name: "bases",
+                        route: "/pages/landing-pages/contact-us",
+                        component: <ContactUs />,
+                    },
+                    {
+                        name: "premios",
+                        route: "/pages/landing-pages/author",
+                        component: <Author />,
+                    },
+                    {
+                        name: "equipo de arbitros",
+                        route: "/pages/landing-pages/author",
+                        component: <Author />,
+                    },
                 ],
             },
             {
                 name: "paralelos",
                 collapse: [
-                    createCollapseItem(
-                        "organizador",
-                        "/pages/authentication/sign-in",
-                        <SignIn />
-                    ),
+                    {
+                        name: "organizador",
+                        route: "/pages/authentication/sign-in",
+                        component: <SignIn />,
+                    },
                 ],
             },
             {
                 name: "ilustradores",
-                collapse: [],
-            },
-            {
-                name: "stream",
-                collapse: [
-                    createCollapseItem(
-                        "iván ojeda - Modern State Of Mind",
-                        null,
-                        null,
-                        "All about overview, quick start, license and contents",
-                        false,
-                        "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/"
-                    ),
-                ],
+                collapse: [], // Ensure this is an array
             },
             {
                 name: "tiendas colaboradoras",
-                collapse: [],
+                collapse: [], // Ensure this is an array
             },
             {
                 name: "alojamiento y logistica",
-                collapse: [],
+                collapse: [], // Ensure this is an array
             },
         ],
     },

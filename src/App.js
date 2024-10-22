@@ -60,7 +60,7 @@ export default function App() {
                         type: "internal",
                         route: "/purchase",
                         label: "comprar entradas",
-                        color: "info",
+                        color: "warning",
                     }}
                     sticky
                     open={navbarOpen}

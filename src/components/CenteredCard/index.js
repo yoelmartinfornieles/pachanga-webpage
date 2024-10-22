@@ -1,17 +1,3 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
@@ -19,6 +5,11 @@ import MuiLink from "@mui/material/Link";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
+import Carousel from "react-material-ui-carousel";
+import { useTheme } from "@mui/material/styles";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import { Paper } from "@mui/material";
 
 function CenteredCard({
     image,
@@ -28,6 +19,8 @@ function CenteredCard({
     action,
     opacity = 1,
 }) {
+    const theme = useTheme();
+    console.log(image);
     return (
         <Card
             sx={{
@@ -46,31 +39,72 @@ function CenteredCard({
                 flexDirection: "column",
             }}
         >
-            <MKBox position="relative" borderRadius="lg" mx={2} mt={-3}>
-                <MKBox
-                    component="img"
-                    src={image}
-                    alt={title}
-                    borderRadius="lg"
-                    width="100%"
-                    position="relative"
-                    zIndex={1}
-                />
-                <MKBox
-                    borderRadius="lg"
-                    shadow="md"
-                    width="100%"
-                    height="100%"
-                    position="absolute"
-                    left={0}
-                    top={0}
-                    sx={{
-                        backgroundImage: `url(${image})`,
-                        transform: "scale(0.94)",
-                        filter: "blur(12px)",
-                        backgroundSize: "cover",
-                    }}
-                />
+            <MKBox
+                position="relative"
+                borderRadius="lg"
+                mx={2}
+                mt={-3}
+                sx={{
+                    height: "300px", // Ensure this height is set
+                    overflow: "hidden",
+                    paddingTop: "100%", // This maintains a square aspect ratio
+                }}
+            >
+                {Array.isArray(image) ? (
+                    <Carousel
+                        animation="fade"
+                        duration={1000}
+                        navButtonsAlwaysVisible={false}
+                        indicators={false}
+                        height="100%"
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            "& .MuiPaper-root": {
+                                borderRadius: "xl",
+                                overflow: "hidden",
+                            },
+                        }}
+                    >
+                        {image.map((item, index) => (
+                            <Paper
+                                key={index}
+                                elevation={0}
+                                sx={{ height: "100%", width: "100%" }}
+                            >
+                                <MKBox
+                                    height="100%"
+                                    width="100%"
+                                    sx={{
+                                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${item})`,
+                                        backgroundSize: "cover",
+                                        backgroundPosition: "center",
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        paddingTop: "100px",
+                                    }}
+                                ></MKBox>
+                            </Paper>
+                        ))}
+                    </Carousel>
+                ) : (
+                    <MKBox
+                        component="img"
+                        src={image}
+                        alt={title}
+                        sx={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            objectPosition: "center",
+                        }}
+                    />
+                )}
             </MKBox>
             <MKBox p={3} mt={-1} textAlign="center">
                 <MKTypography
@@ -95,7 +129,14 @@ function CenteredCard({
                             rel="noreferrer"
                             variant="gradient"
                             size="small"
-                            color={action.color ? action.color : "dark"}
+                            sx={{
+                                backgroundColor:
+                                    theme.palette[action.color]?.main ||
+                                    theme.palette.dark.main,
+                                color:
+                                    theme.palette[action.color]?.contrastText ||
+                                    theme.palette.dark.contrastText,
+                            }}
                         >
                             {action.label}
                         </MKButton>
@@ -105,7 +146,14 @@ function CenteredCard({
                             to={action.route}
                             variant="gradient"
                             size="small"
-                            color={action.color ? action.color : "dark"}
+                            sx={{
+                                backgroundColor:
+                                    theme.palette[action.color]?.main ||
+                                    theme.palette.dark.main,
+                                color:
+                                    theme.palette[action.color]?.contrastText ||
+                                    theme.palette.dark.contrastText,
+                            }}
                         >
                             {action.label}
                         </MKButton>
@@ -116,11 +164,14 @@ function CenteredCard({
 }
 
 CenteredCard.propTypes = {
-    image: PropTypes.string.isRequired,
+    image: PropTypes.oneOfType([
+        PropTypes.string.isRequired,
+        PropTypes.arrayOf(PropTypes.string).isRequired,
+    ]).isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     color: PropTypes.oneOfType([
-        PropTypes.string, // Allow string for palette colors
+        PropTypes.string,
         PropTypes.shape({
             main: PropTypes.string.isRequired,
         }),
@@ -140,7 +191,7 @@ CenteredCard.propTypes = {
         ]),
         label: PropTypes.string,
     }),
-    opacity: PropTypes.number, // New prop for opacity
+    opacity: PropTypes.number,
 };
 
 export default CenteredCard;

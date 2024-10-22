@@ -175,7 +175,7 @@ function PurchaseSuccess() {
                         component={Link}
                         to="/"
                         variant="contained"
-                        color="info"
+                        color="warning"
                         sx={{ mt: 3 }}
                     >
                         Volver a la página principal

@@ -1,7 +1,7 @@
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
 import events from "../../../../events";
-import { carouselImage4, carouselImage5 } from "assets/images";
+import { carouselImage3, carouselImage4, carouselImage5 } from "assets/images";
 
 const sortedEvents = events
     .filter(
@@ -58,7 +58,7 @@ const createEventTitle = (event, fontFamily) => (
 
 const nonEventSlides = [
     {
-        image: "https://pachangatournament.com/images/2024/gallery-7.jpg",
+        image: carouselImage3,
         title: (
             <MKTypography variant="h1" sx={typographyStyles} color="white">
                 Competición y Diversión

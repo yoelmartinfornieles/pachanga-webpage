@@ -41,7 +41,14 @@ function InfoCard({ color, icon, title, description, direction, small }) {
                     <Icon>{icon}</Icon>{" "}
                 </MKTypography>
             ) : (
-                icon
+                <MKTypography
+                    display="block"
+                    variant={direction === "center" ? "h2" : "h3"}
+                    color={color}
+                    textGradient
+                >
+                    {icon}{" "}
+                </MKTypography>
             )}
             <MKTypography
                 display="block"
@@ -65,14 +72,12 @@ function InfoCard({ color, icon, title, description, direction, small }) {
     );
 }
 
-// Setting default props for the DefaultInfoCard
 InfoCard.defaultProps = {
     color: "info",
     direction: "left",
     small: false,
 };
 
-// Typechecking props for the DefaultInfoCard
 InfoCard.propTypes = {
     color: PropTypes.oneOf([
         "primary",
