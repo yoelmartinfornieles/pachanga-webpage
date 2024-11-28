@@ -68,7 +68,7 @@ const nonEventSlides = [
             "Disfruta de intensas partidas y conoce a otros apasionados del juego. ¡Demuestra tus habilidades y estrategias!",
     },
     {
-        image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/5d/a9/0d/lopesan-costa-meloneras.jpg?w=1100&h=-1&s=1",
+        image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/c4/c2/94/area-de-piscina-vistaflor.jpg?w=1200&h=700&s=1",
         title: (
             <MKTypography variant="h1" sx={typographyStyles} color="white">
                 Alójate como dios
