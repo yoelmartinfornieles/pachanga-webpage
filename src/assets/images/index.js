@@ -17,7 +17,9 @@ import pachangaIIPioneerChampion from "./pachangaII-pioneer-champion.png";
 import pachangaIIIModernChampion from "./pachangaIII-modern-champion.png";
 import pachangaIIISealedChampion from "./pachangaIII-sealed-champion.jpeg";
 import pachangaIIIPioneerChampion from "./pachangaIII-pioneer-champion.jpeg";
+import ivanOjedaProfilePhoto from "./ivan-ojeda.jpg";
 export {
+    ivanOjedaProfilePhoto,
     carouselImage3,
     carouselImage4,
     carouselImage5,

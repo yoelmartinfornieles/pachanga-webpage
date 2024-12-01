@@ -1,9 +1,7 @@
 import Icon from "@mui/material/Icon";
 import FortOutlinedIcon from "@mui/icons-material/FortOutlined";
 import PachangaMainEvent from "layouts/pages/pachangaIV/mainEvent";
-import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
-import SignIn from "layouts/pages/authentication/sign-in";
+import Stream from "layouts/pages/pachangaIV/stream";
 
 const routes = [
     {
@@ -20,15 +18,30 @@ const routes = [
                         route: "/pachangaIV/main-event#foundations",
                         component: <PachangaMainEvent />,
                     },
-                    {
+                    /*                  {
                         name: "equipo de arbitros",
                         route: "/pachangaIV/main-event#referee-team",
                         component: <PachangaMainEvent />,
-                    },
+                    }, */
                     {
                         name: "premios",
                         route: "/pachangaIV/main-event#prizes",
                         component: <PachangaMainEvent />,
+                    },
+                ],
+            },
+            {
+                name: "stream",
+                collapse: [
+                    {
+                        name: "Iván Ojeda - Modern State Of Mind",
+                        route: "/pachangaIV/stream",
+                        component: <Stream />,
+                    },
+                    {
+                        name: "Carlos Oliveros",
+                        route: "/pachangaIV/stream",
+                        component: <Stream />,
                     },
                 ],
             },
@@ -62,22 +75,8 @@ const routes = [
                     },
                 ],
             },
-            {
-                name: "stream",
-                collapse: [
-                    {
-                        name: "iván ojeda - Modern State Of Mind",
-                        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
-                        component: null,
-                    },
-                    {
-                        name: "unknown - unknown",
-                        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
-                        component: null,
-                    },
-                ],
-            },
-            {
+
+            /*             {
                 name: "tiendas colaboradoras",
                 collapse: [
                     {
@@ -96,7 +95,7 @@ const routes = [
                         component: null,
                     },
                 ],
-            },
+            }, */
         ],
     },
     {
@@ -105,7 +104,7 @@ const routes = [
         columns: 1,
         rowsPerColumn: 2,
         collapse: [
-            {
+            /* {
                 name: "main event",
                 collapse: [
                     {
@@ -146,7 +145,7 @@ const routes = [
             {
                 name: "alojamiento y logistica",
                 collapse: [], // Ensure this is an array
-            },
+            }, */
         ],
     },
 ];

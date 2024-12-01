@@ -3,7 +3,6 @@ import {
     pachangaIV,
     paradise2ndRound,
     pachangaIVGeneralTicket,
-    pachangaIVVIPticket,
     paradise2ndRoundGeneralTicket,
     pachangaIVTrophy,
     pachangaIVArcanisCollab,
@@ -32,18 +31,10 @@ const events = [
             {
                 name: "Entrada General",
                 description:
-                    "Entrada General para el Main Event. Da derecho al uso de las instalaciones.",
+                    "Entrada General para el Main Event y los torneos de viernes y domingo. Da derecho al uso de las instalaciones.",
                 image: pachangaIVGeneralTicket,
-                price: "67",
-                stripeLink: "https://buy.stripe.com/test_fZe3eX2WlbXy6887st",
-            },
-            {
-                name: "Entrada VIP",
-                description:
-                    "Entrada VIP para el Main Event. Da derecho al uso de las instalaciones y viene con un paquete de regalitos exclusivo.",
-                image: pachangaIVVIPticket,
-                price: "102",
-                stripeLink: "https://buy.stripe.com/test_fZe3eX2WlbXy6887st",
+                price: "80",
+                stripeLink: "https://buy.stripe.com/6oE6pLfbZa5ecqAcMM",
             },
         ],
         refereeTeam: [
@@ -118,7 +109,7 @@ const events = [
             "Repetimos. El verdadero espíritu EDH vuelve a la isla. ¡No te pierdas la oportunidad de jugar con los mejores!",
         image: paradise2ndRound,
         fontFamily: "'Cinzel'",
-        date: new Date("2025-02-21"),
+        date: new Date("2025-05-23"),
         tweet: "Comandante, el Commander Paradise by Pachanga - 2nd Round está al caer. Agarra tus 100, corre a pachangatournament.com a por tu entrada y prepara los tambores de guerra #commanderParadise2ndRound @pachangaTorneo",
         foundations: null,
         tickets: [
@@ -127,8 +118,8 @@ const events = [
                 description:
                     "Entrada General para el Main Event. Da derecho al uso de las instalaciones.",
                 image: paradise2ndRoundGeneralTicket,
-                price: "67",
-                stripeLink: "https://buy.stripe.com/test_fZe3eX2WlbXy6887st",
+                price: "50",
+                stripeLink: "https://buy.stripe.com/3cs7tP3th7X6gGQ8wx",
             },
         ],
     },

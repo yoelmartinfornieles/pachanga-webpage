@@ -4,7 +4,10 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import MKButton from "components/MKButton";
 import { pachangaGreyLogo } from "assets/images/logos";
+import React, { useState } from "react";
+import { useMediaQuery } from "@mui/material";
 
 function Foundations({
     foundations,
@@ -23,6 +26,14 @@ function Foundations({
     const color2 = theme.palette[backgroundColor2]
         ? theme.palette[backgroundColor2].main
         : backgroundColor2;
+
+    const [showMore, setShowMore] = useState(false);
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+    const toggleShowMore = () => {
+        setShowMore(!showMore);
+    };
+
     return (
         <MKBox
             component="section"
@@ -49,14 +60,14 @@ function Foundations({
                                     mt: 3,
                                     position: "relative",
                                     width: {
-                                        xs: "100px",
-                                        sm: "120px",
+                                        xs: "80px",
+                                        sm: "100px",
                                         md: "150px",
                                         lg: "180px",
                                     },
                                     height: {
-                                        xs: "100px",
-                                        sm: "120px",
+                                        xs: "80px",
+                                        sm: "100px",
                                         md: "150px",
                                         lg: "180px",
                                     },
@@ -78,10 +89,16 @@ function Foundations({
                     </Grid>
                 </Grid>
                 <Grid container justifyContent="center" mx="auto">
-                    <MKTypography variant="h3" color="white" gutterBottom>
+                    <MKTypography
+                        variant={isMobile ? "h3" : "h1"}
+                        color="white"
+                        gutterBottom
+                        sx={{ textAlign: "center" }}
+                    >
                         Bases del torneo
                     </MKTypography>
                     <MKTypography
+                        style={{ whiteSpace: "pre-wrap" }}
                         variant="body1"
                         fontWeight="light"
                         color="text"
@@ -91,10 +108,31 @@ function Foundations({
                             maxWidth: "100%",
                             padding: 0,
                             margin: 0,
+                            fontSize: { xs: "0.875rem", sm: "1rem" },
+                            maxHeight: showMore ? "none" : "19.5em",
+                            overflow: "hidden",
                         }}
                     >
                         {foundations}
                     </MKTypography>
+                    {!showMore && foundations.split("\n").length > 10 && (
+                        <MKButton
+                            color={"warning"}
+                            onClick={toggleShowMore}
+                            sx={{ mt: 2 }}
+                        >
+                            Mostrar más
+                        </MKButton>
+                    )}
+                    {showMore && (
+                        <MKButton
+                            color={"warning"}
+                            onClick={toggleShowMore}
+                            sx={{ mt: 2 }}
+                        >
+                            Mostrar menos
+                        </MKButton>
+                    )}
                 </Grid>
             </Container>
         </MKBox>

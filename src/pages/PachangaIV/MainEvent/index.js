@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom"; // Import useLocation
 import Card from "@mui/material/Card";
-import { Foundations, Team, Prizes } from "../../../sections";
+import { Foundations, Prizes, Team } from "../../../sections";
 import { Header } from "../../../sections";
 import events from "../../../events";
 
@@ -62,26 +62,28 @@ function MainEvent() {
                         backgroundColor1="black"
                         backgroundColor2="cerulean"
                         opacity1={0}
-                        opacity2={0.5}
+                        opacity2={0} /* {0.5} */
                         gradient1={98}
                         gradient2={100}
                         gradientAngle={180}
                     />
                 </div>
-                <div id="referee-team">
-                    <Team
-                        title="Equipo de árbitros"
-                        description="Porque este equipazo de árbitros lo tienes que conocer"
-                        teamMembers={event.refereeTeam}
-                        backgroundColor1="cerulean"
-                        backgroundColor2="black"
-                        opacity1={0.5}
-                        opacity2={0}
-                        gradient1={60}
-                        gradient2={90}
-                        gradientAngle={180}
-                    />
-                </div>
+                {/* {
+                    <div id="referee-team">
+                        <Team
+                            title="Equipo de árbitros"
+                            description="Porque este equipazo de árbitros lo tienes que conocer"
+                            teamMembers={event.refereeTeam}
+                            backgroundColor1="cerulean"
+                            backgroundColor2="black"
+                            opacity1={0.5}
+                            opacity2={0}
+                            gradient1={60}
+                            gradient2={90}
+                            gradientAngle={180}
+                        />
+                    </div>
+                } */}
                 <div id="prizes">
                     <Prizes prizes={event.prizes} />{" "}
                 </div>

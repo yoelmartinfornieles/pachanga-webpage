@@ -20,7 +20,6 @@ function CenteredCard({
     opacity = 1,
 }) {
     const theme = useTheme();
-    console.log(image);
     return (
         <Card
             sx={{

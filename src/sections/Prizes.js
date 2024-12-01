@@ -1,3 +1,5 @@
+import { useTheme } from "@mui/material/styles";
+import { useMediaQuery } from "@mui/material";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
@@ -36,7 +38,8 @@ function shuffleArray(array) {
 }
 
 function Prizes({ prizes }) {
-    console.log("CHAMP: ", championImages);
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const shuffledChampionImages = shuffleArray([...championImages]);
     const prizeImages = shuffleArray([...prizes.map((prize) => prize.image)]);
     const combinedImages = [];
@@ -91,7 +94,7 @@ function Prizes({ prizes }) {
                         <Grid item></Grid>
                         <Grid container justifyContent="flex-end">
                             <MKTypography
-                                variant="h3"
+                                variant={isMobile ? "h3" : "h1"}
                                 color="white"
                                 textAlign="right"
                             >
@@ -126,8 +129,23 @@ function Prizes({ prizes }) {
                         sx={{ ml: "auto", mt: { xs: 3, lg: 0 } }}
                     >
                         <CenteredCard
-                            title="¡Conviértete en el campeón!"
-                            description="No es fácil ser el mejor. Y menos en el Pachanga, donde las distracciones y el entretenimiento nos tientan a todas horas. ¿Serás tú el que se mantenga firme y se alce con la victoria en esta edición?"
+                            title={
+                                <span
+                                    style={{
+                                        color: "#E18E04",
+                                        textShadow:
+                                            "2px 2px 4px rgba(0, 0, 0, 0.7)",
+                                        fontWeight: "bold",
+                                        textTransform: "none",
+                                    }}
+                                >
+                                    ¡Hey, tú! Sí, tú. ¡Deja de procrastinar y
+                                    conviértete en el campeón! O al menos
+                                    intenta no dar mucha pena en el intento.
+                                    ¡Vamos, que no es tan difícil!
+                                </span>
+                            }
+                            description="No es fácil ser el mejor, ¿verdad? Especialmente en el Pachanga, donde las distracciones y el entretenimiento son más tentadores que un durum mixto a las 3 a.m. ¿Serás tú el valiente que se mantenga firme y se alce con la victoria en esta edición? O, ya sabes, ¿simplemente te rendirás y te irás a ver Netflix?"
                             image={combinedImages}
                             color="black"
                             opacity={0}

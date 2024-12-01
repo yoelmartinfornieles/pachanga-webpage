@@ -20,7 +20,7 @@ const SUCCESS_TITLE =
 const THANK_YOU_MESSAGE =
     "¡Gracias por tu compra! Verás un cargo en tu cuenta en los próximos días.";
 const EMAIL_CONFIRMATION_MESSAGE =
-    "Hemos enviado también un email de confirmación a tu dirección de correo electrónico. Si no lo encuentras, asegúrate de que no haya caído en la carpeta de No Deseados. Que nos conocemos.";
+    "Enviaremos también un email de confirmación a tu dirección de correo electrónico. Si no lo encuentras, asegúrate de que no haya caído en la carpeta de No Deseados. Que nos conocemos. Y si no, siempre puedes contactar con nosotros y te lo volveremos a enviar.";
 
 function PurchaseSuccess() {
     const theme = useTheme();

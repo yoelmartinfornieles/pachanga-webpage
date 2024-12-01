@@ -66,7 +66,7 @@ function Information() {
                                         description="Disfruta en una ubicación de ensueño de un evento de Magic the Gathering en el que disfrutan tanto los jugadores como sus familiares y amigos."
                                         action={{
                                             type: "internal",
-                                            route: "/sections/page-sections/page-headers",
+                                            route: "/pachangaIV/main-event",
                                             label: "Todos los detalles del torneo",
                                         }}
                                     />
@@ -86,7 +86,7 @@ function Information() {
                                         description="¿Construído de 60 cartas? Nah, esto es EDH en estado puro. En tu Command Zone va a pegar el solete. "
                                         action={{
                                             type: "internal",
-                                            route: "/sections/page-sections/page-headers",
+                                            route: "/pachangaIV/main-event#foundations",
                                             label: "Todos los detalles del torneo",
                                         }}
                                     />
@@ -135,7 +135,7 @@ function Information() {
                                             Muestra y Explica
                                         </StyledLink>
                                     }
-                                    description="Ivan Ojeda (Modern State Of Mind) retransmite el Pachanga Tournament en directo para que no te pierdas ninguno de los momentos más emocionantes... ni las antxoas más gordas."
+                                    description="Ivan Ojeda (Modern State Of Mind) y Carlos Oliveros retransmiten el Pachanga Tournament en directo para que no te pierdas ninguno de los momentos más emocionantes... ni las antxoas más gordas."
                                 />
                             </Grid>
                         </Grid>

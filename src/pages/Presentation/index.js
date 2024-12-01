@@ -30,7 +30,7 @@ function Presentation() {
                         position: "relative",
                         zIndex: 2,
                         p: 4,
-                        mx: { xs: 0, lg: -10 },
+                        mx: { xs: 1, lg: -8.5 },
                         mt: -5,
                         mb: 4,
                         backgroundColor: ({
