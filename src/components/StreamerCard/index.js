@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTheme, styled } from "@mui/material/styles";
 import { Card, Button, CardContent } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import XIcon from "@mui/icons-material/X";
@@ -10,24 +11,35 @@ import {
 import MKTypography from "components/MKTypography";
 import MKBox from "components/MKBox";
 
+const GlowButton = styled(Button)(({ theme }) => ({
+    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+    "&:hover": {
+        transform: "scale(1.1)", // Slightly increase the size
+        boxShadow: `0 0 10px ${theme.palette.error.main}`, // Smaller glow effect
+    },
+    borderRadius: "50%", // Make the button round to avoid square shape
+    overflow: "hidden", // Ensure the icon fits well
+}));
+
 const StreamerCard = ({ name, photo, description, links, position }) => {
+    const theme = useTheme();
     const platformIcons = {
-        Twitch: <FontAwesomeIcon icon={faTwitch} size="lg" color="primary" />,
-        YouTube: <FontAwesomeIcon icon={faYoutube} size="lg" color="primary" />,
-        X: <XIcon />,
+        Twitch: <FontAwesomeIcon icon={faTwitch} size="2x" color="primary" />,
+        YouTube: <FontAwesomeIcon icon={faYoutube} size="2x" color="primary" />,
+        X: <XIcon fontSize="large" />,
         Facebook: (
-            <FontAwesomeIcon icon={faFacebook} size="lg" color="primary" />
+            <FontAwesomeIcon icon={faFacebook} size="2x" color="primary" />
         ),
     };
-
-    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
         <Card
             sx={{
                 width: "100%",
                 margin: "16px 0",
-                background: `linear-gradient(210deg, ${position.color} 80%, black 100%)`,
+                background: `linear-gradient(210deg, ${
+                    theme.palette["black"].main
+                } 80%, ${theme.palette[position.color].main} 100%)`,
                 display: "flex",
                 flexDirection: { xs: "column", md: "row" },
                 borderRadius: "16px",
@@ -50,7 +62,7 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
                     left: { xs: "0", md: "-20px" },
                     borderRadius: "8px",
                     boxShadow: `0 4px 8px rgba(0, 0, 0, 0.2)`,
-                    marginBottom: { xs: "0", md: "0" }, // Removed margin for mobile
+                    marginBottom: { xs: "0", md: "0" },
                 }}
             />
             <CardContent
@@ -60,7 +72,7 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
                     flexDirection: { xs: "column", md: "row" },
                     justifyContent: "space-between",
                     alignItems: { md: "center" },
-                    paddingTop: { xs: "8px", md: "20px" }, // Reduced padding for mobile
+                    paddingTop: { xs: "8px", md: "20px" },
                     marginLeft: { xs: "0", md: "250px" },
                 }}
             >
@@ -69,22 +81,24 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
                         variant="h3"
                         component="div"
                         sx={{ fontSize: { xs: "1.25rem", md: "2rem" } }}
+                        color="white"
                     >
                         {name}
                     </MKTypography>
                     <MKTypography
                         variant="body2"
-                        color="text.secondary"
                         sx={{ fontSize: { xs: "0.75rem", md: "1rem" } }}
+                        color="error"
                     >
                         Streamer
                     </MKTypography>
                     <MKTypography
                         variant="body2"
-                        color="text.secondary"
+                        color="text"
                         sx={{
                             marginTop: "8px",
                             fontSize: { xs: "0.75rem", md: "1rem" },
+                            whiteSpace: "pre-line",
                         }}
                     >
                         {description}
@@ -99,8 +113,8 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
                         padding: "16px",
                     }}
                 >
-                    {links.map((link, index) => (
-                        <Button
+                    {links.map((link) => (
+                        <GlowButton
                             key={link.platform}
                             color="error"
                             href={link.url}
@@ -109,24 +123,15 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
                             sx={{
                                 marginRight: { xs: "8px", md: "0" },
                                 marginBottom: { md: "8px" },
-                                transition:
-                                    "transform 0.3s ease, box-shadow 0.3s ease",
-                                transform:
-                                    hoveredIndex === index
-                                        ? "scale(2.3)"
-                                        : "scale(2)",
-                                boxShadow:
-                                    hoveredIndex === index
-                                        ? "0 0 30px rgba(255, 255, 255, 0.5)"
-                                        : "none",
                                 width: { xs: "40px", sm: "50px", md: "60px" },
                                 height: { xs: "40px", sm: "50px", md: "60px" },
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
                             }}
-                            onMouseEnter={() => setHoveredIndex(index)}
-                            onMouseLeave={() => setHoveredIndex(null)}
                         >
                             {platformIcons[link.platform]}
-                        </Button>
+                        </GlowButton>
                     ))}
                 </MKBox>
             </CardContent>
