@@ -93,7 +93,7 @@ function Streamers({
                             color="white"
                             textAlign="center"
                         >
-                            Stream
+                            Streamers
                         </MKTypography>
                     </MKBox>
                 </Grid>

@@ -78,26 +78,30 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
             >
                 <MKBox sx={{ flex: 1 }}>
                     <MKTypography
-                        variant="h3"
+                        variant="h2"
                         component="div"
-                        sx={{ fontSize: { xs: "1.25rem", md: "2rem" } }}
+                        sx={{ fontSize: { xs: "1.3rem", md: "2rem" } }}
                         color="white"
                     >
                         {name}
                     </MKTypography>
                     <MKTypography
                         variant="body2"
-                        sx={{ fontSize: { xs: "0.75rem", md: "1rem" } }}
+                        sx={{
+                            fontSize: { xs: "0.875rem", md: "1rem" },
+                            fontWeight: "bold",
+                        }} // Añadido fontWeight
                         color="error"
                     >
                         Streamer
                     </MKTypography>
+
                     <MKTypography
                         variant="body2"
                         color="text"
                         sx={{
                             marginTop: "8px",
-                            fontSize: { xs: "0.75rem", md: "1rem" },
+                            fontSize: { xs: "0.875rem", md: "1rem" },
                             whiteSpace: "pre-line",
                         }}
                     >
