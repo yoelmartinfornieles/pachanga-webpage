@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/pachanga-webpage/static/js/main.305b7668.js",
+    "main.js": "/pachanga-webpage/static/js/main.07b79773.js",
     "static/media/pachangaI-pioneer-champion.png": "/pachanga-webpage/static/media/pachangaI-pioneer-champion.7f32bd957f38454f1c25.png",
     "static/media/pachanga-rotating-card-bg-back.jpeg": "/pachanga-webpage/static/media/pachanga-rotating-card-bg-back.89c54405854557d71066.jpeg",
     "static/media/pachangaIV-general-ticket.png": "/pachanga-webpage/static/media/pachangaIV-general-ticket.a2df21c8ff18e63401ad.png",
@@ -17,6 +17,7 @@
     "static/media/pachangaIV-playmat-artist.png": "/pachanga-webpage/static/media/pachangaIV-playmat-artist.8e4acc747c8b2523e3aa.png",
     "static/media/pachangaIV-playmat-mayer.jpg": "/pachanga-webpage/static/media/pachangaIV-playmat-mayer.696ff875c480ea45f20d.jpg",
     "static/media/pachangaIV-material.png": "/pachanga-webpage/static/media/pachangaIV-material.278f401b48376687a3e5.png",
+    "static/media/pachanga-yellow-logo.png": "/pachanga-webpage/static/media/pachanga-yellow-logo.7b4eaa20bbe6eeaaae15.png",
     "static/media/ivan-ojeda.jpg": "/pachanga-webpage/static/media/ivan-ojeda.81efceba9fa1705a0fac.jpg",
     "static/media/pachangaIII-pioneer-champion.jpeg": "/pachanga-webpage/static/media/pachangaIII-pioneer-champion.978e3cb1e0af0ec5de31.jpeg",
     "static/media/paradise2ndRound.webp": "/pachanga-webpage/static/media/paradise2ndRound.b06973045b96cc01c28d.webp",
@@ -37,9 +38,9 @@
     "static/media/bruce-mars.jpg": "/pachanga-webpage/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
     "index.html": "/pachanga-webpage/index.html",
     "static/media/pachanga-white-logo.svg": "/pachanga-webpage/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
-    "main.305b7668.js.map": "/pachanga-webpage/static/js/main.305b7668.js.map"
+    "main.07b79773.js.map": "/pachanga-webpage/static/js/main.07b79773.js.map"
   },
   "entrypoints": [
-    "static/js/main.305b7668.js"
+    "static/js/main.07b79773.js"
   ]
 }
