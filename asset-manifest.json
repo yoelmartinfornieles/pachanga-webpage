@@ -1,22 +1,35 @@
 {
   "files": {
-    "main.js": "/pachanga-webpage/static/js/main.5b55687c.js",
+    "main.js": "/pachanga-webpage/static/js/main.b4d96646.js",
+    "static/media/pachangaV.png": "/pachanga-webpage/static/media/pachangaV.82305a1b7fb9c241b9b8.png",
+    "static/media/josu-solano-6.jpg": "/pachanga-webpage/static/media/josu-solano-6.0d9b5dcec213c8f67ec2.jpg",
     "static/media/pachangaI-pioneer-champion.png": "/pachanga-webpage/static/media/pachangaI-pioneer-champion.7f32bd957f38454f1c25.png",
+    "static/media/josu-solano-4.jpeg": "/pachanga-webpage/static/media/josu-solano-4.86dd6006d2d584d2a234.jpeg",
+    "static/media/josu-solano-8.jpeg": "/pachanga-webpage/static/media/josu-solano-8.cc4a75cd6883546a2030.jpeg",
     "static/media/pachanga-rotating-card-bg-back.jpeg": "/pachanga-webpage/static/media/pachanga-rotating-card-bg-back.89c54405854557d71066.jpeg",
+    "static/media/josu-solano-7.jpg": "/pachanga-webpage/static/media/josu-solano-7.5b62137755201b7f484e.jpg",
     "static/media/pachangaIV-general-ticket.png": "/pachanga-webpage/static/media/pachangaIV-general-ticket.a2df21c8ff18e63401ad.png",
+    "static/media/pachangaIV-points.png": "/pachanga-webpage/static/media/pachangaIV-points.80e9414e1d88c2ea0e33.png",
     "static/media/purchaseSuccess-banner.png": "/pachanga-webpage/static/media/purchaseSuccess-banner.734ed44d4e5b735b8e9e.png",
     "static/media/paradise2ndRound-general-ticket.png": "/pachanga-webpage/static/media/paradise2ndRound-general-ticket.c6f7ce245b596d2017ed.png",
     "static/media/pachangaIV-vip-ticket.png": "/pachanga-webpage/static/media/pachangaIV-vip-ticket.f9cebd56c00f979ebc80.png",
     "static/media/carousel-5.png": "/pachanga-webpage/static/media/carousel-5.d39805ed3f62ad9e22d3.png",
     "static/media/pachangaII-sealed-champion.png": "/pachanga-webpage/static/media/pachangaII-sealed-champion.9a4558ffcb285e0d7802.png",
     "static/media/purchase-banner.jpg": "/pachanga-webpage/static/media/purchase-banner.75a14295419e402621f9.jpg",
+    "static/media/josu-solano-1.jpeg": "/pachanga-webpage/static/media/josu-solano-1.65292533e72e6b001428.jpeg",
+    "static/media/josu-solano-2.jpg": "/pachanga-webpage/static/media/josu-solano-2.c071a308931173f68e33.jpg",
     "static/media/carousel-4.jpeg": "/pachanga-webpage/static/media/carousel-4.079199faecc2665ebb2b.jpeg",
+    "static/media/josu-solano-3.jpeg": "/pachanga-webpage/static/media/josu-solano-3.3eb59c021281bb026174.jpeg",
     "static/media/pachangaII-pioneer-champion.png": "/pachanga-webpage/static/media/pachangaII-pioneer-champion.8617680b02046227741f.png",
     "static/media/pachangaIV-arcanis.png": "/pachanga-webpage/static/media/pachangaIV-arcanis.61675d68417dafd23f25.png",
     "static/media/pachangaIII-modern-champion.png": "/pachanga-webpage/static/media/pachangaIII-modern-champion.6d786b86f3377071871b.png",
     "static/media/pachangaIV-playmat-artist.png": "/pachanga-webpage/static/media/pachangaIV-playmat-artist.8e4acc747c8b2523e3aa.png",
     "static/media/pachangaIV-playmat-mayer.jpg": "/pachanga-webpage/static/media/pachangaIV-playmat-mayer.696ff875c480ea45f20d.jpg",
     "static/media/pachangaIV-material.png": "/pachanga-webpage/static/media/pachangaIV-material.278f401b48376687a3e5.png",
+    "static/media/josu-solano-10.jpg": "/pachanga-webpage/static/media/josu-solano-10.54c9477adf8e5e0e64d8.jpg",
+    "static/media/josu-solano-9.jpg": "/pachanga-webpage/static/media/josu-solano-9.6fc494cb51a1537a4e8e.jpg",
+    "static/media/josu-solano-5.jpeg": "/pachanga-webpage/static/media/josu-solano-5.8289c7f339294aa0caa3.jpeg",
+    "static/media/josu-solano.jpg": "/pachanga-webpage/static/media/josu-solano.82deba3be63daf03cbf8.jpg",
     "static/media/pachanga-yellow-logo.png": "/pachanga-webpage/static/media/pachanga-yellow-logo.7b4eaa20bbe6eeaaae15.png",
     "static/media/ivan-ojeda.jpg": "/pachanga-webpage/static/media/ivan-ojeda.81efceba9fa1705a0fac.jpg",
     "static/media/pachangaIII-pioneer-champion.jpeg": "/pachanga-webpage/static/media/pachangaIII-pioneer-champion.978e3cb1e0af0ec5de31.jpeg",
@@ -24,6 +37,7 @@
     "static/media/carousel-3.jpg": "/pachanga-webpage/static/media/carousel-3.0d5a49e92c34d091d336.jpg",
     "static/media/logo-pachanga.png": "/pachanga-webpage/static/media/logo-pachanga.34005d37653c6f4645f7.png",
     "static/media/pachangaIII-sealed-champion.jpeg": "/pachanga-webpage/static/media/pachangaIII-sealed-champion.728f08b9905d025902fd.jpeg",
+    "static/media/edgar-sanchez.jpeg": "/pachanga-webpage/static/media/edgar-sanchez.dc4867bc098d0a27848e.jpeg",
     "static/media/paradise-rotating-card-bg-front.jpg": "/pachanga-webpage/static/media/paradise-rotating-card-bg-front.4c06499933ece338b76c.jpg",
     "static/media/pachangaII-modern-champion.jpeg": "/pachanga-webpage/static/media/pachangaII-modern-champion.79bf38f6645a4fbe2f3c.jpeg",
     "static/media/dataProtectionPolicy-banner.jpg": "/pachanga-webpage/static/media/dataProtectionPolicy-banner.a928fca90e0c0040f930.jpg",
@@ -35,12 +49,15 @@
     "static/media/paradise-rotating-card-bg-back.jpg": "/pachanga-webpage/static/media/paradise-rotating-card-bg-back.78985e6d56f49a6519ba.jpg",
     "static/media/logo-commander.png": "/pachanga-webpage/static/media/logo-commander.4183488f5fcf42564cca.png",
     "static/media/pachanga-blue-logo.png": "/pachanga-webpage/static/media/pachanga-blue-logo.d3a49bac50b933444aa1.png",
+    "static/media/martin-de-diego.jpg": "/pachanga-webpage/static/media/martin-de-diego.6df8afa1f972e4785d31.jpg",
+    "static/media/joshua-cairos.jpg": "/pachanga-webpage/static/media/joshua-cairos.7fb4f3223a507d7778cc.jpg",
+    "static/media/fran-garces.jpg": "/pachanga-webpage/static/media/fran-garces.43be01e043d9c9a975fb.jpg",
     "static/media/bruce-mars.jpg": "/pachanga-webpage/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
     "index.html": "/pachanga-webpage/index.html",
     "static/media/pachanga-white-logo.svg": "/pachanga-webpage/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
-    "main.5b55687c.js.map": "/pachanga-webpage/static/js/main.5b55687c.js.map"
+    "main.b4d96646.js.map": "/pachanga-webpage/static/js/main.b4d96646.js.map"
   },
   "entrypoints": [
-    "static/js/main.5b55687c.js"
+    "static/js/main.b4d96646.js"
   ]
 }
