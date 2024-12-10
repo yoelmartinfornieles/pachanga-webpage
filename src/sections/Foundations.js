@@ -41,6 +41,7 @@ function Foundations({
             py={6}
             px={{ xs: 2, lg: 0 }}
             mx={-4}
+            mt={-8}
             sx={{
                 background: `linear-gradient(${gradientAngle}deg, ${theme.functions.rgba(
                     color1,
@@ -52,43 +53,7 @@ function Foundations({
             }}
         >
             <Container>
-                <Grid container justifyContent="center" mx="auto">
-                    <Grid item xs={12} md={8} textAlign="center">
-                        <MKBox mt={{ xs: -16, md: -28 }}>
-                            <Box
-                                sx={{
-                                    mt: 3,
-                                    position: "relative",
-                                    width: {
-                                        xs: "80px",
-                                        sm: "100px",
-                                        md: "150px",
-                                        lg: "180px",
-                                    },
-                                    height: {
-                                        xs: "80px",
-                                        sm: "100px",
-                                        md: "150px",
-                                        lg: "180px",
-                                    },
-                                    overflow: "hidden",
-                                    display: "inline-block",
-                                }}
-                            >
-                                <img
-                                    src={pachangaGreyLogo}
-                                    alt="pachanga logo"
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        objectFit: "contain",
-                                    }}
-                                />
-                            </Box>
-                        </MKBox>
-                    </Grid>
-                </Grid>
-                <Grid container justifyContent="center" mx="auto">
+                <Grid container justifyContent="flex-end" mx="auto">
                     <MKTypography
                         variant={isMobile ? "h3" : "h1"}
                         color="white"
@@ -111,6 +76,7 @@ function Foundations({
                             fontSize: { xs: "0.875rem", sm: "1rem" },
                             maxHeight: showMore ? "none" : "19.5em",
                             overflow: "hidden",
+                            mt: -3,
                         }}
                     >
                         {foundations}
@@ -119,7 +85,7 @@ function Foundations({
                         <MKButton
                             color={"warning"}
                             onClick={toggleShowMore}
-                            sx={{ mt: 2 }}
+                            sx={{ mt: 3 }}
                         >
                             Mostrar más
                         </MKButton>
@@ -128,7 +94,7 @@ function Foundations({
                         <MKButton
                             color={"warning"}
                             onClick={toggleShowMore}
-                            sx={{ mt: 2 }}
+                            sx={{ mt: 3 }}
                         >
                             Mostrar menos
                         </MKButton>

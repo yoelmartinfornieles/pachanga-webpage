@@ -1,7 +1,13 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom"; // Import useLocation
 import Card from "@mui/material/Card";
-import { Foundations, Prizes, Team } from "../../../sections";
+import {
+    Tournament,
+    Hotel,
+    Foundations,
+    Prizes,
+    Team,
+} from "../../../sections";
 import { Header } from "../../../sections";
 import events from "../../../events";
 
@@ -56,6 +62,31 @@ function MainEvent() {
                     flexDirection: "column",
                 }}
             >
+                <div id="tournament">
+                    <Tournament
+                        info={event.info}
+                        poster={event.posters[0]}
+                        backgroundColor1="black"
+                        backgroundColor2="cerulean"
+                        opacity1={0}
+                        opacity2={0} /* {0.5} */
+                        gradient1={98}
+                        gradient2={100}
+                        gradientAngle={180}
+                    />
+                </div>{" "}
+                <div id="hotel">
+                    <Hotel
+                        hotel={event.hotel}
+                        backgroundColor1="black"
+                        backgroundColor2="cerulean"
+                        opacity1={0}
+                        opacity2={0} /* {0.5} */
+                        gradient1={98}
+                        gradient2={100}
+                        gradientAngle={180}
+                    />
+                </div>
                 <div id="foundations">
                     <Foundations
                         foundations={event.foundations}

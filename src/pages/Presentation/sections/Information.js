@@ -86,7 +86,7 @@ function Information() {
                                         description="¿Construído de 60 cartas? Nah, esto es EDH en estado puro. En tu Command Zone va a pegar el solete. "
                                         action={{
                                             type: "internal",
-                                            route: "/pachangaIV/main-event#foundations",
+                                            route: "/commander-paradise/main-event",
                                             label: "Todos los detalles del torneo",
                                         }}
                                     />
@@ -112,7 +112,7 @@ function Information() {
                                     title={
                                         <StyledLink
                                             sx={{ color: "white.main" }}
-                                            to="/your-internal-route"
+                                            to="/pachangaIV/guests"
                                         >
                                             Sirviente del pintor
                                         </StyledLink>
@@ -130,7 +130,7 @@ function Information() {
                                     title={
                                         <StyledLink
                                             sx={{ color: "white.main" }}
-                                            to="/your-internal-route"
+                                            to="/pachangaIV/stream"
                                         >
                                             Muestra y Explica
                                         </StyledLink>
@@ -153,7 +153,7 @@ function Information() {
                                     }
                                     title={
                                         <StyledLink
-                                            to="/your-internal-route"
+                                            to="/sponsors"
                                             sx={{ color: "white.main" }}
                                         >
                                             Abrir la Armería
@@ -171,7 +171,7 @@ function Information() {
                                     }
                                     title={
                                         <StyledLink
-                                            to="/your-internal-route"
+                                            to="/pachangaIV/main-event#hotel"
                                             sx={{ color: "white.main" }}
                                         >
                                             Una oferta que no podrás rechazar

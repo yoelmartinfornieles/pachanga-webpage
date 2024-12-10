@@ -167,7 +167,7 @@ CenteredCard.propTypes = {
         PropTypes.string.isRequired,
         PropTypes.arrayOf(PropTypes.string).isRequired,
     ]).isRequired,
-    title: PropTypes.string.isRequired,
+    title: PropTypes.any.isRequired,
     description: PropTypes.string.isRequired,
     color: PropTypes.oneOfType([
         PropTypes.string,

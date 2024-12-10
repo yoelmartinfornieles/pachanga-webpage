@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTheme, styled } from "@mui/material/styles";
 import { Card, Button, CardContent } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,14 +14,21 @@ import MKBox from "components/MKBox";
 const GlowButton = styled(Button)(({ theme }) => ({
     transition: "transform 0.3s ease, box-shadow 0.3s ease",
     "&:hover": {
-        transform: "scale(1.1)", // Slightly increase the size
-        boxShadow: `0 0 10px ${theme.palette.error.main}`, // Smaller glow effect
+        transform: "scale(1.1)",
+        boxShadow: `0 0 10px ${theme.palette.error.main}`,
     },
-    borderRadius: "50%", // Make the button round to avoid square shape
-    overflow: "hidden", // Ensure the icon fits well
+    borderRadius: "50%",
+    overflow: "hidden",
 }));
 
-const StreamerCard = ({ name, photo, description, links, position }) => {
+const StreamerCard = ({
+    name,
+    photo,
+    description,
+    links,
+    position,
+    glow = true,
+}) => {
     const theme = useTheme();
     const platformIcons = {
         Twitch: <FontAwesomeIcon icon={faTwitch} size="2x" color="primary" />,
@@ -43,9 +50,12 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
                 display: "flex",
                 flexDirection: { xs: "column", md: "row" },
                 borderRadius: "16px",
-                boxShadow: `0 20px 40px rgba(0, 0, 0, 0.3)`,
                 position: "relative",
                 overflow: "visible",
+                boxShadow: glow
+                    ? `0 0 10px ${theme.palette[position.color].main}`
+                    : "none",
+                marginBottom: "32px",
             }}
         >
             <MKBox
@@ -61,8 +71,11 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
                     top: { xs: "0", md: "-20px" },
                     left: { xs: "0", md: "-20px" },
                     borderRadius: "8px",
-                    boxShadow: `0 4px 8px rgba(0, 0, 0, 0.2)`,
-                    marginBottom: { xs: "0", md: "0" },
+                    boxShadow: {
+                        xs: "0 4px 8px rgba(0, 0, 0, 0.2)", // Sin glow en mobile
+                        md: "0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px white", // Glow blanco en desktop
+                    },
+                    marginBottom: { xs: "8px", md: "0" },
                 }}
             />
             <CardContent
@@ -90,7 +103,7 @@ const StreamerCard = ({ name, photo, description, links, position }) => {
                         sx={{
                             fontSize: { xs: "0.875rem", md: "1rem" },
                             fontWeight: "bold",
-                        }} // Añadido fontWeight
+                        }}
                         color="error"
                     >
                         Streamer

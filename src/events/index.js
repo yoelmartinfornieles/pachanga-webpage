@@ -6,11 +6,16 @@ import {
     paradise2ndRoundGeneralTicket,
     pachangaIVTrophy,
     pachangaIVArcanisCollab,
-    pachangaIVPlaymat,
+    pachaPoints,
+    pachangaV,
     pachangaIVMaterial,
+    pachangaIVPosterA,
+    pachangaIVPosterB,
 } from "./images";
 import kepaRefereePhoto from "../assets/images/bruce-mars.jpg";
 import { pachangaIVFoundations } from "./foundations";
+import { pachangaIVInfo } from "./tournament";
+import { pachangaIVHotel } from "./hotel";
 import {
     EmojiEventsTwoTone,
     ConfirmationNumberOutlined,
@@ -22,10 +27,13 @@ const events = [
         name: "Pachanga Tournament IV",
         description:
             "El Pachanga vuelve más grande y mejor que nunca. ¿Te lo vas a perder?",
+        hotel: pachangaIVHotel,
         image: pachangaIV,
         fontFamily: "'Permanent Marker'",
         date: new Date("2025-10-03"),
         tweet: "Pachanga Tournament IV cada día está más cerca. ¿Te lo vas a perder? Compra ya tu entrada en www.pachangatournament.com #pachangaTournamentIV, @pachangaTorneo",
+        info: pachangaIVInfo,
+        posters: [pachangaIVPosterA, pachangaIVPosterB],
         foundations: pachangaIVFoundations,
         tickets: [
             {
@@ -45,27 +53,6 @@ const events = [
                 description:
                     "Le gustan los chuletunes más que a un tonto un pirulí.",
             },
-            {
-                image: kepaRefereePhoto,
-                name: "Benito",
-                position: { color: "warning", label: "L1 Judge" },
-                description:
-                    "Le gustan los chuletunes más que a un tonto un pirulí.",
-            },
-            {
-                image: kepaRefereePhoto,
-                name: "Antonio",
-                position: { color: "info", label: "L2 Judge" },
-                description:
-                    "Le gustan los chuletunes más que a un tonto un pirulí.",
-            },
-            {
-                image: kepaRefereePhoto,
-                name: "Jesús",
-                position: { color: "success", label: "L3 Judge" },
-                description:
-                    "Le gustan los chuletunes más que a un tonto un pirulí.",
-            },
         ],
         prizes: [
             {
@@ -77,27 +64,27 @@ const events = [
                 alt: "Trofeo Pachanga IV Modern Champion",
             },
             {
-                name: "1 entrada para el Arcanis 2026 con alojamiento",
+                name: "1 entrada para el Pachanga V",
                 description:
-                    "Ventilado el Pachanga, siguiente reto. Vive el sueño, juega Magic, descubre Iberia.",
+                    "Ventilado el Pachanga, siguiente reto. Vive el sueño, juega Magic, descubre Iberia. Y después, repite.",
                 icon: <ConfirmationNumberOutlined />,
-                image: pachangaIVArcanisCollab,
-                alt: "Entrada para el Arcanis 2026",
+                image: pachangaV,
+                alt: "Entrada para el Pachanga V",
             },
-            {
+            /*             {
                 name: "Material de Ultimate Guard y crédito de CardMarket a cholón",
                 description:
                     "Elige a tu ilustrador favorito para que te haga un tapete digno de enmarcar, llévate un arkhive 400, deckboxes, fundas, playmats, pídete unas cartitas fullart foil...",
                 icon: "public",
                 image: pachangaIVMaterial,
                 alt: "Material de UG",
-            },
+            }, */
             {
-                name: "1000+ pachaPoints en juego",
+                name: "5999+ pachaPoints en juego",
                 description:
-                    "Te los puedes gastar en invitar a cócteles a tus groupies, en cartas o en invitar a cenar a Josín. Hay quien se los gasta en Lorcana, no te cuento más.",
+                    "Te los puedes gastar en invitar a cócteles a tus groupies, en cartas o en llevar a cenar a Josín. Hay quien se los gasta en Lorcana, no te cuento más.",
                 icon: <LocalBarTwoTone />,
-                image: pachangaIVPlaymat,
+                image: pachaPoints,
                 alt: "pachaPoints",
             },
         ],

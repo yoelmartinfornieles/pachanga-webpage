@@ -80,7 +80,7 @@ function Prizes({ prizes }) {
             py={12}
             px={{ xs: 2, lg: 0 }}
             mx={-4}
-            mt={-15}
+            mt={-20}
         >
             <MKBox
                 component="section"
@@ -92,11 +92,11 @@ function Prizes({ prizes }) {
                 <Container>
                     <Grid container>
                         <Grid item></Grid>
-                        <Grid container justifyContent="flex-end">
+                        <Grid container justifyContent="center">
                             <MKTypography
                                 variant={isMobile ? "h3" : "h1"}
                                 color="white"
-                                textAlign="right"
+                                textAlign="center"
                             >
                                 Premios
                             </MKTypography>

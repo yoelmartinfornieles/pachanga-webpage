@@ -18,6 +18,12 @@ import pachangaIIIModernChampion from "./pachangaIII-modern-champion.png";
 import pachangaIIISealedChampion from "./pachangaIII-sealed-champion.jpeg";
 import pachangaIIIPioneerChampion from "./pachangaIII-pioneer-champion.jpeg";
 import ivanOjedaProfilePhoto from "./ivan-ojeda.jpg";
+import edgarSanchezProfilePhoto from "./edgar-sanchez.jpeg";
+import josuSolanoProfilePhoto from "./josu-solano.jpg";
+import franGarcesProfilePhoto from "./fran-garces.jpg";
+import joshuaCairosProfilePhoto from "./joshua-cairos.jpg";
+import martinDeDiegoProfilePhoto from "./martin-de-diego.jpg";
+import javierCharroProfilePhoto from "./javier-charro.jpeg";
 export {
     ivanOjedaProfilePhoto,
     carouselImage3,
@@ -39,4 +45,10 @@ export {
     pachangaIIIModernChampion,
     pachangaIIISealedChampion,
     pachangaIIIPioneerChampion,
+    edgarSanchezProfilePhoto,
+    josuSolanoProfilePhoto,
+    franGarcesProfilePhoto,
+    joshuaCairosProfilePhoto,
+    martinDeDiegoProfilePhoto,
+    javierCharroProfilePhoto,
 };

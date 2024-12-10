@@ -1,6 +1,8 @@
 // @mui material components
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -10,6 +12,9 @@ import MKSocialButton from "components/MKSocialButton";
 import socialUrls from "./data/socialData";
 
 function Social() {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
     return (
         <MKBox pt={5} pb={6}>
             <Container>
@@ -33,7 +38,11 @@ function Social() {
                             sx={{ flex: 1, mx: 1 }}
                         >
                             <i className="fab fa-facebook" />
-                            &nbsp;Compartir en Facebook
+                            {!isMobile && (
+                                <span className="text">
+                                    Compartir en Facebook
+                                </span>
+                            )}
                         </MKSocialButton>
                         <MKSocialButton
                             component="a"
@@ -43,7 +52,7 @@ function Social() {
                             sx={{ flex: 1, mx: 1 }}
                         >
                             <i className="fab fa-twitter" />
-                            &nbsp;Tweet
+                            {!isMobile && <span className="text">Tweet</span>}
                         </MKSocialButton>
                         <MKSocialButton
                             component="a"
@@ -53,7 +62,11 @@ function Social() {
                             sx={{ flex: 1, mx: 1 }}
                         >
                             <i className="fab fa-instagram" />
-                            &nbsp;Compartir en Instagram
+                            {!isMobile && (
+                                <span className="text">
+                                    Compartir en Instagram
+                                </span>
+                            )}
                         </MKSocialButton>
                     </Grid>
                 </Grid>
