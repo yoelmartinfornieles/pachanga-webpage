@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pachanga-webpage/static/css/main.259a9af0.css",
-    "main.js": "/pachanga-webpage/static/js/main.40a10ffe.js",
+    "main.js": "/pachanga-webpage/static/js/main.7a460e8d.js",
     "static/media/pachangaV.png": "/pachanga-webpage/static/media/pachangaV.82305a1b7fb9c241b9b8.png",
     "static/media/joshua-cairos.jpg": "/pachanga-webpage/static/media/joshua-cairos.1167e83fd057efca9c10.jpg",
     "static/media/josu-solano-6.jpg": "/pachanga-webpage/static/media/josu-solano-6.0d9b5dcec213c8f67ec2.jpg",
@@ -139,10 +139,10 @@
     "index.html": "/pachanga-webpage/index.html",
     "static/media/pachanga-white-logo.svg": "/pachanga-webpage/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
     "main.259a9af0.css.map": "/pachanga-webpage/static/css/main.259a9af0.css.map",
-    "main.40a10ffe.js.map": "/pachanga-webpage/static/js/main.40a10ffe.js.map"
+    "main.7a460e8d.js.map": "/pachanga-webpage/static/js/main.7a460e8d.js.map"
   },
   "entrypoints": [
     "static/css/main.259a9af0.css",
-    "static/js/main.40a10ffe.js"
+    "static/js/main.7a460e8d.js"
   ]
 }
