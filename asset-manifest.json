@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pachanga-webpage/static/css/main.259a9af0.css",
-    "main.js": "/pachanga-webpage/static/js/main.0381dded.js",
+    "main.js": "/pachanga-webpage/static/js/main.c0526dd0.js",
     "static/media/pachangaV.png": "/pachanga-webpage/static/media/pachangaV.82305a1b7fb9c241b9b8.png",
     "static/media/joshua-cairos.jpg": "/pachanga-webpage/static/media/joshua-cairos.1167e83fd057efca9c10.jpg",
     "static/media/josu-solano-6.jpg": "/pachanga-webpage/static/media/josu-solano-6.0d9b5dcec213c8f67ec2.jpg",
@@ -47,13 +47,13 @@
     "static/media/fran-garces-1.jpg": "/pachanga-webpage/static/media/fran-garces-1.71b8ba7c9813b7ee9c24.jpg",
     "static/media/edgar-sanchez-3.jpg": "/pachanga-webpage/static/media/edgar-sanchez-3.18d0509adc57c4266169.jpg",
     "static/media/fran-garces-6.jpg": "/pachanga-webpage/static/media/fran-garces-6.a0b412a7314c6d0d5c06.jpg",
-    "static/media/josu-solano-3.jpeg": "/pachanga-webpage/static/media/josu-solano-3.3eb59c021281bb026174.jpeg",
     "static/media/pachangaII-pioneer-champion.png": "/pachanga-webpage/static/media/pachangaII-pioneer-champion.8617680b02046227741f.png",
     "static/media/pachangaIV-arcanis.png": "/pachanga-webpage/static/media/pachangaIV-arcanis.61675d68417dafd23f25.png",
     "static/media/pachangaIII-modern-champion.png": "/pachanga-webpage/static/media/pachangaIII-modern-champion.6d786b86f3377071871b.png",
     "static/media/pachangaIV-playmat-artist.png": "/pachanga-webpage/static/media/pachangaIV-playmat-artist.8e4acc747c8b2523e3aa.png",
     "static/media/pachangaIV-playmat-mayer.jpg": "/pachanga-webpage/static/media/pachangaIV-playmat-mayer.696ff875c480ea45f20d.jpg",
     "static/media/vistaflor-1.jpg": "/pachanga-webpage/static/media/vistaflor-1.6a26a3b2ceab85efd167.jpg",
+    "static/media/josu-solano-3.jpeg": "/pachanga-webpage/static/media/josu-solano-3.6dcac71372574a59540f.jpeg",
     "static/media/javier-charro-2.jpg": "/pachanga-webpage/static/media/javier-charro-2.c5a18a82d77a0fd07a86.jpg",
     "static/media/pachangaIV-material.png": "/pachanga-webpage/static/media/pachangaIV-material.278f401b48376687a3e5.png",
     "static/media/vistaflor-4.jpg": "/pachanga-webpage/static/media/vistaflor-4.66daf7a4c9e9fe63048a.jpg",
@@ -139,10 +139,10 @@
     "index.html": "/pachanga-webpage/index.html",
     "static/media/pachanga-white-logo.svg": "/pachanga-webpage/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
     "main.259a9af0.css.map": "/pachanga-webpage/static/css/main.259a9af0.css.map",
-    "main.0381dded.js.map": "/pachanga-webpage/static/js/main.0381dded.js.map"
+    "main.c0526dd0.js.map": "/pachanga-webpage/static/js/main.c0526dd0.js.map"
   },
   "entrypoints": [
     "static/css/main.259a9af0.css",
-    "static/js/main.0381dded.js"
+    "static/js/main.c0526dd0.js"
   ]
 }
