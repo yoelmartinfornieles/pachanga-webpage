@@ -6,9 +6,9 @@ import Typography from "@mui/material/Typography";
 function Header({ fontFamily, title, image }) {
     return (
         <MKBox
-            minHeight="25rem"
-            width="100%"
             sx={{
+                minHeight: { xs: "25rem", md: "35rem" },
+                width: "100%",
                 backgroundImage: ({
                     functions: { linearGradient, rgba },
                     palette: { gradients },
@@ -46,6 +46,7 @@ function Header({ fontFamily, title, image }) {
         </MKBox>
     );
 }
+
 Header.defaultProps = {
     fontFamily: "'Roboto'",
 };
