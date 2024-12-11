@@ -1,30 +1,45 @@
-import Header from "./Header";
+import Banner from "./Banner";
+import Counters from "./Counters";
+import EventProductList from "./EventProductList";
+import EventTickets from "./EventTickets";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
-import Tournament from "./Tournament";
-import Hotel from "./Hotel";
 import Foundations from "./Foundations";
-import Statement from "./Statement";
-import Team from "./Team";
-import Prizes from "./Prizes";
-import Streamers from "./Streamers";
-import Recordings from "./Recordings";
-import Streaming from "./Streaming";
-import Illustrators from "./Illustrators";
 import GuestsIntro from "./GuestsIntro";
+import Header from "./Header";
+import Hotel from "./Hotel";
+import Illustrators from "./Illustrators";
+import Information from "./Information";
+import Merchandising from "./Merchandising";
+import Navbar from "./Navbar";
+import Prizes from "./Prizes";
+import Recordings from "./Recordings";
+import Social from "./Social";
+import Statement from "./Statement";
+import Streamers from "./Streamers";
+import Streaming from "./Streaming";
+import Team from "./Team";
+import Tournament from "./Tournament";
+
 export {
-    Header,
+    Banner,
+    Counters,
+    EventProductList,
+    EventTickets,
     Footer,
-    Navbar,
-    Tournament,
-    Hotel,
     Foundations,
-    Statement,
-    Team,
-    Prizes,
-    Streamers,
-    Recordings,
-    Streaming,
-    Illustrators,
     GuestsIntro,
+    Header,
+    Hotel,
+    Illustrators,
+    Information,
+    Merchandising,
+    Navbar,
+    Prizes,
+    Recordings,
+    Social,
+    Statement,
+    Streamers,
+    Streaming,
+    Team,
+    Tournament,
 };

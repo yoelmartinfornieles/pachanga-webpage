@@ -31,6 +31,12 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React example components
 import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
+import {
+    FONT_SIZE_DESKTOP_HEADING,
+    FONT_SIZE_DESKTOP_BODY,
+    FONT_SIZE_MOBILE_HEADING,
+    FONT_SIZE_MOBILE_BODY,
+} from "shared";
 
 function DefaultNavbarMobile({ routes, open, light }) {
     const [collapse, setCollapse] = useState("");

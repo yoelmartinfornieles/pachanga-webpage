@@ -6,6 +6,12 @@ import MKTypography from "components/MKTypography";
 import { useMediaQuery } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitch } from "@fortawesome/free-brands-svg-icons";
+import {
+    FONT_SIZE_DESKTOP_HEADING,
+    FONT_SIZE_DESKTOP_BODY,
+    FONT_SIZE_MOBILE_HEADING,
+    FONT_SIZE_MOBILE_BODY,
+} from "shared";
 
 function Streaming({
     title,
@@ -34,12 +40,18 @@ function Streaming({
             <Container>
                 <Grid container>
                     <Grid item></Grid>
-                    <Grid container justifyContent="center">
+                    <Grid
+                        container
+                        justifyContent={isMobile ? "center" : "center"}
+                    >
                         <MKTypography
-                            variant={isMobile ? "h3" : "h1"}
+                            variant="h1"
                             color="white"
                             sx={{
                                 mb: 2,
+                                fontSize: isMobile
+                                    ? FONT_SIZE_MOBILE_HEADING
+                                    : FONT_SIZE_DESKTOP_HEADING,
                             }}
                         >
                             Streaming
@@ -57,7 +69,9 @@ function Streaming({
                                 maxWidth: "100%",
                                 padding: 0,
                                 margin: 0,
-                                fontSize: { xs: "0.875rem", sm: "1rem" },
+                                fontSize: isMobile
+                                    ? FONT_SIZE_MOBILE_BODY
+                                    : FONT_SIZE_DESKTOP_BODY,
                                 overflow: "hidden",
                                 mb: 6,
                             }}

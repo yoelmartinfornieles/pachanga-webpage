@@ -16,6 +16,12 @@ import {
     pachangaIPioneerChampion,
     pachangaISealedChampion,
 } from "../assets/images";
+import {
+    FONT_SIZE_DESKTOP_HEADING,
+    FONT_SIZE_DESKTOP_BODY,
+    FONT_SIZE_MOBILE_HEADING,
+    FONT_SIZE_MOBILE_BODY,
+} from "shared";
 
 const championImages = [
     pachangaIIIModernChampion,
@@ -90,17 +96,19 @@ function Prizes({ prizes }) {
                 mx={-4}
             >
                 <Container>
-                    <Grid container>
-                        <Grid item></Grid>
-                        <Grid container justifyContent="center">
-                            <MKTypography
-                                variant={isMobile ? "h3" : "h1"}
-                                color="white"
-                                textAlign="center"
-                            >
-                                Premios
-                            </MKTypography>
-                        </Grid>
+                    <Grid container justifyContent="center">
+                        <MKTypography
+                            variant="h1"
+                            color="white"
+                            textAlign="center"
+                            sx={{
+                                fontSize: isMobile
+                                    ? FONT_SIZE_MOBILE_HEADING
+                                    : FONT_SIZE_DESKTOP_HEADING,
+                            }}
+                        >
+                            Premios
+                        </MKTypography>
                     </Grid>
                 </Container>
             </MKBox>
@@ -137,6 +145,9 @@ function Prizes({ prizes }) {
                                             "2px 2px 4px rgba(0, 0, 0, 0.7)",
                                         fontWeight: "bold",
                                         textTransform: "none",
+                                        fontSize: isMobile
+                                            ? "1.2rem"
+                                            : "1.25rem",
                                     }}
                                 >
                                     ¡Hey, tú! Sí, tú. ¡Deja de procrastinar y

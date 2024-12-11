@@ -1,29 +1,15 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
-// Material Kit 2 React examples
 import HorizontalTeamCard from "../components/HorizontalTeamCard";
+import {
+    FONT_SIZE_DESKTOP_HEADING,
+    FONT_SIZE_DESKTOP_BODY,
+    FONT_SIZE_MOBILE_HEADING,
+    FONT_SIZE_MOBILE_BODY,
+} from "shared";
 
 function Team({
     title,
@@ -65,13 +51,28 @@ function Team({
             <Container>
                 <Grid container>
                     <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-                        <MKTypography variant="h3" color="white">
+                        <MKTypography
+                            variant="h3"
+                            color="white"
+                            sx={{
+                                fontSize: {
+                                    xs: FONT_SIZE_MOBILE_HEADING,
+                                    md: FONT_SIZE_DESKTOP_HEADING,
+                                },
+                            }}
+                        >
                             {title}
                         </MKTypography>
                         <MKTypography
                             variant="body2"
                             color="white"
                             opacity={0.8}
+                            sx={{
+                                fontSize: {
+                                    xs: FONT_SIZE_MOBILE_BODY,
+                                    md: FONT_SIZE_DESKTOP_BODY,
+                                },
+                            }}
                         >
                             {description}
                         </MKTypography>

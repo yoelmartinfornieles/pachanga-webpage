@@ -144,7 +144,7 @@ const IllustratorCard = ({
                 >
                     {links.map((link) => (
                         <GlowButton
-                            key={link.platform}
+                            key={`${link.platform}-${Math.random()}`}
                             color="white"
                             href={link.url}
                             target="_blank"
@@ -188,24 +188,19 @@ const IllustratorCard = ({
                         objectPosition: "bottom",
                     }}
                 >
-                    {shuffledImages.map(
-                        (
-                            img,
-                            index // Usar imágenes mezcladas
-                        ) => (
-                            <MKBox
-                                key={index}
-                                component="img"
-                                src={img}
-                                alt={`Example ${index + 1}`}
-                                sx={{
-                                    width: "100%",
-                                    height: "250px",
-                                    objectFit: "cover",
-                                }}
-                            />
-                        )
-                    )}
+                    {shuffledImages.map((img, index) => (
+                        <MKBox
+                            key={index}
+                            component="img"
+                            src={img}
+                            alt={`Image ${index + 1}`}
+                            sx={{
+                                width: "100%",
+                                height: "250px",
+                                objectFit: "cover",
+                            }}
+                        />
+                    ))}
                 </Carousel>
             </MKBox>
         </Card>

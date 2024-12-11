@@ -1,26 +1,37 @@
 import Card from "@mui/material/Card";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
-import { Header } from "../../sections";
+import { useTheme, styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
-import { purchaseSuccessBanner } from "../../assets/images";
-import { useTheme } from "@mui/material/styles";
 import { motion } from "framer-motion";
-import { styled } from "@mui/material/styles";
+import { MKButton, MKTypography } from "components";
+import { Header } from "sections";
+import { purchaseSuccessBanner } from "assets/images";
+import {
+    SUCCESS_TITLE,
+    THANK_YOU_MESSAGE,
+    EMAIL_CONFIRMATION_MESSAGE,
+} from "./data/successMessages";
+import {
+    FONT_SIZE_DESKTOP_BODY,
+    FONT_SIZE_DESKTOP_HEADING,
+    FONT_SIZE_MOBILE_BODY,
+    FONT_SIZE_MOBILE_HEADING,
+} from "shared";
 
 const StyledHeading = styled(MKTypography)(({ theme }) => ({
     fontWeight: 700,
-    fontSize: "2rem",
+    fontSize: FONT_SIZE_DESKTOP_HEADING,
     color: theme.palette.white.main,
+    [theme.breakpoints.down("sm")]: {
+        fontSize: FONT_SIZE_MOBILE_HEADING,
+    },
 }));
 
-// Constants for text
-const SUCCESS_TITLE =
-    "¡Felicidades, estás un paso más cerca de disfrutar del evento más jarto de MTG!";
-const THANK_YOU_MESSAGE =
-    "¡Gracias por tu compra! Verás un cargo en tu cuenta en los próximos días.";
-const EMAIL_CONFIRMATION_MESSAGE =
-    "Enviaremos también un email de confirmación a tu dirección de correo electrónico. Si no lo encuentras, asegúrate de que no haya caído en la carpeta de No Deseados. Que nos conocemos. Y si no, siempre puedes contactar con nosotros y te lo volveremos a enviar.";
+const StyledBodyText = styled(MKTypography)(({ theme }) => ({
+    fontSize: FONT_SIZE_DESKTOP_BODY,
+    [theme.breakpoints.down("sm")]: {
+        fontSize: FONT_SIZE_MOBILE_BODY,
+    },
+}));
 
 function PurchaseSuccess() {
     const theme = useTheme();
@@ -149,9 +160,9 @@ function PurchaseSuccess() {
                     animate="visible"
                     transition={{ duration: 0.5, delay: 0.5 }}
                 >
-                    <MKTypography variant="body1" color="text" mb={2}>
+                    <StyledBodyText variant="body1" color="text" mb={2}>
                         {THANK_YOU_MESSAGE}
-                    </MKTypography>
+                    </StyledBodyText>
                 </motion.div>
 
                 <motion.div
@@ -160,9 +171,9 @@ function PurchaseSuccess() {
                     animate="visible"
                     transition={{ duration: 0.5, delay: 0.7 }}
                 >
-                    <MKTypography variant="body1" color="text" mb={4}>
+                    <StyledBodyText variant="body1" color="text" mb={4}>
                         {EMAIL_CONFIRMATION_MESSAGE}
-                    </MKTypography>
+                    </StyledBodyText>
                 </motion.div>
 
                 <motion.div

@@ -1,27 +1,9 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
-
-// @mui material components
 import Icon from "@mui/material/Icon";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import { useTheme } from "@mui/material/styles";
+import { useMediaQuery } from "@mui/material";
 
 function DefaultInfoCard({
     color,
@@ -31,30 +13,32 @@ function DefaultInfoCard({
     direction,
     small,
 }) {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
     return (
         <MKBox
             lineHeight={1}
-            p={direction === "center" ? 2 : 0}
-            textAlign={direction}
+            p={isMobile || direction === "center" ? 2 : 0}
+            textAlign={isMobile ? "center" : direction}
         >
             {typeof icon === "string" ? (
                 <MKTypography
                     display="block"
-                    variant={direction === "center" ? "h2" : "h3"}
+                    variant={isMobile || direction === "center" ? "h2" : "h3"}
                     color={color}
                     textGradient
                 >
-                    {" "}
-                    <Icon>{icon}</Icon>{" "}
+                    <Icon>{icon}</Icon>
                 </MKTypography>
             ) : (
                 icon
             )}
             <MKTypography
                 display="block"
-                variant="5"
+                variant="h5"
                 fontWeight="bold"
-                mt={direction === "center" ? 1 : 2}
+                mt={isMobile || direction === "center" ? 1 : 2}
                 mb={1.5}
             >
                 {title}
@@ -63,8 +47,8 @@ function DefaultInfoCard({
                 display="block"
                 variant={small ? "button" : "body2"}
                 color="text"
-                pr={direction === "left" ? 6 : 0}
-                pl={direction === "right" ? 6 : 0}
+                pr={isMobile || direction === "left" ? 0 : 0}
+                pl={isMobile || direction === "right" ? 0 : 0}
             >
                 {description}
             </MKTypography>
@@ -72,14 +56,12 @@ function DefaultInfoCard({
     );
 }
 
-// Setting default props for the DefaultInfoCard
 DefaultInfoCard.defaultProps = {
     color: "info",
     direction: "left",
     small: false,
 };
 
-// Typechecking props for the DefaultInfoCard
 DefaultInfoCard.propTypes = {
     color: PropTypes.oneOf([
         "primary",

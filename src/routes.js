@@ -29,11 +29,6 @@ const routes = [
                         route: "/pachangaIV/main-event#foundations",
                         component: <PachangaMainEvent />,
                     },
-                    /*                  {
-                        name: "equipo de arbitros",
-                        route: "/pachangaIV/main-event#referee-team",
-                        component: <PachangaMainEvent />,
-                    }, */
                     {
                         name: "premios",
                         route: "/pachangaIV/main-event#prizes",
@@ -50,7 +45,7 @@ const routes = [
                         component: <Stream />,
                     },
                     {
-                        name: "Iván Ojeda - Modern State Of Mind",
+                        name: "Iván Ojeda",
                         route: "/pachangaIV/stream#ivanojeda",
                         component: <Stream />,
                     },
@@ -117,16 +112,7 @@ const routes = [
                     },
                 ],
             },
-            {
-                name: "alojamiento y logistica",
-                collapse: [
-                    {
-                        name: "hotel 1",
-                        href: "https://example.com/hotel1",
-                        component: null,
-                    },
-                ],
-            }, */
+         */
         ],
     },
     {

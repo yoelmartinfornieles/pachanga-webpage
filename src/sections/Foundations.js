@@ -1,13 +1,17 @@
 import { useTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
-import { pachangaGreyLogo } from "assets/images/logos";
 import React, { useState } from "react";
 import { useMediaQuery } from "@mui/material";
+import {
+    FONT_SIZE_DESKTOP_HEADING,
+    FONT_SIZE_DESKTOP_BODY,
+    FONT_SIZE_MOBILE_HEADING,
+    FONT_SIZE_MOBILE_BODY,
+} from "shared";
 
 function Foundations({
     foundations,
@@ -53,12 +57,21 @@ function Foundations({
             }}
         >
             <Container>
-                <Grid container justifyContent="flex-end" mx="auto">
+                <Grid
+                    container
+                    justifyContent={isMobile ? "center" : "flex-end"}
+                    mx="auto"
+                >
                     <MKTypography
-                        variant={isMobile ? "h3" : "h1"}
+                        variant="h1"
                         color="white"
                         gutterBottom
-                        sx={{ textAlign: "center" }}
+                        sx={{
+                            textAlign: "center",
+                            fontSize: isMobile
+                                ? FONT_SIZE_MOBILE_HEADING
+                                : FONT_SIZE_DESKTOP_HEADING,
+                        }}
                     >
                         Bases del torneo
                     </MKTypography>
@@ -73,7 +86,9 @@ function Foundations({
                             maxWidth: "100%",
                             padding: 0,
                             margin: 0,
-                            fontSize: { xs: "0.875rem", sm: "1rem" },
+                            fontSize: isMobile
+                                ? FONT_SIZE_MOBILE_BODY
+                                : FONT_SIZE_DESKTOP_BODY,
                             maxHeight: showMore ? "none" : "19.5em",
                             overflow: "hidden",
                             mt: -3,
@@ -83,7 +98,7 @@ function Foundations({
                     </MKTypography>
                     {!showMore && foundations.split("\n").length > 10 && (
                         <MKButton
-                            color={"warning"}
+                            color={"dark"}
                             onClick={toggleShowMore}
                             sx={{ mt: 3 }}
                         >

@@ -6,11 +6,16 @@ import { useMediaQuery } from "@mui/material";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import {
+    FONT_SIZE_DESKTOP_HEADING,
+    FONT_SIZE_DESKTOP_BODY,
+    FONT_SIZE_MOBILE_HEADING,
+    FONT_SIZE_MOBILE_BODY,
+} from "shared";
 
 function Recordings() {
     const theme = useTheme();
     const [isPlaying, setIsPlaying] = useState(false);
-
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
     return (
@@ -20,7 +25,6 @@ function Recordings() {
             py={6}
             px={{ xs: 2, lg: 0 }}
             mx={-4}
-            sx={{}}
         >
             <Container>
                 <Grid container justifyContent="center" mx="auto">
@@ -49,7 +53,11 @@ function Recordings() {
                         </MKBox>
                     </Grid>
                 </Grid>
-                <Grid container justifyContent="flex-start" mx="auto">
+                <Grid
+                    container
+                    justifyContent={isMobile ? "center" : "flex-start"}
+                    mx="auto"
+                >
                     <MKBox
                         component="section"
                         position="relative"
@@ -59,10 +67,15 @@ function Recordings() {
                         mb={2}
                     >
                         <MKTypography
-                            variant={isMobile ? "h3" : "h1"}
+                            variant="h1"
                             color="white"
                             textAlign="center"
-                            sx={{ mb: 2 }}
+                            sx={{
+                                mb: 2,
+                                fontSize: isMobile
+                                    ? FONT_SIZE_MOBILE_HEADING
+                                    : FONT_SIZE_DESKTOP_HEADING,
+                            }}
                         >
                             Grabaciones
                         </MKTypography>
@@ -81,7 +94,9 @@ function Recordings() {
                                 maxWidth: "100%",
                                 padding: 0,
                                 margin: 0,
-                                fontSize: { xs: "0.875rem", sm: "1rem" },
+                                fontSize: isMobile
+                                    ? FONT_SIZE_MOBILE_BODY
+                                    : FONT_SIZE_DESKTOP_BODY,
                                 overflow: "hidden",
                                 mb: 4,
                             }}
@@ -137,7 +152,9 @@ function Recordings() {
                                     maxWidth: "100%",
                                     padding: 0,
                                     margin: 0,
-                                    fontSize: { xs: "0.875rem", sm: "1rem" },
+                                    fontSize: isMobile
+                                        ? FONT_SIZE_MOBILE_BODY
+                                        : FONT_SIZE_DESKTOP_BODY,
                                     overflow: "hidden",
                                     mb: 2,
                                 }}

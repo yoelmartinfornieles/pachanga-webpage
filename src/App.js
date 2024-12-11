@@ -1,3 +1,4 @@
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useEffect, useState } from "react";
 import MKBox from "components/MKBox";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";

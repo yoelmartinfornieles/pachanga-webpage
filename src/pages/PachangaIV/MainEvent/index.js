@@ -1,42 +1,13 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation
-import Card from "@mui/material/Card";
-import {
-    Tournament,
-    Hotel,
-    Foundations,
-    Prizes,
-    Team,
-} from "../../../sections";
-import { Header } from "../../../sections";
-import events from "../../../events";
-
-const event = events.find((event) => event.name === "Pachanga Tournament IV");
+import { Grid } from "@mui/material";
+import { Tournament, Hotel, Foundations, Prizes, Header } from "sections";
+import { MKBox, PachangaLogo, Section, StyledCard } from "components";
+import { useHashScroll, findEventByName } from "shared";
 
 function MainEvent() {
-    const location = useLocation();
+    useHashScroll();
 
-    useEffect(() => {
-        const hash = window.location.hash;
-        if (hash) {
-            requestAnimationFrame(() => {
-                const element = document.getElementById(hash.substring(1));
-                if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                }
-            });
-        }
-    }, [location]);
-
-    useEffect(() => {
-        const initialHash = window.location.hash;
-        if (initialHash) {
-            const element = document.getElementById(initialHash.substring(1));
-            if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-            }
-        }
-    }, []);
+    const event = findEventByName("Pachanga Tournament IV");
+    if (!event) return null;
 
     return (
         <>
@@ -45,80 +16,63 @@ function MainEvent() {
                 title={event.name}
                 image={event.image}
             />
-            <Card
-                sx={{
-                    p: 4,
-                    mx: { xs: 2, lg: 3 },
-                    mt: -5,
-                    mb: 4,
-                    backgroundColor: ({
-                        palette: { black },
-                        functions: { rgba },
-                    }) => rgba(black.main, 0.8),
-                    backdropFilter: "saturate(200%) blur(30px)",
-                    boxShadow: `0 20px 40px rgba(0, 0, 0, 0.3)`,
-                    borderRadius: "16px",
-                    display: "flex",
-                    flexDirection: "column",
-                }}
+            <Grid
+                container
+                justifyContent="center"
+                mx="auto"
+                position="relative"
             >
-                <div id="tournament">
+                <Grid item xs={12} md={8} textAlign="center">
+                    <MKBox
+                        mt={{ xs: -2, md: -13 }}
+                        sx={{ position: "relative", zIndex: 1 }}
+                    >
+                        <PachangaLogo />
+                    </MKBox>
+                </Grid>
+            </Grid>
+            <StyledCard>
+                <Section id="tournament">
                     <Tournament
                         info={event.info}
                         poster={event.posters[0]}
                         backgroundColor1="black"
                         backgroundColor2="cerulean"
                         opacity1={0}
-                        opacity2={0} /* {0.5} */
+                        opacity2={0}
                         gradient1={98}
                         gradient2={100}
                         gradientAngle={180}
                     />
-                </div>{" "}
-                <div id="hotel">
+                </Section>
+                <Section id="hotel">
                     <Hotel
                         hotel={event.hotel}
                         backgroundColor1="black"
                         backgroundColor2="cerulean"
                         opacity1={0}
-                        opacity2={0} /* {0.5} */
+                        opacity2={0}
                         gradient1={98}
                         gradient2={100}
                         gradientAngle={180}
                     />
-                </div>
-                <div id="foundations">
+                </Section>
+                <Section id="foundations">
                     <Foundations
                         foundations={event.foundations}
                         backgroundColor1="black"
                         backgroundColor2="cerulean"
                         opacity1={0}
-                        opacity2={0} /* {0.5} */
+                        opacity2={0}
                         gradient1={98}
                         gradient2={100}
                         gradientAngle={180}
                     />
-                </div>
-                {/* {
-                    <div id="referee-team">
-                        <Team
-                            title="Equipo de árbitros"
-                            description="Porque este equipazo de árbitros lo tienes que conocer"
-                            teamMembers={event.refereeTeam}
-                            backgroundColor1="cerulean"
-                            backgroundColor2="black"
-                            opacity1={0.5}
-                            opacity2={0}
-                            gradient1={60}
-                            gradient2={90}
-                            gradientAngle={180}
-                        />
-                    </div>
-                } */}
-                <div id="prizes">
-                    <Prizes prizes={event.prizes} />{" "}
-                </div>
-            </Card>
+                </Section>
+                <Section id="prizes">
+                    <Prizes prizes={event.prizes} />
+                </Section>
+            </StyledCard>
         </>
     );
 }

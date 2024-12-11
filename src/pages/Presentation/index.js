@@ -7,12 +7,7 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 
 // Presentation page sections
-import {
-    Banner,
-    Counters,
-    Information,
-    Social,
-} from "pages/Presentation/sections";
+import { Banner, Counters, Information, Social } from "sections";
 
 function Presentation() {
     return (

@@ -1,8 +1,7 @@
-// @mui material components
-import Card from "@mui/material/Card";
-
-import { Statement, Header } from "../../sections";
-import dataProtectionPolicyStatement from "./sections/data/dataProtectionPolicyStatement";
+import { Grid } from "@mui/material";
+import { Header, Statement } from "sections";
+import { MKBox, PachangaLogo, Section, StyledCard } from "components";
+import dataProtectionPolicyStatement from "./data/dataProtectionPolicyStatement";
 import { dataProtectionPolicyBanner } from "../../assets/images";
 
 function DataProtectionPolicy() {
@@ -12,23 +11,29 @@ function DataProtectionPolicy() {
                 title={dataProtectionPolicyStatement.title}
                 image={dataProtectionPolicyBanner}
             />
-            <Card
-                sx={{
-                    p: 4,
-                    mx: { xs: 2, lg: 3 },
-                    mt: -5,
-                    mb: 4,
-                    backgroundColor: ({
-                        palette: { black },
-                        functions: { rgba },
-                    }) => rgba(black.main, 0.8),
-                    backdropFilter: "saturate(200%) blur(30px)",
-                    boxShadow: `0 20px 40px rgba(0, 0, 0, 0.3)`,
-                    borderRadius: "16px",
-                }}
+            <Grid
+                container
+                justifyContent="center"
+                mx="auto"
+                position="relative"
             >
-                <Statement title="" body={dataProtectionPolicyStatement.body} />
-            </Card>
+                <Grid item xs={12} md={8} textAlign="center">
+                    <MKBox
+                        mt={{ xs: -2, md: -13 }}
+                        sx={{ position: "relative", zIndex: 1 }}
+                    >
+                        <PachangaLogo />
+                    </MKBox>
+                </Grid>
+            </Grid>
+            <StyledCard>
+                <Section id="dataprotectionpolicy">
+                    <Statement
+                        title=""
+                        body={dataProtectionPolicyStatement.body}
+                    />
+                </Section>
+            </StyledCard>
         </>
     );
 }

@@ -1,40 +1,14 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation
-import Card from "@mui/material/Card";
-import { Header } from "../../../sections";
-import events from "../../../events";
-import { Streamers, Recordings, Streaming } from "../../../sections";
+import { Grid } from "@mui/material";
+import { Header, Streamers, Recordings, Streaming } from "sections";
+import { MKBox, PachangaLogo, Section, StyledCard } from "components";
+import { useHashScroll, findEventByName } from "shared";
 import streamersData from "./data/streamersData";
-import { Grid, Box } from "@mui/material";
-import MKBox from "components/MKBox";
-import { pachangaGreyLogo } from "assets/images/logos";
-
-const event = events.find((event) => event.name === "Pachanga Tournament IV");
 
 function Stream() {
-    const location = useLocation();
+    useHashScroll();
 
-    useEffect(() => {
-        const hash = window.location.hash;
-        if (hash) {
-            requestAnimationFrame(() => {
-                const element = document.getElementById(hash.substring(1));
-                if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                }
-            });
-        }
-    }, [location]);
-
-    useEffect(() => {
-        const initialHash = window.location.hash;
-        if (initialHash) {
-            const element = document.getElementById(initialHash.substring(1));
-            if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-            }
-        }
-    }, []);
+    const event = findEventByName("Pachanga Tournament IV");
+    if (!event) return null;
 
     return (
         <>
@@ -54,71 +28,25 @@ function Stream() {
                         mt={{ xs: -2, md: -13 }}
                         sx={{ position: "relative", zIndex: 1 }}
                     >
-                        <Box
-                            sx={{
-                                position: "absolute",
-                                top: -50,
-                                left: "50%",
-                                transform: "translateX(-50%)",
-                                width: {
-                                    xs: "80px",
-                                    sm: "100px",
-                                    md: "150px",
-                                    lg: "180px",
-                                },
-                                height: {
-                                    xs: "80px",
-                                    sm: "100px",
-                                    md: "150px",
-                                    lg: "180px",
-                                },
-                                overflow: "hidden",
-                                display: "inline-block",
-                            }}
-                        >
-                            <img
-                                src={pachangaGreyLogo}
-                                alt="pachanga logo"
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    objectFit: "contain",
-                                }}
-                            />
-                        </Box>
+                        <PachangaLogo />
                     </MKBox>
                 </Grid>
             </Grid>
-            <Card
-                sx={{
-                    p: 4,
-                    mx: { xs: 2, lg: 3 },
-                    mt: -5,
-                    mb: 4,
-                    backgroundColor: ({
-                        palette: { black },
-                        functions: { rgba },
-                    }) => rgba(black.main, 0.8),
-                    backdropFilter: "saturate(200%) blur(30px)",
-                    boxShadow: `0 20px 40px rgba(0, 0, 0, 0.3)`,
-                    borderRadius: "16px",
-                    display: "flex",
-                    flexDirection: "column",
-                }}
-            >
-                {" "}
-                <div id="main"></div>
-                <div id="streaming">
+            <StyledCard>
+                <Section id="main" />
+                <Section id="streaming">
                     <Streaming />
-                </div>
-                <div
+                </Section>
+                <Section
                     id="streamers"
                     style={{ display: "flex", justifyContent: "center" }}
                 >
                     <Streamers streamersData={streamersData} />
-                </div>
-                <div id="recordings">{<Recordings />}</div>
-            </Card>
+                </Section>
+                <Section id="recordings">
+                    <Recordings />
+                </Section>
+            </StyledCard>
         </>
     );
 }

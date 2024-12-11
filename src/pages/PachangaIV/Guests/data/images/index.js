@@ -54,7 +54,7 @@ import martinDeDiego6 from "./martin-de-diego-6.jpg";
 import martinDeDiego7 from "./martin-de-diego-7.jpg";
 import martinDeDiego8 from "./martin-de-diego-8.jpg";
 import martinDeDiego9 from "./martin-de-diego-9.jpg";
-import martinDeDiego10 from "./edgar-sanchez-10.jpg";
+import martinDeDiego10 from "./martin-de-diego-10.jpg";
 import javierCharro1 from "./javier-charro-1.jpg";
 import javierCharro2 from "./javier-charro-2.jpg";
 import javierCharro3 from "./javier-charro-3.jpg";

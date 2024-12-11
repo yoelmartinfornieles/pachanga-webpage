@@ -158,7 +158,7 @@ inspirándose en la naturaleza y las formas orgánicas. Sus preferencias a la ho
         links: [
             {
                 platform: "Web",
-                url: "www.dibujantenocturno.com",
+                url: "https://www.dibujantenocturno.com",
             },
             {
                 platform: "ArtStation",
