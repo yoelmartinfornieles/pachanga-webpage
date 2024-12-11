@@ -47,6 +47,7 @@ function MainEvent() {
                 </Section>
                 <Section id="hotel">
                     <Hotel
+                        event={event.name}
                         hotel={event.hotel}
                         backgroundColor1="black"
                         backgroundColor2="cerulean"

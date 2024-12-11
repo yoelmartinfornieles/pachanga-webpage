@@ -1,4 +1,4 @@
-export default {
+const themeColors = {
     background: {
         default: "#272B2E",
     },
@@ -336,3 +336,5 @@ export default {
         indicator: { boxShadow: "#ddd" },
     },
 };
+
+export default themeColors;

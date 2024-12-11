@@ -42,9 +42,9 @@ function CenteredCard({
                 mx={2}
                 mt={-3}
                 sx={{
-                    height: "300px", // Ensure this height is set
+                    height: "300px",
                     overflow: "hidden",
-                    paddingTop: "100%", // This maintains a square aspect ratio
+                    paddingTop: "100%",
                 }}
             >
                 {Array.isArray(image) ? (
@@ -76,7 +76,7 @@ function CenteredCard({
                                     height="100%"
                                     width="100%"
                                     sx={{
-                                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${item})`,
+                                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(${item})`,
                                         backgroundSize: "cover",
                                         backgroundPosition: "center",
                                         display: "flex",

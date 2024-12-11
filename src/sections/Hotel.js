@@ -12,6 +12,7 @@ import {
 } from "shared";
 
 function Hotel({
+    event,
     hotel,
     backgroundColor1,
     backgroundColor2,
@@ -27,8 +28,8 @@ function Hotel({
     const color1 = theme.palette[backgroundColor1]?.main || backgroundColor1;
     const color2 = theme.palette[backgroundColor2]?.main || backgroundColor2;
 
-    const intro = `El pachanga se celebra en el hotel Vistaflor de Maspalomas, donde la experiencia es tan completa como un mazo de cinco colores. 
-Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclusiva para reservar (te la enviaremos por correo, porque, ya sabes, el hotel no abre reservas hasta que el universo lo permita, y el universo dice que la prisa mata, amigo) podrás disfrutar del ambientazo del Pachanga desde la mañana hasta que el sol se esconda, y quizás hasta altas horas de la madrugada. 
+    const intro = `El ${event} se celebra en el hotel Vistaflor de Maspalomas, donde la experiencia es tan completa como un mazo de cinco colores. 
+Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclusiva para reservar (te la enviaremos por correo, porque, ya sabes, el hotel no abre reservas hasta que el universo lo permita, y el universo dice que la prisa mata, amigo) podrás disfrutar del ambientazo del ${event} desde la mañana hasta que el sol se esconda, y quizás hasta altas horas de la madrugada. 
 ¿Cómo sino hubiese podido ocurrir el fastuoso 'Incidente culito blanco'? 
 ¡Y además, tráete a todos los acompanantes que quieras, tan importante es el gathering como el Magic, mi arma!`;
 

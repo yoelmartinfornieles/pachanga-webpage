@@ -1,6 +1,7 @@
 import Icon from "@mui/material/Icon";
 import FortOutlinedIcon from "@mui/icons-material/FortOutlined";
 import PachangaMainEvent from "layouts/pages/pachangaIV/mainEvent";
+import Commander2MainEvent from "layouts/pages/commanderParadise2/mainEvent";
 import Stream from "layouts/pages/pachangaIV/stream";
 import Guests from "layouts/pages/pachangaIV/guests";
 
@@ -121,48 +122,56 @@ const routes = [
         columns: 1,
         rowsPerColumn: 2,
         collapse: [
-            /* {
+            {
                 name: "main event",
                 collapse: [
                     {
+                        name: "el torneo",
+                        route: "/commanderParadise2ndRound/main-event",
+                        component: <Commander2MainEvent />,
+                    },
+                    {
+                        name: "el hotel",
+                        route: "/commanderParadise2ndRound/main-event#hotel",
+                        component: <Commander2MainEvent />,
+                    },
+                    {
                         name: "bases",
-                        route: "/pages/landing-pages/contact-us",
-                        component: <ContactUs />,
+                        route: "/commanderParadise2ndRound/main-event#foundations",
+                        component: <Commander2MainEvent />,
                     },
                     {
                         name: "premios",
-                        route: "/pages/landing-pages/author",
-                        component: <Author />,
-                    },
-                    {
-                        name: "equipo de arbitros",
-                        route: "/pages/landing-pages/author",
-                        component: <Author />,
+                        route: "/commanderParadise2ndRound/main-event#prizes",
+                        component: <Commander2MainEvent />,
                     },
                 ],
             },
             {
-                name: "paralelos",
+                name: "Invitados",
                 collapse: [
                     {
-                        name: "organizador",
-                        route: "/pages/authentication/sign-in",
-                        component: <SignIn />,
+                        name: "invitados",
+                        route: "/commanderParadise2ndRound/guests",
+                        component: <Guests />,
+                    },
+                    {
+                        name: "fran garces",
+                        route: "/commanderParadise2ndRound/guests#frangarces",
+                        component: <Guests />,
+                    },
+                    {
+                        name: "joshua cairos",
+                        route: "/commanderParadise2ndRound/guests#joshuacairos",
+                        component: <Guests />,
+                    },
+                    {
+                        name: "martin de diego",
+                        route: "/commanderParadise2ndRound/guests#martindediego",
+                        component: <Guests />,
                     },
                 ],
             },
-            {
-                name: "ilustradores",
-                collapse: [], // Ensure this is an array
-            },
-            {
-                name: "tiendas colaboradoras",
-                collapse: [], // Ensure this is an array
-            },
-            {
-                name: "alojamiento y logistica",
-                collapse: [], // Ensure this is an array
-            }, */
         ],
     },
 ];

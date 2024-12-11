@@ -13,7 +13,10 @@ import {
     pachangaIVPosterB,
 } from "./images";
 import kepaRefereePhoto from "../assets/images/bruce-mars.jpg";
-import { pachangaIVFoundations } from "./foundations";
+import {
+    pachangaIVFoundations,
+    commanderParadise2Foundations,
+} from "./foundations";
 import { pachangaIVInfo } from "./tournament";
 import { pachangaIVHotel } from "./hotel";
 import {
@@ -89,16 +92,18 @@ const events = [
             },
         ],
     },
-
     {
         name: "Commander Paradise: 2nd Round",
         description:
             "Repetimos. El verdadero espíritu EDH vuelve a la isla. ¡No te pierdas la oportunidad de jugar con los mejores!",
         image: paradise2ndRound,
+        hotel: pachangaIVHotel,
         fontFamily: "'Cinzel'",
         date: new Date("2025-05-23"),
+        info: pachangaIVInfo,
+        posters: [pachangaIVPosterB],
         tweet: "Comandante, el Commander Paradise by Pachanga - 2nd Round está al caer. Agarra tus 100, corre a pachangatournament.com a por tu entrada y prepara los tambores de guerra #commanderParadise2ndRound @pachangaTorneo",
-        foundations: null,
+        foundations: commanderParadise2Foundations,
         tickets: [
             {
                 name: "Entrada General",
@@ -109,17 +114,56 @@ const events = [
                 stripeLink: "https://buy.stripe.com/3cs7tP3th7X6gGQ8wx",
             },
         ],
+        prizes: [
+            {
+                name: "Trofeo Commnader Paradise 2nd Round Champion",
+                description:
+                    "Sólo los Comandantes más dominantes pueden poseer este trofeo ¿Conseguirás la gloria?",
+                icon: <EmojiEventsTwoTone />,
+                image: pachangaIVTrophy,
+                alt: "Trofeo Commnader Paradise 2nd Round Champion",
+            },
+            {
+                name: "1499+ pachaPoints en juego",
+                description:
+                    "Y rellenamos esas duals que le faltan a tu mazo (No seas granuja, éstos no valen en el Yumbo).",
+                icon: <LocalBarTwoTone />,
+                image: pachaPoints,
+                alt: "pachaPoints",
+            },
+        ],
     },
-    {
+    /*  {
         name: "Pachanga Tournament V",
         description: null,
+        hotel: null,
         image: null,
         fontFamily: null,
         date: null,
         tweet: null,
+        info: null,
+        posters: [],
         foundations: null,
-        tickets: [],
-    },
+        tickets: [
+            {
+                name: null,
+                description: null,
+                image: null,
+                price: null,
+                stripeLink: null,
+            },
+        ],
+        refereeTeam: [],
+        prizes: [
+            {
+                name: null,
+                description: null,
+                icon: <EmojiEventsTwoTone />,
+                image: null,
+                alt: null,
+            },
+        ],
+    }, */
 ];
 
 export default events;

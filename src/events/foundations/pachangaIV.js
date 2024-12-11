@@ -1,9 +1,9 @@
 const pachangaIVFoundations = `
 Formato del torneo:
 
-Día 1: Formato Suizo 32 jugadores a elegir entre Standard, Legacy, Pauper. 
+Día 1: Formato Suizo 32 jugadores a elegir entre Modern, Estándar, Legacy, Pauper. 
 Día 2: Formato Modern. Suizo + Top
-Día 3: Formato Suizo 32 jugadores a elegir entre Standard, Legacy, Pauper, Vintage. Suizo
+Día 3: Formato Suizo 32 jugadores a elegir entre Modern, Estándar, Legacy, Pauper, Vintage. 
 
 Habrá torneos paralelos los 3 días (se pagan aparte) cuyos formatos se anunciarán en la web.
 Cada formato tiene sus propias reglas y restricciones sobre qué cartas se pueden jugar, así que asegúrate de conocer las reglas del formato.

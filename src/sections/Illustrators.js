@@ -69,7 +69,7 @@ function Illustrators({ illustratorsData }) {
                 </Grid>
                 <Grid container spacing={3} justifyContent="center">
                     {shuffledIllustrators.map((illustrator) => (
-                        <Grid item xs={12} key={illustrator.id} sx={{ ml: 3 }}>
+                        <Grid item xs={12} key={illustrator.id} sx={{ ml: 0 }}>
                             <IllustratorCard
                                 name={illustrator.name}
                                 photo={illustrator.image}
