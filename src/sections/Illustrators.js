@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Grid, useMediaQuery } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
@@ -12,6 +12,7 @@ function Illustrators({ illustratorsData }) {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const location = useLocation();
+    const [shuffledIllustrators, setShuffledIllustrators] = useState([]);
 
     const scrollToElement = (hash) => {
         if (hash) {
@@ -31,6 +32,12 @@ function Illustrators({ illustratorsData }) {
     useEffect(() => {
         scrollToElement(window.location.hash);
     }, []);
+
+    useEffect(() => {
+        // Shuffle the illustratorsData array
+        const shuffled = [...illustratorsData].sort(() => Math.random() - 0.5);
+        setShuffledIllustrators(shuffled);
+    }, [illustratorsData]);
 
     return (
         <MKBox
@@ -61,7 +68,7 @@ function Illustrators({ illustratorsData }) {
                     </MKTypography>
                 </Grid>
                 <Grid container spacing={3} justifyContent="center">
-                    {illustratorsData.map((illustrator) => (
+                    {shuffledIllustrators.map((illustrator) => (
                         <Grid item xs={12} key={illustrator.id} sx={{ ml: 3 }}>
                             <IllustratorCard
                                 name={illustrator.name}

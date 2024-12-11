@@ -16,12 +16,7 @@ import {
     pachangaIPioneerChampion,
     pachangaISealedChampion,
 } from "../assets/images";
-import {
-    FONT_SIZE_DESKTOP_HEADING,
-    FONT_SIZE_DESKTOP_BODY,
-    FONT_SIZE_MOBILE_HEADING,
-    FONT_SIZE_MOBILE_BODY,
-} from "shared";
+import { FONT_SIZE_DESKTOP_HEADING, FONT_SIZE_MOBILE_HEADING } from "shared";
 
 const championImages = [
     pachangaIIIModernChampion,

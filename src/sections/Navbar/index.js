@@ -15,8 +15,7 @@ import NavbarDropdown from "./NavbarDropdown";
 import NavbarMobile from "./NavbarMobile";
 import breakpoints from "assets/theme/base/breakpoints";
 import { pachangaGreyLogo } from "../../assets/images/logos";
-import { useTheme } from "@mui/material/styles";
-import { useMediaQuery } from "@mui/material";
+import { Sling as Hamburger } from "hamburger-react";
 
 function Navbar({
     brand,
@@ -28,8 +27,6 @@ function Navbar({
     relative,
     center,
 }) {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const location = useLocation();
     const [dropdown, setDropdown] = useState("");
     const [dropdownEl, setDropdownEl] = useState("");
@@ -516,15 +513,13 @@ function Navbar({
                     display="flex"
                     justifyContent="space-between"
                     alignItems="center"
-                    position="relative"
                 >
                     <MKBox
                         component={Link}
                         to="/"
                         lineHeight={1}
                         py={transparent ? 1.5 : 0.75}
-                        pl={relative || transparent ? 0 : { xs: 1, lg: 1 }}
-                        mr={2} // Adjust this value to set the distance from the logo to the button
+                        pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
                     >
                         <MKTypography
                             variant="button"
@@ -542,14 +537,7 @@ function Navbar({
                     >
                         {renderNavbarItems}
                     </MKBox>
-                    <MKBox
-                        sx={{
-                            position: isMobile ? "absolute" : "static",
-                            left: isMobile ? "50%" : "auto",
-                            transform: isMobile ? "translateX(-50%)" : "none",
-                            ml: 2, // Adjust this value to set the distance from the button to the hamburger menu
-                        }}
-                    >
+                    <MKBox ml={{ xs: "auto", lg: 0 }}>
                         <MKButton
                             component={action?.type === "internal" ? Link : "a"}
                             to={
@@ -600,28 +588,10 @@ function Navbar({
                         sx={{ cursor: "pointer" }}
                         onClick={openMobileNavbar}
                     >
-                        <svg
-                            className={`menu-icon ${
-                                mobileNavbar ? "open" : "closed"
-                            }`}
-                            width="40px"
-                            height="40px"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d={
-                                    mobileNavbar
-                                        ? "M6 18L18 6M6 6l12 12"
-                                        : "M3 12h18M3 6h18M3 18h18"
-                                }
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
+                        <Hamburger
+                            toggled={mobileNavbar}
+                            toggle={openMobileNavbar}
+                        />
                     </MKBox>
                 </MKBox>
                 <MKBox

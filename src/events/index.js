@@ -5,10 +5,10 @@ import {
     pachangaIVGeneralTicket,
     paradise2ndRoundGeneralTicket,
     pachangaIVTrophy,
-    pachangaIVArcanisCollab,
+    //pachangaIVArcanisCollab,
     pachaPoints,
     pachangaV,
-    pachangaIVMaterial,
+    //pachangaIVMaterial,
     pachangaIVPosterA,
     pachangaIVPosterB,
 } from "./images";

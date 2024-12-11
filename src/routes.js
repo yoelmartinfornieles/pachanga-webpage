@@ -16,7 +16,7 @@ const routes = [
                 collapse: [
                     {
                         name: "el torneo",
-                        route: "/pachangaIV/main-event#tournament",
+                        route: "/pachangaIV/main-event",
                         component: <PachangaMainEvent />,
                     },
                     {

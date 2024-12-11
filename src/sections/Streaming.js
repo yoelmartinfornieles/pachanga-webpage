@@ -77,7 +77,7 @@ function Streaming({
                             }}
                         >
                             {`Señores, señoras, niños y niñas, gatos, perros, canarios y demás aficionados a Magic The Gathering;
-                            ¡preparáos para el streaming más épico que la humanidad haya presenciado! 
+                            ¡Preparáos para el streaming más épico que la humanidad haya presenciado! 
                             ¡Ouh mama, sí, lo habéis adivinado: El streaming del Pachanga IV! 
                             Aquí se enfrentarán los mejores jugadores del universo, y tú, sí, tú, el afortunado que está viendo esto, podrás disfrutarlo en riguroso directo 
                             (bueno, más o menos, porque la vida es un poco complicada y hay un pequeño retraso, pero estoy seguro de que lo superarás). 

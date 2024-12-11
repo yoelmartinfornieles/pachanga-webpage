@@ -1,11 +1,5 @@
 import { Paper, Grid, Container } from "@mui/material";
 import { MKBox, MKTypography } from "components";
-import {
-    FONT_SIZE_DESKTOP_HEADING,
-    FONT_SIZE_DESKTOP_BODY,
-    FONT_SIZE_MOBILE_HEADING,
-    FONT_SIZE_MOBILE_BODY,
-} from "shared";
 
 function BannerCarouselItem({ item }) {
     return (

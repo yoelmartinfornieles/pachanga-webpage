@@ -3,7 +3,7 @@ const FONT_SIZE_MOBILE_HEADING = "2rem";
 const FONT_SIZE_DESKTOP_TITLE = "2rem";
 const FONT_SIZE_MOBILE_TITLE = "1.5rem";
 const FONT_SIZE_DESKTOP_BODY = "1rem";
-const FONT_SIZE_MOBILE_BODY = "0.95rem";
+const FONT_SIZE_MOBILE_BODY = "1rem";
 
 export {
     FONT_SIZE_DESKTOP_HEADING,

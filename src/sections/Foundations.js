@@ -107,7 +107,7 @@ function Foundations({
                     )}
                     {showMore && (
                         <MKButton
-                            color={"warning"}
+                            color={"dark"}
                             onClick={toggleShowMore}
                             sx={{ mt: 3 }}
                         >

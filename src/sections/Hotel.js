@@ -45,7 +45,7 @@ Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclus
             component="section"
             position="relative"
             py={6}
-            px={{ xs: 2, lg: 0 }}
+            px={{ xs: 2, md: 0 }}
             mx={-4}
             mt={-8}
             sx={{
@@ -61,54 +61,55 @@ Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclus
             <Container>
                 <Grid
                     container
-                    justifyContent={isMobile ? "center" : "flex-start"}
-                    mx="auto"
+                    justifyContent="center"
+                    alignItems="center"
+                    spacing={3}
                 >
-                    <MKTypography
-                        variant="h1"
-                        color="white"
-                        gutterBottom
-                        sx={{ textAlign: "center", fontSize: headingFontSize }}
-                    >
-                        El Hotel
-                    </MKTypography>
-                    <MKTypography
-                        variant="body1"
-                        fontWeight="light"
-                        color="text"
-                        textAlign={textAlign}
-                        sx={{
-                            whiteSpace: "pre-line",
-                            width: "100%",
-                            maxWidth: "100%",
-                            padding: 0,
-                            margin: 0,
-                            fontSize: bodyFontSize,
-                            mb: 8,
-                        }}
-                    >
-                        {intro}
-                    </MKTypography>
-                    <Grid container spacing={3} justifyContent="center">
+                    <Grid item xs={12}>
+                        <MKTypography
+                            variant="h1"
+                            color="white"
+                            gutterBottom
+                            sx={{
+                                textAlign: "center",
+                                fontSize: headingFontSize,
+                            }}
+                        >
+                            El Hotel
+                        </MKTypography>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <MKTypography
+                            variant="body1"
+                            fontWeight="light"
+                            color="text"
+                            textAlign={textAlign}
+                            sx={{
+                                whiteSpace: "pre-line",
+                                width: "100%",
+                                maxWidth: "100%",
+                                padding: 0,
+                                margin: 0,
+                                fontSize: bodyFontSize,
+                                mb: 0,
+                            }}
+                        >
+                            {intro}
+                        </MKTypography>
+                    </Grid>
+                    <Grid item xs={12}>
                         <div id={hotel.id} style={{ width: "100%" }}>
-                            <Grid
-                                item
-                                xs={12}
-                                key={hotel.name}
-                                sx={{ ml: 3, mt: { xs: 0, lg: 30 } }}
-                            >
-                                <HotelCard
-                                    name={hotel.name}
-                                    location={hotel.location}
-                                    description={hotel.description}
-                                    logo={hotel.logo}
-                                    webpage={hotel.webpage}
-                                    photos={hotel.photos}
-                                    position={hotel.position}
-                                    services={hotel.services}
-                                    links={hotel.links}
-                                />
-                            </Grid>
+                            <HotelCard
+                                name={hotel.name}
+                                location={hotel.location}
+                                description={hotel.description}
+                                logo={hotel.logo}
+                                webpage={hotel.webpage}
+                                photos={hotel.photos}
+                                position={hotel.position}
+                                services={hotel.services}
+                                links={hotel.links}
+                            />
                         </div>
                     </Grid>
                 </Grid>

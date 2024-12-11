@@ -7,8 +7,6 @@ import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 import Carousel from "react-material-ui-carousel";
 import { useTheme } from "@mui/material/styles";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import { Paper } from "@mui/material";
 
 function CenteredCard({
