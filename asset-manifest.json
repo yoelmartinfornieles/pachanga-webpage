@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pachanga-webpage/static/css/main.259a9af0.css",
-    "main.js": "/pachanga-webpage/static/js/main.01482364.js",
+    "main.js": "/pachanga-webpage/static/js/main.888a5899.js",
     "static/media/pachangaV.png": "/pachanga-webpage/static/media/pachangaV.82305a1b7fb9c241b9b8.png",
     "static/media/joshua-cairos.jpg": "/pachanga-webpage/static/media/joshua-cairos.1167e83fd057efca9c10.jpg",
     "static/media/josu-solano-6.jpg": "/pachanga-webpage/static/media/josu-solano-6.0d9b5dcec213c8f67ec2.jpg",
@@ -94,6 +94,7 @@
     "static/media/pachangaIII-sealed-champion.jpeg": "/pachanga-webpage/static/media/pachangaIII-sealed-champion.728f08b9905d025902fd.jpeg",
     "static/media/paradise-rotating-card-bg-front.jpg": "/pachanga-webpage/static/media/paradise-rotating-card-bg-front.4c06499933ece338b76c.jpg",
     "static/media/vistaflor-6.jpg": "/pachanga-webpage/static/media/vistaflor-6.a80150794fefcf2fe4f1.jpg",
+    "static/media/paradise1-champion.jpg": "/pachanga-webpage/static/media/paradise1-champion.62e16769356a30313cc7.jpg",
     "static/media/vistaflor-5.jpg": "/pachanga-webpage/static/media/vistaflor-5.2dd44f153a8201e354a5.jpg",
     "static/media/javier-charro-11.jpg": "/pachanga-webpage/static/media/javier-charro-11.584a9c41138a17f96367.jpg",
     "static/media/martin-de-diego-6.jpg": "/pachanga-webpage/static/media/martin-de-diego-6.b0f08c5646b6eed7b873.jpg",
@@ -102,6 +103,7 @@
     "static/media/martin-de-diego-8.jpg": "/pachanga-webpage/static/media/martin-de-diego-8.9b177acb06bec4615873.jpg",
     "static/media/joshua-cairos-6.jpg": "/pachanga-webpage/static/media/joshua-cairos-6.9389a24c73adbbb073f6.jpg",
     "static/media/joshua-cairos-4.jpg": "/pachanga-webpage/static/media/joshua-cairos-4.66c2f11345bab8e72e9d.jpg",
+    "static/media/paradise1-trophy.jpg": "/pachanga-webpage/static/media/paradise1-trophy.68bd78f4e0c110c4cda5.jpg",
     "static/media/joshua-cairos-7.jpg": "/pachanga-webpage/static/media/joshua-cairos-7.58663eb044cb3f1aa8f4.jpg",
     "static/media/martin-de-diego-2.jpg": "/pachanga-webpage/static/media/martin-de-diego-2.2f13a5daeee17d5f3dc6.jpg",
     "static/media/fa-brands-400.ttf": "/pachanga-webpage/static/media/fa-brands-400.26b80c8830bebf340211.ttf",
@@ -139,10 +141,10 @@
     "index.html": "/pachanga-webpage/index.html",
     "static/media/pachanga-white-logo.svg": "/pachanga-webpage/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
     "main.259a9af0.css.map": "/pachanga-webpage/static/css/main.259a9af0.css.map",
-    "main.01482364.js.map": "/pachanga-webpage/static/js/main.01482364.js.map"
+    "main.888a5899.js.map": "/pachanga-webpage/static/js/main.888a5899.js.map"
   },
   "entrypoints": [
     "static/css/main.259a9af0.css",
-    "static/js/main.01482364.js"
+    "static/js/main.888a5899.js"
   ]
 }
