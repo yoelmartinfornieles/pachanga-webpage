@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/pachanga-webpage/static/css/main.259a9af0.css",
-    "main.js": "/pachanga-webpage/static/js/main.2ef57d8e.js",
+    "main.js": "/pachanga-webpage/static/js/main.6130e226.js",
     "static/media/pachangaV.png": "/pachanga-webpage/static/media/pachangaV.82305a1b7fb9c241b9b8.png",
     "static/media/joshua-cairos.jpg": "/pachanga-webpage/static/media/joshua-cairos.1167e83fd057efca9c10.jpg",
     "static/media/josu-solano-6.jpg": "/pachanga-webpage/static/media/josu-solano-6.0d9b5dcec213c8f67ec2.jpg",
     "static/media/martin-de-diego.jpg": "/pachanga-webpage/static/media/martin-de-diego.02eb1e5d96bd0efd6b23.jpg",
+    "static/media/javier-charro-9.jpg": "/pachanga-webpage/static/media/javier-charro-9.71d9f6b5bd3693b58daa.jpg",
+    "static/media/javier-charro-10.jpg": "/pachanga-webpage/static/media/javier-charro-10.0a5f04ade2b9020ffa75.jpg",
     "static/media/pachangaI-pioneer-champion.png": "/pachanga-webpage/static/media/pachangaI-pioneer-champion.7f32bd957f38454f1c25.png",
     "static/media/josu-solano-4.jpeg": "/pachanga-webpage/static/media/josu-solano-4.86dd6006d2d584d2a234.jpeg",
     "static/media/josu-solano-8.jpeg": "/pachanga-webpage/static/media/josu-solano-8.cc4a75cd6883546a2030.jpeg",
@@ -81,7 +83,6 @@
     "static/media/fran-garces-10.jpg": "/pachanga-webpage/static/media/fran-garces-10.8ab7b5463d524d2c2d77.jpg",
     "static/media/fa-solid-900.ttf": "/pachanga-webpage/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
     "static/media/edgar-sanchez-6.jpg": "/pachanga-webpage/static/media/edgar-sanchez-6.867e726c28be3f935700.jpg",
-    "static/media/javier-charro-10.jpg": "/pachanga-webpage/static/media/javier-charro-10.bc54819056cde1fcbccc.jpg",
     "static/media/paradise2ndRound.webp": "/pachanga-webpage/static/media/paradise2ndRound.b06973045b96cc01c28d.webp",
     "static/media/javier-charro.jpeg": "/pachanga-webpage/static/media/javier-charro.a4e52e3ecbd3b57b2ebd.jpeg",
     "static/media/edgar-sanchez-8.jpg": "/pachanga-webpage/static/media/edgar-sanchez-8.1d95cad402dce0ed2016.jpg",
@@ -93,7 +94,6 @@
     "static/media/vistaflor-5.jpg": "/pachanga-webpage/static/media/vistaflor-5.2dd44f153a8201e354a5.jpg",
     "static/media/javier-charro-11.jpg": "/pachanga-webpage/static/media/javier-charro-11.584a9c41138a17f96367.jpg",
     "static/media/martin-de-diego-6.jpg": "/pachanga-webpage/static/media/martin-de-diego-6.b0f08c5646b6eed7b873.jpg",
-    "static/media/javier-charro-9.jpg": "/pachanga-webpage/static/media/javier-charro-9.2bf4690ba2a4d5937c62.jpg",
     "static/media/martin-de-diego-7.jpg": "/pachanga-webpage/static/media/martin-de-diego-7.d4d1577845a12b49934c.jpg",
     "static/media/joshua-cairos-5.jpg": "/pachanga-webpage/static/media/joshua-cairos-5.02c653e0b16459ca24e8.jpg",
     "static/media/joshua-cairos-9.jpg": "/pachanga-webpage/static/media/joshua-cairos-9.b2bb29ba15e9234cb556.jpg",
@@ -139,10 +139,10 @@
     "index.html": "/pachanga-webpage/index.html",
     "static/media/pachanga-white-logo.svg": "/pachanga-webpage/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
     "main.259a9af0.css.map": "/pachanga-webpage/static/css/main.259a9af0.css.map",
-    "main.2ef57d8e.js.map": "/pachanga-webpage/static/js/main.2ef57d8e.js.map"
+    "main.6130e226.js.map": "/pachanga-webpage/static/js/main.6130e226.js.map"
   },
   "entrypoints": [
     "static/css/main.259a9af0.css",
-    "static/js/main.2ef57d8e.js"
+    "static/js/main.6130e226.js"
   ]
 }
