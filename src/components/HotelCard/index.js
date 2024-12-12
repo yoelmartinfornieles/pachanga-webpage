@@ -1,6 +1,6 @@
 import React from "react";
-import { useTheme, styled } from "@mui/material/styles";
-import { Card, Button, CardContent, Paper } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { Card, CardContent, Paper } from "@mui/material";
 import {
     X as XIcon,
     ArtTrack as ArtTrackIcon,
@@ -14,20 +14,9 @@ import {
     Phone as PhoneIcon,
     Email as EmailIcon,
 } from "@mui/icons-material";
-import MKTypography from "components/MKTypography";
-import MKBox from "components/MKBox";
+import { MKTypography, MKBox, GlowButton } from "components";
 import Carousel from "react-material-ui-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-const GlowButton = styled(Button)(({ theme }) => ({
-    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-    "&:hover": {
-        transform: "scale(1.3)",
-        boxShadow: `0 0 30px ${theme.palette.warning.main}`,
-    },
-    borderRadius: "50%",
-    overflow: "hidden",
-}));
 
 const platformIcons = {
     ArtStation: ArtTrackIcon,
@@ -56,6 +45,7 @@ const IconComponent = ({ platform }) => {
 };
 
 const HotelCard = ({
+    color,
     name,
     location,
     description,
@@ -82,16 +72,14 @@ const HotelCard = ({
                 sx={{
                     width: "100%",
                     margin: "16px 0",
-                    background: `linear-gradient(210deg, ${
-                        theme.palette.black.main
-                    } 80%, ${theme.palette[position.color].main} 140%)`,
+                    background: `linear-gradient(210deg, ${theme.palette.black.main} 80%, ${theme.palette[color].main} 140%)`,
                     display: "flex",
                     flexDirection: { xs: "column", md: "row" },
                     borderRadius: "16px",
                     position: "relative",
                     overflow: "visible",
                     boxShadow: glow
-                        ? `0 0 30px ${theme.palette[position.color].main}`
+                        ? `0 0 30px ${theme.palette[color].main}`
                         : "none",
                     marginBottom: "32px",
                 }}
@@ -190,7 +178,7 @@ const HotelCard = ({
                                 fontSize: { xs: "0.875rem", md: "1rem" },
                                 fontWeight: "bold",
                             }}
-                            color="warning"
+                            color={color}
                         >
                             {location}
                         </MKTypography>

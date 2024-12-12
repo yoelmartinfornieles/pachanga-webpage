@@ -11,12 +11,12 @@ import MKAvatar from "./MKAvatar";
 import MKBox from "./MKBox";
 import MKButton from "./MKButton";
 import MKTypography from "./MKTypography";
-import PachangaLogo from "./PachangaLogo";
+import Logo from "./Logo";
 import Section from "./Section";
 import StyledCard from "./StyledCard";
 import BannerCarouselItem from "./BannerCarouselItem";
 import DefaultCounterCard from "./DefaultCounterCard";
-
+import GlowButton from "./GlowButton";
 export {
     CenteredCard,
     TransparentCard,
@@ -32,8 +32,9 @@ export {
     MKTypography,
     MKBox,
     MKAvatar,
-    PachangaLogo,
+    Logo,
     Section,
     StyledCard,
     BannerCarouselItem,
+    GlowButton,
 };

@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import { Header, Statement } from "sections";
-import { MKBox, PachangaLogo, Section, StyledCard } from "components";
+import { MKBox, Logo, Section, StyledCard } from "components";
 import dataProtectionPolicyStatement from "./data/dataProtectionPolicyStatement";
 import { dataProtectionPolicyBanner } from "../../assets/images";
 
@@ -22,7 +22,7 @@ function DataProtectionPolicy() {
                         mt={{ xs: -2, md: -13 }}
                         sx={{ position: "relative", zIndex: 1 }}
                     >
-                        <PachangaLogo />
+                        <Logo />
                     </MKBox>
                 </Grid>
             </Grid>

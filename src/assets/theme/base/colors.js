@@ -48,8 +48,48 @@ const themeColors = {
         focus: "#B37403", // Adjusted focus color for harvestGold
     },
 
-    error: {
+    pachangaInfo: {
+        main: "#007096", // Cerulean color
+        focus: "#005f7a", // Adjusted focus color for cerulean
+    },
+
+    pachangaSuccess: {
+        main: "#126D68", // Caribbean color
+        focus: "#0E5B54", // Adjusted focus color
+    },
+
+    pachangaWarning: {
+        main: "#E18E04", // HarvestGold color
+        focus: "#B37403", // Adjusted focus color for harvestGold
+    },
+
+    pachangaError: {
         main: "#8C0027", // Burgundy color
+        focus: "#6A001F", // Adjusted focus color
+    },
+
+    paradiseInfo: {
+        main: "#B73D6E", // Raspberry color
+        focus: "#241965", // Adjusted focus color for Raspberry
+    },
+
+    paradiseSuccess: {
+        main: "#653993", // Rebecca color
+        focus: "#B37403", // Adjusted focus color for Rebecca
+    },
+
+    paradiseWarning: {
+        main: "#2ABA9E", // Keppel color
+        focus: "#0E5B54", // Adjusted focus color for Keppel
+    },
+
+    paradiseError: {
+        main: "#8C0027", // Burgundy color
+        focus: "#6A001F", // Adjusted focus color
+    },
+
+    error: {
+        main: "#EFA5A6", // Melon color
         focus: "#6A001F", // Adjusted focus color
     },
 

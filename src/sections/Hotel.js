@@ -13,7 +13,6 @@ import {
 
 function Hotel({
     event,
-    hotel,
     backgroundColor1,
     backgroundColor2,
     opacity1 = 0.8,
@@ -22,14 +21,16 @@ function Hotel({
     gradient2 = 75,
     gradientAngle = 185,
 }) {
+    const name = event.name;
+    const hotel = event.hotel;
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
     const color1 = theme.palette[backgroundColor1]?.main || backgroundColor1;
     const color2 = theme.palette[backgroundColor2]?.main || backgroundColor2;
 
-    const intro = `El ${event} se celebra en el hotel Vistaflor de Maspalomas, donde la experiencia es tan completa como un mazo de cinco colores. 
-Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclusiva para reservar (te la enviaremos por correo, porque, ya sabes, el hotel no abre reservas hasta que el universo lo permita, y el universo dice que la prisa mata, amigo) podrás disfrutar del ambientazo del ${event} desde la mañana hasta que el sol se esconda, y quizás hasta altas horas de la madrugada. 
+    const intro = `El ${name} se celebra en el hotel Vistaflor de Maspalomas, donde la experiencia es tan completa como un mazo de cinco colores. 
+Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclusiva para reservar (te la enviaremos por correo, porque, ya sabes, el hotel no abre reservas hasta que el universo lo permita, y el universo dice que la prisa mata, amigo) podrás disfrutar del ambientazo del ${name} desde la mañana hasta que el sol se esconda, y quizás hasta altas horas de la madrugada. 
 ¿Cómo sino hubiese podido ocurrir el fastuoso 'Incidente culito blanco'? 
 ¡Y además, tráete a todos los acompanantes que quieras, tan importante es el gathering como el Magic, mi arma!`;
 
@@ -101,6 +102,7 @@ Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclus
                     <Grid item xs={12}>
                         <div id={hotel.id} style={{ width: "100%" }}>
                             <HotelCard
+                                color={event.colors.warning}
                                 name={hotel.name}
                                 location={hotel.location}
                                 description={hotel.description}

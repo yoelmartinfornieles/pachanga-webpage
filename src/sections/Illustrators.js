@@ -8,7 +8,7 @@ import MKTypography from "components/MKTypography";
 import IllustratorCard from "../components/IllustratorCard";
 import { FONT_SIZE_DESKTOP_HEADING, FONT_SIZE_MOBILE_HEADING } from "shared";
 
-function Illustrators({ illustratorsData }) {
+function Illustrators({ illustratorsData, event }) {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const location = useLocation();
@@ -34,7 +34,6 @@ function Illustrators({ illustratorsData }) {
     }, []);
 
     useEffect(() => {
-        // Shuffle the illustratorsData array
         const shuffled = [...illustratorsData].sort(() => Math.random() - 0.5);
         setShuffledIllustrators(shuffled);
     }, [illustratorsData]);
@@ -77,6 +76,7 @@ function Illustrators({ illustratorsData }) {
                                 links={illustrator.links}
                                 position={illustrator.position}
                                 images={illustrator.images}
+                                color={event.colors.success}
                             />
                         </Grid>
                     ))}

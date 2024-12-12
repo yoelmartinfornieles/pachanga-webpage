@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import { Tournament, Hotel, Foundations, Prizes, Header } from "sections";
-import { MKBox, PachangaLogo, Section, StyledCard } from "components";
+import { MKBox, Logo, Section, StyledCard } from "components";
 import { useHashScroll, findEventByName } from "shared";
 
 function MainEvent() {
@@ -27,7 +27,7 @@ function MainEvent() {
                         mt={{ xs: -2, md: -13 }}
                         sx={{ position: "relative", zIndex: 1 }}
                     >
-                        <PachangaLogo />
+                        <Logo logo={event.logo} />
                     </MKBox>
                 </Grid>
             </Grid>
@@ -47,8 +47,7 @@ function MainEvent() {
                 </Section>
                 <Section id="hotel">
                     <Hotel
-                        event={event.name}
-                        hotel={event.hotel}
+                        event={event}
                         backgroundColor1="black"
                         backgroundColor2="cerulean"
                         opacity1={0}
@@ -71,7 +70,7 @@ function MainEvent() {
                     />
                 </Section>
                 <Section id="prizes">
-                    <Prizes prizes={event.prizes} />
+                    <Prizes event={event} />
                 </Section>
             </StyledCard>
         </>

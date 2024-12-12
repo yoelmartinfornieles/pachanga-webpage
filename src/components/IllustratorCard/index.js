@@ -1,6 +1,6 @@
 import React from "react";
-import { useTheme, styled } from "@mui/material/styles";
-import { Card, Button, CardContent } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { Card, CardContent } from "@mui/material";
 import { X as XIcon } from "@mui/icons-material";
 import Carousel from "react-material-ui-carousel";
 import ArtTrackIcon from "@mui/icons-material/ArtTrack";
@@ -11,17 +11,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LanguageIcon from "@mui/icons-material/Language";
 import PublicIcon from "@mui/icons-material/Public";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import MKTypography from "components/MKTypography";
-import MKBox from "components/MKBox";
-const GlowButton = styled(Button)(({ theme }) => ({
-    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-    "&:hover": {
-        transform: "scale(1.1)",
-        boxShadow: `0 0 10px ${theme.palette.success.main}`,
-    },
-    borderRadius: "50%",
-    overflow: "hidden",
-}));
+import { GlowButton, MKBox, MKTypography } from "components";
 
 const IllustratorCard = ({
     id,
@@ -32,6 +22,7 @@ const IllustratorCard = ({
     position,
     glow = true,
     images,
+    color,
 }) => {
     const theme = useTheme();
 
@@ -54,16 +45,14 @@ const IllustratorCard = ({
             sx={{
                 width: "100%",
                 margin: "16px 0",
-                background: `linear-gradient(210deg, ${
-                    theme.palette["black"].main
-                } 80%, ${theme.palette[position.color].main} 100%)`,
+                background: `linear-gradient(210deg, ${theme.palette["black"].main} 80%, ${theme.palette[color].main} 100%)`,
                 display: "flex",
                 flexDirection: { xs: "column", md: "row" },
                 borderRadius: "16px",
                 position: "relative",
                 overflow: "visible",
                 boxShadow: glow
-                    ? `0 0 10px ${theme.palette[position.color].main}`
+                    ? `0 0 10px ${theme.palette[color].main}`
                     : "none",
                 marginBottom: "52px",
                 minHeight: "550px",
@@ -83,8 +72,8 @@ const IllustratorCard = ({
                     left: { xs: "0", md: "-20px" },
                     borderRadius: "8px",
                     boxShadow: {
-                        xs: "0 4px 8px rgba(0, 0, 0, 0.2)", // Sin glow en mobile
-                        md: "0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px white", // Glow blanco en desktop
+                        xs: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                        md: "0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px white",
                     },
                     marginBottom: { xs: "8px", md: "0" },
                 }}
@@ -115,7 +104,7 @@ const IllustratorCard = ({
                             fontSize: { xs: "0.875rem", md: "1rem" },
                             fontWeight: "bold",
                         }}
-                        color="success"
+                        color={color}
                     >
                         Ilustrador
                     </MKTypography>
@@ -145,7 +134,7 @@ const IllustratorCard = ({
                     {links.map((link) => (
                         <GlowButton
                             key={`${link.platform}-${Math.random()}`}
-                            color="white"
+                            color={color}
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"

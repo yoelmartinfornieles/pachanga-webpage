@@ -537,7 +537,7 @@ function Navbar({
                     >
                         {renderNavbarItems}
                     </MKBox>
-                    <MKBox ml={{ xs: 0, lg: 0 }} mr={{ xs: -2.5, lg: 1 }}>
+                    <MKBox ml={{ xs: -2, lg: 0 }} mr={{ xs: -2.8, lg: 1 }}>
                         <MKButton
                             component={action?.type === "internal" ? Link : "a"}
                             to={

@@ -5,30 +5,8 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import { InfoCard, CenteredCard } from "../components";
 import MKTypography from "components/MKTypography";
-import {
-    pachangaIIIModernChampion,
-    pachangaIIIPioneerChampion,
-    pachangaIIISealedChampion,
-    pachangaIIModernChampion,
-    pachangaIIPioneerChampion,
-    pachangaIISealedChampion,
-    pachangaIModernChampion,
-    pachangaIPioneerChampion,
-    pachangaISealedChampion,
-} from "../assets/images";
-import { FONT_SIZE_DESKTOP_HEADING, FONT_SIZE_MOBILE_HEADING } from "shared";
 
-const championImages = [
-    pachangaIIIModernChampion,
-    pachangaIIIPioneerChampion,
-    pachangaIIISealedChampion,
-    pachangaIIModernChampion,
-    pachangaIIPioneerChampion,
-    pachangaIISealedChampion,
-    pachangaIModernChampion,
-    pachangaIPioneerChampion,
-    pachangaISealedChampion,
-];
+import { FONT_SIZE_DESKTOP_HEADING, FONT_SIZE_MOBILE_HEADING } from "shared";
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -38,10 +16,12 @@ function shuffleArray(array) {
     return array;
 }
 
-function Prizes({ prizes }) {
+function Prizes({ event }) {
+    const prizes = event.prizes;
+    const previousWinnersPhotos = event.previousWinnersPhotos;
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-    const shuffledChampionImages = shuffleArray([...championImages]);
+    const shuffledChampionImages = shuffleArray([...previousWinnersPhotos]);
     const prizeImages = shuffleArray([...prizes.map((prize) => prize.image)]);
     const combinedImages = [];
     let championIndex = 0;
@@ -115,7 +95,7 @@ function Prizes({ prizes }) {
                                 <Grid item xs={12} md={6} key={index}>
                                     <MKBox mb={5}>
                                         <InfoCard
-                                            color="warning"
+                                            color={event.colors.warning}
                                             icon={prize.icon}
                                             title={prize.name}
                                             description={prize.description}
@@ -135,7 +115,9 @@ function Prizes({ prizes }) {
                             title={
                                 <span
                                     style={{
-                                        color: "#E18E04",
+                                        color: theme.palette[
+                                            event.colors.warning
+                                        ].main,
                                         textShadow:
                                             "2px 2px 4px rgba(0, 0, 0, 0.7)",
                                         fontWeight: "bold",
@@ -151,7 +133,7 @@ function Prizes({ prizes }) {
                                     ¡Vamos, que no es tan difícil!
                                 </span>
                             }
-                            description="No es fácil ser el mejor, ¿verdad? Especialmente en el Pachanga, donde las distracciones y el entretenimiento son más tentadores que un durum mixto a las 3 a.m. ¿Serás tú el valiente que se mantenga firme y se alce con la victoria en esta edición? O, ya sabes, ¿simplemente te rendirás y te irás a ver Netflix?"
+                            description={`No es fácil ser el mejor, ¿verdad? Especialmente en el ${event.name}, donde las distracciones y el entretenimiento son más tentadores que un durum mixto a las 3 a.m. ¿Serás tú el valiente que se mantenga firme y se alce con la victoria en esta edición? O, ya sabes, ¿simplemente te rendirás y te irás a ver Netflix?`}
                             image={combinedImages}
                             color="black"
                             opacity={0}

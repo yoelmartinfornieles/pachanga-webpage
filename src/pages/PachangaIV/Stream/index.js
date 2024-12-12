@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import { Header, Streamers, Recordings, Streaming } from "sections";
-import { MKBox, PachangaLogo, Section, StyledCard } from "components";
+import { MKBox, Logo, Section, StyledCard } from "components";
 import { useHashScroll, findEventByName } from "shared";
 import streamersData from "./data/streamersData";
 
@@ -28,7 +28,7 @@ function Stream() {
                         mt={{ xs: -2, md: -13 }}
                         sx={{ position: "relative", zIndex: 1 }}
                     >
-                        <PachangaLogo />
+                        <Logo logo={event.logo} />
                     </MKBox>
                 </Grid>
             </Grid>

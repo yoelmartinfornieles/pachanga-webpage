@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import { Header, GuestsIntro, Illustrators } from "sections";
 import { useHashScroll, findEventByName } from "shared";
-import { MKBox, PachangaLogo, Section, StyledCard } from "components";
+import { MKBox, Logo, Section, StyledCard } from "components";
 import illustratorsData from "./data/illustratorsData";
 
 function Guests() {
@@ -28,20 +28,23 @@ function Guests() {
                         mt={{ xs: -2, md: -13 }}
                         sx={{ position: "relative", zIndex: 1 }}
                     >
-                        <PachangaLogo />
+                        <Logo logo={event.logo} />
                     </MKBox>
                 </Grid>
             </Grid>
             <StyledCard>
                 <Section id="main" />
                 <Section id="guestsintro">
-                    <GuestsIntro />
+                    <GuestsIntro event={event} />
                 </Section>
                 <Section
                     id="illustrators"
                     style={{ display: "flex", justifyContent: "center" }}
                 >
-                    <Illustrators illustratorsData={illustratorsData} />
+                    <Illustrators
+                        illustratorsData={illustratorsData}
+                        event={event}
+                    />
                 </Section>
             </StyledCard>
         </>

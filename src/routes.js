@@ -1,9 +1,10 @@
 import Icon from "@mui/material/Icon";
 import FortOutlinedIcon from "@mui/icons-material/FortOutlined";
 import PachangaMainEvent from "layouts/pages/pachangaIV/mainEvent";
+import PachangaStream from "layouts/pages/pachangaIV/stream";
+import PachangaGuests from "layouts/pages/pachangaIV/guests";
 import Commander2MainEvent from "layouts/pages/commanderParadise2/mainEvent";
-import Stream from "layouts/pages/pachangaIV/stream";
-import Guests from "layouts/pages/pachangaIV/guests";
+import Commander2Guests from "layouts/pages/commanderParadise2/guests";
 
 const routes = [
     {
@@ -43,22 +44,22 @@ const routes = [
                     {
                         name: "Streaming",
                         route: "/pachangaIV/stream",
-                        component: <Stream />,
+                        component: <PachangaStream />,
                     },
                     {
                         name: "Iván Ojeda",
                         route: "/pachangaIV/stream#ivanojeda",
-                        component: <Stream />,
+                        component: <PachangaStream />,
                     },
                     {
                         name: "Carlos Oliveros",
                         route: "/pachangaIV/stream#carlosoliveros",
-                        component: <Stream />,
+                        component: <PachangaStream />,
                     },
                     {
                         name: "Grabaciones",
                         route: "/pachangaIV/stream#recordings",
-                        component: <Stream />,
+                        component: <PachangaStream />,
                     },
                 ],
             },
@@ -68,37 +69,37 @@ const routes = [
                     {
                         name: "invitados",
                         route: "/pachangaIV/guests",
-                        component: <Guests />,
+                        component: <PachangaGuests />,
                     },
                     {
                         name: "josu solano",
                         route: "/pachangaIV/guests#josusolano",
-                        component: <Guests />,
+                        component: <PachangaGuests />,
                     },
                     {
                         name: "fran garces",
                         route: "/pachangaIV/guests#frangarces",
-                        component: <Guests />,
+                        component: <PachangaGuests />,
                     },
                     {
                         name: "joshua cairos",
                         route: "/pachangaIV/guests#joshuacairos",
-                        component: <Guests />,
+                        component: <PachangaGuests />,
                     },
                     {
                         name: "edgar sánchez hidalgo",
                         route: "/pachangaIV/guests#edgarsanchez",
-                        component: <Guests />,
+                        component: <PachangaGuests />,
                     },
                     {
                         name: "martin de diego",
                         route: "/pachangaIV/guests#martindediego",
-                        component: <Guests />,
+                        component: <PachangaGuests />,
                     },
                     {
                         name: "javier charro",
                         route: "/pachangaIV/guests#javiercharro",
-                        component: <Guests />,
+                        component: <PachangaGuests />,
                     },
                 ],
             },
@@ -153,22 +154,22 @@ const routes = [
                     {
                         name: "invitados",
                         route: "/commanderParadise2ndRound/guests",
-                        component: <Guests />,
+                        component: <Commander2Guests />,
                     },
                     {
                         name: "fran garces",
                         route: "/commanderParadise2ndRound/guests#frangarces",
-                        component: <Guests />,
+                        component: <Commander2Guests />,
                     },
                     {
                         name: "joshua cairos",
                         route: "/commanderParadise2ndRound/guests#joshuacairos",
-                        component: <Guests />,
+                        component: <Commander2Guests />,
                     },
                     {
                         name: "martin de diego",
                         route: "/commanderParadise2ndRound/guests#martindediego",
-                        component: <Guests />,
+                        component: <Commander2Guests />,
                     },
                 ],
             },

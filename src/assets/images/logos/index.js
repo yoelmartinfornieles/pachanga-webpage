@@ -3,6 +3,8 @@ import pachangaBlueLogo from "./pachanga-blue-logo.png";
 import paradiseGreyLogo from "./gray-logos/logo-commander.png";
 import pachangaWhiteLogo from "./pachanga-white-logo.svg";
 import pachangaYellowLogo from "./pachanga-yellow-logo.png";
+import commanderWhiteLogo from "./commander-white-logo.png";
+import commanderBlackLogo from "./commander-black-logo.png";
 
 export {
     pachangaGreyLogo,
@@ -10,4 +12,6 @@ export {
     paradiseGreyLogo,
     pachangaWhiteLogo,
     pachangaYellowLogo,
+    commanderWhiteLogo,
+    commanderBlackLogo,
 };

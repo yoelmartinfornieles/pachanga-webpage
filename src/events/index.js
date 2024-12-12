@@ -5,29 +5,43 @@ import {
     pachangaIVGeneralTicket,
     paradise2ndRoundGeneralTicket,
     pachangaIVTrophy,
+    paradise1Trophy,
     //pachangaIVArcanisCollab,
     pachaPoints,
     pachangaV,
     //pachangaIVMaterial,
     pachangaIVPosterA,
     pachangaIVPosterB,
+    pachangaIIIModernChampion,
+    pachangaIIIPioneerChampion,
+    pachangaIIISealedChampion,
+    pachangaIIModernChampion,
+    pachangaIIPioneerChampion,
+    pachangaIISealedChampion,
+    pachangaIModernChampion,
+    pachangaIPioneerChampion,
+    pachangaISealedChampion,
+    paradise1Champion,
+    commanderParadise2Poster,
 } from "./images";
 import kepaRefereePhoto from "../assets/images/bruce-mars.jpg";
 import {
     pachangaIVFoundations,
     commanderParadise2Foundations,
 } from "./foundations";
-import { pachangaIVInfo } from "./tournament";
-import { pachangaIVHotel } from "./hotel";
+import { pachangaIVInfo, commanderParadise2Info } from "./tournament";
+import { pachangaIVHotel, commanderParadise2Hotel } from "./hotel";
 import {
     EmojiEventsTwoTone,
     ConfirmationNumberOutlined,
     LocalBarTwoTone,
 } from "@mui/icons-material";
+import { pachangaGreyLogo, commanderWhiteLogo } from "../assets/images/logos";
 
 const events = [
     {
         name: "Pachanga Tournament IV",
+        logo: pachangaGreyLogo,
         description:
             "El Pachanga vuelve más grande y mejor que nunca. ¿Te lo vas a perder?",
         hotel: pachangaIVHotel,
@@ -91,17 +105,34 @@ const events = [
                 alt: "pachaPoints",
             },
         ],
+        previousWinnersPhotos: [
+            pachangaIIIModernChampion,
+            pachangaIIIPioneerChampion,
+            pachangaIIISealedChampion,
+            pachangaIIModernChampion,
+            pachangaIIPioneerChampion,
+            pachangaIISealedChampion,
+            pachangaIModernChampion,
+            pachangaIPioneerChampion,
+            pachangaISealedChampion,
+        ],
+        colors: {
+            warning: "pachangaWarning",
+            success: "pachangaSuccess",
+            info: "pachangaInfo",
+        },
     },
     {
         name: "Commander Paradise: 2nd Round",
+        logo: commanderWhiteLogo,
         description:
             "Repetimos. El verdadero espíritu EDH vuelve a la isla. ¡No te pierdas la oportunidad de jugar con los mejores!",
         image: paradise2ndRound,
-        hotel: pachangaIVHotel,
+        hotel: commanderParadise2Hotel,
         fontFamily: "'Cinzel'",
         date: new Date("2025-05-23"),
-        info: pachangaIVInfo,
-        posters: [pachangaIVPosterB],
+        info: commanderParadise2Info,
+        posters: [commanderParadise2Poster],
         tweet: "Comandante, el Commander Paradise by Pachanga - 2nd Round está al caer. Agarra tus 100, corre a pachangatournament.com a por tu entrada y prepara los tambores de guerra #commanderParadise2ndRound @pachangaTorneo",
         foundations: commanderParadise2Foundations,
         tickets: [
@@ -120,7 +151,7 @@ const events = [
                 description:
                     "Sólo los Comandantes más dominantes pueden poseer este trofeo ¿Conseguirás la gloria?",
                 icon: <EmojiEventsTwoTone />,
-                image: pachangaIVTrophy,
+                image: paradise1Trophy,
                 alt: "Trofeo Commnader Paradise 2nd Round Champion",
             },
             {
@@ -132,9 +163,16 @@ const events = [
                 alt: "pachaPoints",
             },
         ],
+        previousWinnersPhotos: [paradise1Champion],
+        colors: {
+            warning: "paradiseWarning",
+            success: "paradiseSuccess",
+            info: "paradiseInfo",
+        },
     },
     /*  {
-        name: "Pachanga Tournament V",
+        name: "Pachanga Tournament V",        
+        logo: pachangaWhiteLogo,
         description: null,
         hotel: null,
         image: null,
@@ -162,7 +200,13 @@ const events = [
                 image: null,
                 alt: null,
             },
-        ],
+        ],        previousWinnerPhotos: [
+
+        ],        colors: {
+            warning: "pachangaWarning",
+            success: "pachangaSuccess",
+            error: "pachangaError",
+        },
     }, */
 ];
 

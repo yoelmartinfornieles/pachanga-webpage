@@ -1,4 +1,8 @@
-const pachangaIVInfo = ` Limitado a 226 jugadores.
+const pachangaIVInfo = ` 
+El Pachanga Tournament es un torneo de MTG que se celebra en la isla de Gran Canaria anualmente.
+Este ano toca la IV edicion, que celebraremos en el hotel Vistaflor de Maspalomas, limitada a 226 participantes.
+El plato fuerte es el main event de Modern que constará de 10 rondas de suizo y un top 16 de eliminatorias.
+El viernes se celebrará un FNM a elegir entre
 Legacy 20 proxies
 Vintage full proxy
 https://mpcfill.com
