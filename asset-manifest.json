@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pachanga-webpage/static/css/main.259a9af0.css",
-    "main.js": "/pachanga-webpage/static/js/main.d8cd381b.js",
+    "main.js": "/pachanga-webpage/static/js/main.91c8f1b9.js",
     "static/media/pachangaV.png": "/pachanga-webpage/static/media/pachangaV.82305a1b7fb9c241b9b8.png",
     "static/media/joshua-cairos.jpg": "/pachanga-webpage/static/media/joshua-cairos.1167e83fd057efca9c10.jpg",
     "static/media/commanderParadise2-poster.png": "/pachanga-webpage/static/media/commanderParadise2-poster.de76067078883c6f4c91.png",
@@ -124,8 +124,10 @@
     "static/media/pachangaI-modern-champion.jpeg": "/pachanga-webpage/static/media/pachangaI-modern-champion.dead99a8346167f688ff.jpeg",
     "static/media/martin-de-diego-9.jpg": "/pachanga-webpage/static/media/martin-de-diego-9.f4f93540e989439ebe55.jpg",
     "static/media/paradise-rotating-card-bg-back.jpg": "/pachanga-webpage/static/media/paradise-rotating-card-bg-back.78985e6d56f49a6519ba.jpg",
+    "static/media/commander-white-logo.png": "/pachanga-webpage/static/media/commander-white-logo.4183488f5fcf42564cca.png",
     "static/media/logo-commander.png": "/pachanga-webpage/static/media/logo-commander.4183488f5fcf42564cca.png",
     "static/media/fa-brands-400.woff2": "/pachanga-webpage/static/media/fa-brands-400.fdbb558523a380307689.woff2",
+    "static/media/commander-black-logo.png": "/pachanga-webpage/static/media/commander-black-logo.aa840ccf1cc626102e1a.png",
     "static/media/pachanga-blue-logo.png": "/pachanga-webpage/static/media/pachanga-blue-logo.d3a49bac50b933444aa1.png",
     "static/media/joshua-cairos-1.jpg": "/pachanga-webpage/static/media/joshua-cairos-1.77b2ed963e0fe9a20a2a.jpg",
     "static/media/vistaflor-9.jpg": "/pachanga-webpage/static/media/vistaflor-9.5a9242c524f8fd5672f0.jpg",
@@ -142,10 +144,10 @@
     "index.html": "/pachanga-webpage/index.html",
     "static/media/pachanga-white-logo.svg": "/pachanga-webpage/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
     "main.259a9af0.css.map": "/pachanga-webpage/static/css/main.259a9af0.css.map",
-    "main.d8cd381b.js.map": "/pachanga-webpage/static/js/main.d8cd381b.js.map"
+    "main.91c8f1b9.js.map": "/pachanga-webpage/static/js/main.91c8f1b9.js.map"
   },
   "entrypoints": [
     "static/css/main.259a9af0.css",
-    "static/js/main.d8cd381b.js"
+    "static/js/main.91c8f1b9.js"
   ]
 }
