@@ -238,7 +238,30 @@ const HotelCard = ({
                             };
 
                             return (
-                                <GlowButton {...linkProps}>
+                                <GlowButton
+                                    key={`${link.platform}-${Math.random()}`}
+                                    color={color}
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    sx={{
+                                        marginRight: { xs: "8px", md: "0" },
+                                        marginBottom: { md: "8px" },
+                                        width: {
+                                            xs: "40px",
+                                            sm: "50px",
+                                            md: "60px",
+                                        },
+                                        height: {
+                                            xs: "40px",
+                                            sm: "50px",
+                                            md: "60px",
+                                        },
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                    }}
+                                >
                                     <IconComponent platform={link.platform} />
                                 </GlowButton>
                             );
