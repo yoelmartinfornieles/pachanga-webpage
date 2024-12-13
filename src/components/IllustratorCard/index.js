@@ -13,17 +13,9 @@ import PublicIcon from "@mui/icons-material/Public";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { GlowButton, MKBox, MKTypography } from "components";
 
-const IllustratorCard = ({
-    id,
-    name,
-    photo,
-    description,
-    links,
-    position,
-    glow = true,
-    images,
-    color,
-}) => {
+const IllustratorCard = ({ illustrator, glow = true, color }) => {
+    const { name, photo, description, links, images } = illustrator;
+
     const theme = useTheme();
 
     const platformIcons = {

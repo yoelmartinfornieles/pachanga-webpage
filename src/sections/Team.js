@@ -51,18 +51,20 @@ function Team({
             <Container>
                 <Grid container>
                     <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-                        <MKTypography
-                            variant="h3"
-                            color="white"
-                            sx={{
-                                fontSize: {
-                                    xs: FONT_SIZE_MOBILE_HEADING,
-                                    md: FONT_SIZE_DESKTOP_HEADING,
-                                },
-                            }}
-                        >
-                            {title}
-                        </MKTypography>
+                        <div>
+                            <MKTypography
+                                variant="h3"
+                                color="white"
+                                sx={{
+                                    fontSize: {
+                                        xs: FONT_SIZE_MOBILE_HEADING,
+                                        md: FONT_SIZE_DESKTOP_HEADING,
+                                    },
+                                }}
+                            >
+                                {title}
+                            </MKTypography>
+                        </div>
                         <MKTypography
                             variant="body2"
                             color="white"

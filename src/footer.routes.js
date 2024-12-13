@@ -9,72 +9,72 @@ import MKTypography from "components/MKTypography";
 // Images
 import { pachangaGreyLogo } from "assets/images/logos";
 
-const date = new Date().getFullYear();
+const fecha = new Date().getFullYear();
 
-export default {
-    brand: {
-        name: "Pachanga Tournament",
-        image: pachangaGreyLogo,
-        route: "/",
+const configuracion = {
+    marca: {
+        nombre: "Pachanga Tournament",
+        imagen: pachangaGreyLogo,
+        ruta: "/",
     },
-    socials: [
+    redesSociales: [
         {
-            icon: <FacebookIcon />,
-            link: "https://www.facebook.com/p/Pachanga-Tournament-100083619990138/",
+            icono: <FacebookIcon />,
+            enlace: "https://www.facebook.com/p/Pachanga-Tournament-100083619990138/",
         },
         {
-            icon: <TwitterIcon />,
-            link: "https://twitter.com/pachangaTorneo",
+            icono: <TwitterIcon />,
+            enlace: "https://twitter.com/pachangaTorneo",
         },
         {
-            icon: <InstagramIcon />,
-            link: "https://www.instagram.com/pachangatournament/",
+            icono: <InstagramIcon />,
+            enlace: "https://www.instagram.com/pachangatournament/",
         },
     ],
     menus: [
         {
-            name: "company",
-            items: [
+            nombre: "empresa",
+            elementos: [
                 {
-                    name: "about us",
+                    nombre: "sobre nosotros",
                     href: "https://www.pachangatournament.com/about-us",
                 },
             ],
         },
         {
-            name: "help & support",
-            items: [
+            nombre: "ayuda y soporte",
+            elementos: [
                 {
-                    name: "contact us",
+                    nombre: "contáctanos",
                     href: "https://www.pachangatournament.com/contact-us",
                 },
                 {
-                    name: "sponsorships",
+                    nombre: "patrocinios",
                     href: "https://www.pachangatournament.com/sponsorships",
                 },
             ],
         },
         {
-            name: "legal",
-            items: [
+            nombre: "legal",
+            elementos: [
                 {
-                    name: "terms & conditions",
+                    nombre: "términos y condiciones",
                     href: "https://www.pachangatournament.com/terms",
                 },
                 {
-                    name: "privacy policy",
+                    nombre: "política de privacidad",
                     href: "https://www.pachangatournament.com/privacy",
                 },
                 {
-                    name: "licenses (EULA)",
+                    nombre: "licencias (EULA)",
                     href: "https://www.pachangatournament.com/licenses",
                 },
             ],
         },
     ],
-    copyright: (
+    derechosDeAutor: (
         <MKTypography variant="button" fontWeight="regular">
-            All rights reserved. Copyright &copy; {date} by{" "}
+            Todos los derechos reservados. Copyright &copy; {fecha} por{" "}
             <MKTypography
                 component="a"
                 href="https://www.pachangatournament.com"
@@ -89,3 +89,5 @@ export default {
         </MKTypography>
     ),
 };
+
+export default configuracion;

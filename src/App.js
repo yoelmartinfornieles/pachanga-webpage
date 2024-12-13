@@ -12,6 +12,8 @@ import {
     PresentationPage,
     PachangaIVMainEventPage,
     DataProtectionPolicyPage,
+    AboutUsPage,
+    CopyrightAndImagesPage,
 } from "layouts/pages";
 import routes from "routes";
 
@@ -85,7 +87,12 @@ export default function App() {
                     <Route
                         path="/data-protection-policy"
                         element={<DataProtectionPolicyPage />}
-                    />
+                    />{" "}
+                    <Route
+                        path="/copyright-and-images"
+                        element={<CopyrightAndImagesPage />}
+                    />{" "}
+                    <Route path="/about-us" element={<AboutUsPage />} />
                     <Route path="*" element={<Navigate to="/presentation" />} />
                 </Routes>
                 <Footer />

@@ -84,12 +84,12 @@ const themeColors = {
     },
 
     paradiseError: {
-        main: "#8C0027", // Burgundy color
+        main: "#8C0027", // Melon color
         focus: "#6A001F", // Adjusted focus color
     },
 
     error: {
-        main: "#EFA5A6", // Melon color
+        main: "#8C0027", // Burgundy color
         focus: "#6A001F", // Adjusted focus color
     },
 

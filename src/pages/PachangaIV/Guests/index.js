@@ -2,7 +2,6 @@ import { Grid } from "@mui/material";
 import { Header, GuestsIntro, Illustrators } from "sections";
 import { useHashScroll, findEventByName } from "shared";
 import { MKBox, Logo, Section, StyledCard } from "components";
-import illustratorsData from "./data/illustratorsData";
 
 function Guests() {
     useHashScroll();
@@ -41,10 +40,7 @@ function Guests() {
                     id="illustrators"
                     style={{ display: "flex", justifyContent: "center" }}
                 >
-                    <Illustrators
-                        illustratorsData={illustratorsData}
-                        event={event}
-                    />
+                    <Illustrators event={event} />
                 </Section>
             </StyledCard>
         </>

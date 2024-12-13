@@ -19,6 +19,7 @@ import Streamers from "./Streamers";
 import Streaming from "./Streaming";
 import Team from "./Team";
 import Tournament from "./Tournament";
+import TeamMembers from "./TeamMembers";
 
 export {
     Banner,
@@ -42,4 +43,5 @@ export {
     Streaming,
     Team,
     Tournament,
+    TeamMembers,
 };

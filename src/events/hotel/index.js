@@ -1,4 +1,3 @@
-import { pachangaIVHotel } from "./pachangaIV.js";
-import { commanderParadise2Hotel } from "./commanderParadise2.js";
+import { vistaflorMaspalomas } from "./vistaflorMaspalomas";
 
-export { pachangaIVHotel, commanderParadise2Hotel };
+export { vistaflorMaspalomas };

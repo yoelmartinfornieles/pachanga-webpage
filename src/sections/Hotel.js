@@ -73,7 +73,7 @@ Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclus
                             color="white"
                             gutterBottom
                             sx={{
-                                textAlign: "center",
+                                textAlign: "left",
                                 fontSize: headingFontSize,
                             }}
                         >

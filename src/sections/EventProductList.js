@@ -47,22 +47,25 @@ function EventProductList({ event, eventIndex }) {
                         <TransparentCard
                             image={ticket.image}
                             title={
-                                <MKTypography
-                                    color="warning"
-                                    variant="h3"
-                                    sx={{
-                                        fontSize: isMobile
-                                            ? FONT_SIZE_MOBILE_TITLE
-                                            : FONT_SIZE_DESKTOP_TITLE,
-                                    }}
-                                >
-                                    {ticket.name}
-                                </MKTypography>
+                                <div>
+                                    <MKTypography
+                                        color="warning"
+                                        variant="h3"
+                                        sx={{
+                                            fontSize: isMobile
+                                                ? FONT_SIZE_MOBILE_TITLE
+                                                : FONT_SIZE_DESKTOP_TITLE,
+                                        }}
+                                    >
+                                        {ticket.name}
+                                    </MKTypography>
+                                </div>
                             }
                             description={
                                 <MKTypography
                                     variant="body2"
                                     color="text"
+                                    style={{ whiteSpace: "pre-wrap" }}
                                     sx={{
                                         overflow: "hidden",
                                         textOverflow: "ellipsis",

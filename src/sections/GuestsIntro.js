@@ -55,7 +55,7 @@ function GuestsIntro({ event }) {
                             mb: 6,
                         }}
                     >
-                        {`¡Ey, ey, ey! Sin nuestros invitados, esto sería como un mazo de Magic sin tierras: ¡totalmente inútil! Sin toda esos chalaos que hacen que el ${event.name} sea una fiesta de locos, no hay diversión. Sin ilustradores, las cartitas serían más aburridas que un juego de Monopoly. ¡Así que, a lo que vinimos, vamos con nuestros invitados!`}
+                        {event.guests.intro}
                     </MKTypography>
                 </Grid>
                 <Grid container spacing={3}></Grid>

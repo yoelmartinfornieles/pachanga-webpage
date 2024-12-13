@@ -1,9 +1,11 @@
-import PresentationPage from "layouts/pages/presentation";
-import { default as PachangaIVMainEventPage } from "layouts/pages/pachangaIV/mainEvent";
-import { default as CommanderParadise2MainEventPage } from "layouts/pages/commanderParadise2/mainEvent";
-import PurchasePage from "layouts/pages/purchase";
-import PurchaseSuccessPage from "layouts/pages/purchase-success";
+import PresentationPage from "./presentation";
+import PurchasePage from "./purchase";
+import PurchaseSuccessPage from "./purchase-success";
 import DataProtectionPolicyPage from "./data-protection-policy";
+import AboutUsPage from "./about-us";
+import CopyrightAndImagesPage from "./copyright-and-images";
+import { default as PachangaIVMainEventPage } from "./pachangaIV/mainEvent";
+import { default as CommanderParadise2MainEventPage } from "./commanderParadise2/mainEvent";
 
 export {
     PresentationPage,
@@ -12,4 +14,6 @@ export {
     PurchasePage,
     PurchaseSuccessPage,
     DataProtectionPolicyPage,
+    AboutUsPage,
+    CopyrightAndImagesPage,
 };

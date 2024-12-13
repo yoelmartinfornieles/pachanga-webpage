@@ -82,7 +82,7 @@ function Tournament({
                         variant="body1"
                         fontWeight="light"
                         color="text"
-                        textAlign="justify"
+                        textAlign="left"
                         sx={{
                             width: "100%",
                             maxWidth: "100%",
@@ -91,6 +91,8 @@ function Tournament({
                             fontSize: isMobile
                                 ? FONT_SIZE_MOBILE_BODY
                                 : FONT_SIZE_DESKTOP_BODY,
+                            overflow: "hidden",
+                            mt: -3,
                         }}
                     >
                         {info}

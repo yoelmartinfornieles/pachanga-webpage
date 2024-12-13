@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 export function scrollToElementById(elementId) {
     const element = document.getElementById(elementId);
     if (element) {
+        console.log("Scrolling to element with ID:", elementId);
         element.scrollIntoView({ behavior: "smooth" });
     } else {
         console.log("Element not found for ID:", elementId);
@@ -16,14 +17,22 @@ export function useHashScroll() {
     useEffect(() => {
         const hash = window.location.hash;
         if (hash) {
-            requestAnimationFrame(() => scrollToElementById(hash.substring(1)));
+            console.log("Hash changed:", hash);
+            setTimeout(() => {
+                requestAnimationFrame(() =>
+                    scrollToElementById(hash.substring(1))
+                );
+            }, 100);
         }
     }, [location]);
 
     useEffect(() => {
         const initialHash = window.location.hash;
         if (initialHash) {
-            scrollToElementById(initialHash.substring(1));
+            console.log("Initial hash:", initialHash);
+            setTimeout(() => {
+                scrollToElementById(initialHash.substring(1));
+            }, 100);
         }
     }, []);
 }

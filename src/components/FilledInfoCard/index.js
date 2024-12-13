@@ -62,15 +62,17 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
             pb={3}
             px={3}
         >
-            <MKTypography
-                display="block"
-                variant="h3"
-                color={iconColor}
-                textGradient={variant === "contained"}
-                mt={-0.625}
-            >
-                {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
-            </MKTypography>
+            <div>
+                <MKTypography
+                    display="block"
+                    variant="h3"
+                    color={iconColor}
+                    textGradient={variant === "contained"}
+                    mt={-0.625}
+                >
+                    {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
+                </MKTypography>
+            </div>
             <MKBox pt={{ xs: 3, md: 0 }} pl={{ xs: 0, md: 2 }} lineHeight={1}>
                 <MKTypography
                     display="block"

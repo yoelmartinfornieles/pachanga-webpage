@@ -1,19 +1,9 @@
-// prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
-
-// @mui material components
-import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
-import Stack from "@mui/material/Stack";
-
-// @mui icons
+import { Link, Grid, Stack } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import { MKBox, MKTypography } from "components";
 
 function CenteredFooter({ links, socials, light }) {
     const year = new Date().getFullYear();
@@ -84,7 +74,7 @@ function CenteredFooter({ links, socials, light }) {
                             variant="body2"
                             color={light ? "white" : "secondary"}
                         >
-                            Pachanga Tournament & Yoel Martin
+                            Pachanga Tournament & YM3.
                         </MKTypography>
                         .
                     </MKTypography>
@@ -94,25 +84,31 @@ function CenteredFooter({ links, socials, light }) {
     );
 }
 
-// Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-    company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+    company: {
+        href: "https://www.pachangaTournament.com/",
+        name: "Pachanga Tournament",
+    },
     links: [
         {
-            href: "https://www.pachangatournament.com/about-us",
-            name: "About Us",
+            href: "/about-us",
+            name: "Sobre Nosotros",
         },
         {
             href: "mailto:pachangaTournament@gmail.com",
-            name: "Contact Us",
+            name: "Contáctanos",
         },
         {
-            href: "https://www.pachangatournament.com/sponsors",
-            name: "Sponsors",
+            href: "/sponsors",
+            name: "Patrocinadores",
         },
         {
             href: "/data-protection-policy",
-            name: "Data protection policy",
+            name: "Política de Protección de Datos",
+        },
+        {
+            href: "/copyright-and-images",
+            name: "Copyright e imágenes",
         },
     ],
     socials: [

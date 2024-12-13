@@ -35,7 +35,7 @@ const cardData = [
         backImage: pachangaRotatingCardBgBack,
         title: "Pachanga Tournament",
         description:
-            "10+ rondas de Modern into Top16, con premios a los 32 mejores jugadores.",
+            "8+ rondas de Modern into Top16, con premios a los 16 mejores jugadores.",
         backDescription:
             "Disfruta en una ubicación de ensueño de un evento de Magic the Gathering en el que disfrutan tanto los jugadores como sus familiares y amigos.",
         route: "/pachangaIV/main-event",
@@ -45,10 +45,10 @@ const cardData = [
         backImage: paradiseRotatingCardBgBack,
         title: "Commander Paradise",
         description:
-            "Battle Royal de 4 jugadores, con premios a los 32 mejores jugadores.",
+            "Battle Royal de 4 jugadores, con premios a los 8 mejores jugadores.",
         backDescription:
             "¿Construído de 60 cartas? Nah, esto es EDH en estado puro. En tu Command Zone va a pegar el solete.",
-        route: "/commander-paradise/main-event",
+        route: "/commanderParadise2ndRound/main-event",
     },
 ];
 
@@ -108,36 +108,42 @@ function Information() {
                                             image={card.frontImage}
                                             icon="touch_app"
                                             title={
-                                                <MKTypography
-                                                    variant="h3"
-                                                    sx={{
-                                                        fontSize:
-                                                            FONT_SIZE_DESKTOP_TITLE,
-                                                        color: theme.palette[
-                                                            "warning"
-                                                        ].main,
-                                                    }}
-                                                >
-                                                    {card.title}
-                                                </MKTypography>
+                                                <div>
+                                                    <MKTypography
+                                                        variant="h3"
+                                                        sx={{
+                                                            fontSize:
+                                                                FONT_SIZE_DESKTOP_TITLE,
+                                                            color: theme
+                                                                .palette[
+                                                                "warning"
+                                                            ].main,
+                                                        }}
+                                                    >
+                                                        {card.title}
+                                                    </MKTypography>
+                                                </div>
                                             }
                                             description={card.description}
                                         />
                                         <RotatingCardBack
                                             image={card.backImage}
                                             title={
-                                                <MKTypography
-                                                    variant="h5"
-                                                    sx={{
-                                                        fontSize:
-                                                            FONT_SIZE_DESKTOP_TITLE,
-                                                        color: theme.palette[
-                                                            "white"
-                                                        ].main,
-                                                    }}
-                                                >
-                                                    Descubre Más
-                                                </MKTypography>
+                                                <div>
+                                                    <MKTypography
+                                                        variant="h5"
+                                                        sx={{
+                                                            fontSize:
+                                                                FONT_SIZE_DESKTOP_TITLE,
+                                                            color: theme
+                                                                .palette[
+                                                                "white"
+                                                            ].main,
+                                                        }}
+                                                    >
+                                                        Descubre Más
+                                                    </MKTypography>
+                                                </div>
                                             }
                                             description={card.backDescription}
                                             action={{

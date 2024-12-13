@@ -19,7 +19,7 @@ function Statement({ title, body }) {
         <MKBox
             component="section"
             position="relative"
-            py={6}
+            py={0}
             px={{ xs: 2, lg: 0 }}
             mx={-4}
         >
@@ -74,14 +74,14 @@ function Statement({ title, body }) {
                         </MKTypography>
                     </MKBox>
                 </Grid>
-                <Grid container spacing={3}>
+                <Grid container justifyContent="center" mx="auto">
                     <Grid item xs={12} textAlign="center">
                         <MKTypography
                             style={{ whiteSpace: "pre-wrap" }}
                             variant="body1"
                             fontWeight="light"
                             color="text"
-                            textAlign="justify"
+                            textAlign={isMobile ? "center" : "justify"}
                             sx={{
                                 width: "100%",
                                 maxWidth: "100%",
@@ -91,7 +91,7 @@ function Statement({ title, body }) {
                                     ? FONT_SIZE_MOBILE_BODY
                                     : FONT_SIZE_DESKTOP_BODY,
                                 overflow: "hidden",
-                                mb: 4,
+                                mb: 0,
                             }}
                         >
                             {body}

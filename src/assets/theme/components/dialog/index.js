@@ -20,15 +20,17 @@ import boxShadows from "assets/theme/base/boxShadows";
 const { borderRadius } = borders;
 const { xxl } = boxShadows;
 
-export default {
-  styleOverrides: {
-    paper: {
-      borderRadius: borderRadius.lg,
-      boxShadow: xxl,
-    },
+const dialogStyles = {
+    styleOverrides: {
+        paper: {
+            borderRadius: borderRadius.lg,
+            boxShadow: xxl,
+        },
 
-    paperFullScreen: {
-      borderRadius: 0,
+        paperFullScreen: {
+            borderRadius: 0,
+        },
     },
-  },
 };
+
+export default dialogStyles;

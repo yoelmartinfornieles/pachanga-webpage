@@ -5,6 +5,7 @@ import PachangaStream from "layouts/pages/pachangaIV/stream";
 import PachangaGuests from "layouts/pages/pachangaIV/guests";
 import Commander2MainEvent from "layouts/pages/commanderParadise2/mainEvent";
 import Commander2Guests from "layouts/pages/commanderParadise2/guests";
+import UnderConstruction from "pages/UnderConstruction";
 
 const routes = [
     {
@@ -129,50 +130,45 @@ const routes = [
                     {
                         name: "el torneo",
                         route: "/commanderParadise2ndRound/main-event",
-                        component: <Commander2MainEvent />,
+                        component: <UnderConstruction />,
                     },
                     {
                         name: "el hotel",
                         route: "/commanderParadise2ndRound/main-event#hotel",
-                        component: <Commander2MainEvent />,
+                        component: <UnderConstruction />,
                     },
                     {
                         name: "bases",
                         route: "/commanderParadise2ndRound/main-event#foundations",
-                        component: <Commander2MainEvent />,
+                        component: <UnderConstruction />,
                     },
                     {
                         name: "premios",
                         route: "/commanderParadise2ndRound/main-event#prizes",
-                        component: <Commander2MainEvent />,
+                        component: <UnderConstruction />,
                     },
                 ],
             },
-            {
+            /*             {
                 name: "Invitados",
                 collapse: [
                     {
                         name: "invitados",
                         route: "/commanderParadise2ndRound/guests",
-                        component: <Commander2Guests />,
+                        component: <UnderConstruction />,
                     },
                     {
                         name: "fran garces",
                         route: "/commanderParadise2ndRound/guests#frangarces",
-                        component: <Commander2Guests />,
+                        component: <UnderConstruction />,
                     },
                     {
-                        name: "joshua cairos",
-                        route: "/commanderParadise2ndRound/guests#joshuacairos",
-                        component: <Commander2Guests />,
-                    },
-                    {
-                        name: "martin de diego",
-                        route: "/commanderParadise2ndRound/guests#martindediego",
-                        component: <Commander2Guests />,
+                        name: "javier charro",
+                        route: "/commanderParadise2ndRound/guests#javiercharro",
+                        component: <UnderConstruction />,
                     },
                 ],
-            },
+            }, */
         ],
     },
 ];

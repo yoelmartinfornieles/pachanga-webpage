@@ -3,6 +3,7 @@ import CenteredCard from "./CenteredCard";
 import InfoCard from "./InfoCard";
 import HotelCard from "./HotelCard";
 import StreamerCard from "./StreamerCard";
+import TeamMemberCard from "./TeamMemberCard";
 import IllustratorCard from "./IllustratorCard";
 import FilledInfoCard from "./FilledInfoCard";
 import HorizontalTeamCard from "./HorizontalTeamCard";
@@ -23,6 +24,7 @@ export {
     DefaultCounterCard,
     HorizontalTeamCard,
     StreamerCard,
+    TeamMemberCard,
     IllustratorCard,
     HotelCard,
     InfoCard,

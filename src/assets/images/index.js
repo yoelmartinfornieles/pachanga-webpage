@@ -8,15 +8,18 @@ import paradiseRotatingCardBgBack from "./paradise-rotating-card-bg-back.jpg";
 import purchaseBanner from "./purchase-banner.jpg";
 import dataProtectionPolicyBanner from "./dataProtectionPolicy-banner.jpg";
 import purchaseSuccessBanner from "./purchaseSuccess-banner.png";
-
+import copyrightAndImagesBanner from "./copyrightAndImages-banner.png";
+import aboutUsBanner from "./aboutUs-banner.jpg";
+import comingSoonBg from "./bg-coming-soon.png";
 import ivanOjedaProfilePhoto from "./ivan-ojeda.jpg";
-import edgarSanchezProfilePhoto from "./edgar-sanchez.jpeg";
-import josuSolanoProfilePhoto from "./josu-solano.jpg";
-import franGarcesProfilePhoto from "./fran-garces.jpg";
-import joshuaCairosProfilePhoto from "./joshua-cairos.jpg";
-import martinDeDiegoProfilePhoto from "./martin-de-diego.jpg";
-import javierCharroProfilePhoto from "./javier-charro.jpeg";
+import josinProfilePhoto from "./josin.png";
+import riquelmeProfilePhoto from "./riquelme.png";
+import yoelProfilePhoto from "./yoel.webp";
+
 export {
+    yoelProfilePhoto,
+    josinProfilePhoto,
+    riquelmeProfilePhoto,
     ivanOjedaProfilePhoto,
     carouselImage3,
     carouselImage4,
@@ -27,11 +30,8 @@ export {
     paradiseRotatingCardBgBack,
     purchaseBanner,
     purchaseSuccessBanner,
+    copyrightAndImagesBanner,
     dataProtectionPolicyBanner,
-    edgarSanchezProfilePhoto,
-    josuSolanoProfilePhoto,
-    franGarcesProfilePhoto,
-    joshuaCairosProfilePhoto,
-    martinDeDiegoProfilePhoto,
-    javierCharroProfilePhoto,
+    aboutUsBanner,
+    comingSoonBg,
 };

@@ -34,15 +34,17 @@ function DefaultInfoCard({
             ) : (
                 icon
             )}
-            <MKTypography
-                display="block"
-                variant="h5"
-                fontWeight="bold"
-                mt={isMobile || direction === "center" ? 1 : 2}
-                mb={1.5}
-            >
-                {title}
-            </MKTypography>
+            <div>
+                <MKTypography
+                    display="block"
+                    variant="h5"
+                    fontWeight="bold"
+                    mt={isMobile || direction === "center" ? 1 : 2}
+                    mb={1.5}
+                >
+                    {title}
+                </MKTypography>
+            </div>
             <MKTypography
                 display="block"
                 variant={small ? "button" : "body2"}

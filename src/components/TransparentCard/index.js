@@ -118,19 +118,21 @@ function TransparentCard({ image, title, price, description, link, action }) {
                         rel="noreferrer"
                         sx={cardActionStyles}
                     >
-                        <MKTypography
-                            variant="h3"
-                            gutterBottom
-                            sx={{
-                                overflow: "hidden",
-                                textOverflow: "ellipsis",
-                                whiteSpace: "nowrap",
-                                width: "100%",
-                            }}
-                            color="warning"
-                        >
-                            {title}
-                        </MKTypography>
+                        <div>
+                            <MKTypography
+                                variant="h3"
+                                gutterBottom
+                                sx={{
+                                    overflow: "hidden",
+                                    textOverflow: "ellipsis",
+                                    whiteSpace: "nowrap",
+                                    width: "100%",
+                                }}
+                                color="warning"
+                            >
+                                {title}
+                            </MKTypography>
+                        </div>
                     </MuiLink>
                 </MKBox>
                 <MKTypography variant="body2" component="p" color="text" mb={0}>

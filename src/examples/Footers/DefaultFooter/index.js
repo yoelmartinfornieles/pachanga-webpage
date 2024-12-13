@@ -36,19 +36,23 @@ function DefaultFooter({ content }) {
                         </MKBox>
                         <MKBox display="flex" alignItems="center" mt={3}>
                             {socials.map(({ icon, link }, key) => (
-                                <MKTypography
-                                    key={link}
-                                    component="a"
-                                    href={link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    variant="h5"
-                                    color="info"
-                                    opacity={0.8}
-                                    mr={key === socials.length - 1 ? 0 : 2.5}
-                                >
-                                    {icon}
-                                </MKTypography>
+                                <div>
+                                    <MKTypography
+                                        key={link}
+                                        component="a"
+                                        href={link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        variant="h5"
+                                        color="info"
+                                        opacity={0.8}
+                                        mr={
+                                            key === socials.length - 1 ? 0 : 2.5
+                                        }
+                                    >
+                                        {icon}
+                                    </MKTypography>
+                                </div>
                             ))}
                         </MKBox>
                     </Grid>

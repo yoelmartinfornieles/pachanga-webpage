@@ -80,7 +80,7 @@ function Foundations({
                         variant="body1"
                         fontWeight="light"
                         color="text"
-                        textAlign="justify"
+                        textAlign="left"
                         sx={{
                             width: "100%",
                             maxWidth: "100%",

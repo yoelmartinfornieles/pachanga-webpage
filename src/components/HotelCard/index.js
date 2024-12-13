@@ -208,13 +208,22 @@ const HotelCard = ({
                             gap: { xs: "10px", md: "22px" },
                         }}
                     >
-                        {links.map((link) => {
-                            const linkProps = {
-                                key: link.platform,
-                                color: "error",
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                sx: {
+                        {links.map((link) => (
+                            <GlowButton
+                                key={`${link.platform}-${Math.random()}`}
+                                color={color}
+                                href={
+                                    link.platform === "Phone"
+                                        ? `tel:${link.url}`
+                                        : link.platform === "Email"
+                                        ? `mailto:${link.url}`
+                                        : link.url
+                                }
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                    marginRight: { xs: "8px", md: "0" },
+                                    marginBottom: { md: "8px" },
                                     width: {
                                         xs: "40px",
                                         sm: "50px",
@@ -228,44 +237,11 @@ const HotelCard = ({
                                     display: "flex",
                                     justifyContent: "center",
                                     alignItems: "center",
-                                },
-                                href:
-                                    link.platform === "Phone"
-                                        ? `tel:${link.url}`
-                                        : link.platform === "Email"
-                                        ? `mailto:${link.url}`
-                                        : link.url,
-                            };
-
-                            return (
-                                <GlowButton
-                                    key={`${link.platform}-${Math.random()}`}
-                                    color={color}
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    sx={{
-                                        marginRight: { xs: "8px", md: "0" },
-                                        marginBottom: { md: "8px" },
-                                        width: {
-                                            xs: "40px",
-                                            sm: "50px",
-                                            md: "60px",
-                                        },
-                                        height: {
-                                            xs: "40px",
-                                            sm: "50px",
-                                            md: "60px",
-                                        },
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center",
-                                    }}
-                                >
-                                    <IconComponent platform={link.platform} />
-                                </GlowButton>
-                            );
-                        })}
+                                }}
+                            >
+                                <IconComponent platform={link.platform} />
+                            </GlowButton>
+                        ))}
                     </MKBox>
                 </CardContent>
             </Card>
