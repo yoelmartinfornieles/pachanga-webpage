@@ -1,13 +1,32 @@
 import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { Grid } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
-import Container from "@mui/material/Container";
-import { useMediaQuery } from "@mui/material";
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import StreamerCard from "../components/StreamerCard";
+import { useMediaQuery, Container } from "@mui/material";
+import { MKBox, MKTypography, StreamerCard } from "components";
 import { FONT_SIZE_DESKTOP_HEADING, FONT_SIZE_MOBILE_HEADING } from "shared";
+
+const LazyStreamerCard = ({ streamer }) => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    return (
+        <div ref={ref}>
+            {inView && (
+                <StreamerCard
+                    name={streamer.name}
+                    photo={streamer.image}
+                    description={streamer.description}
+                    links={streamer.links}
+                    position={streamer.position}
+                />
+            )}
+        </div>
+    );
+};
 
 function Streamers({ streamersData }) {
     const theme = useTheme();
@@ -73,13 +92,7 @@ function Streamers({ streamersData }) {
                     {streamersData.map((streamer) => (
                         <div id={streamer.id} key={streamer.id}>
                             <Grid item xs={12} sx={{ ml: 3 }}>
-                                <StreamerCard
-                                    name={streamer.name}
-                                    photo={streamer.image}
-                                    description={streamer.description}
-                                    links={streamer.links}
-                                    position={streamer.position}
-                                />
+                                <LazyStreamerCard streamer={streamer} />
                             </Grid>
                         </div>
                     ))}

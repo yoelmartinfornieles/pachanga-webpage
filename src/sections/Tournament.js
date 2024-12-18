@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import { useMediaQuery } from "@mui/material";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
+import { useInView } from "react-intersection-observer";
 import {
     FONT_SIZE_DESKTOP_HEADING,
     FONT_SIZE_DESKTOP_BODY,
@@ -44,6 +45,11 @@ function Tournament({
     const handleClose = () => {
         setOpen(false);
     };
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
 
     return (
         <MKBox
@@ -100,8 +106,9 @@ function Tournament({
                 </Grid>
                 <Grid container justifyContent="center" mt={4}>
                     <Box
+                        ref={ref}
                         component="img"
-                        src={poster}
+                        src={inView ? poster : ""}
                         alt="Poster"
                         sx={{
                             width: { xs: "100%", md: "30%" },

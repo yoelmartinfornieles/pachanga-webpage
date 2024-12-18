@@ -1,11 +1,8 @@
+import React from "react";
 import { useTheme } from "@mui/material/styles";
-import { useMediaQuery } from "@mui/material";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import MKBox from "components/MKBox";
-import { InfoCard, CenteredCard } from "../components";
-import MKTypography from "components/MKTypography";
-
+import { useMediaQuery, Container, Grid } from "@mui/material";
+import { InfoCard, CenteredCard, MKBox, MKTypography } from "../components";
+import { useInView } from "react-intersection-observer";
 import { FONT_SIZE_DESKTOP_HEADING, FONT_SIZE_MOBILE_HEADING } from "shared";
 
 function shuffleArray(array) {
@@ -15,6 +12,49 @@ function shuffleArray(array) {
     }
     return array;
 }
+
+const LazyInfoCard = ({ prize, color }) => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    return (
+        <div ref={ref}>
+            {inView && (
+                <MKBox mb={5}>
+                    <InfoCard
+                        color={color}
+                        icon={prize.icon}
+                        title={prize.name}
+                        description={prize.description}
+                    />
+                </MKBox>
+            )}
+        </div>
+    );
+};
+
+const LazyCenteredCard = ({ title, description, image, color, opacity }) => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    return (
+        <div ref={ref}>
+            {inView && (
+                <CenteredCard
+                    title={title}
+                    description={description}
+                    image={image}
+                    color={color}
+                    opacity={opacity}
+                />
+            )}
+        </div>
+    );
+};
 
 function Prizes({ event }) {
     const prizes = event.prizes;
@@ -61,7 +101,7 @@ function Prizes({ event }) {
             py={12}
             px={{ xs: 2, lg: 0 }}
             mx={-4}
-            mt={-20}
+            mt={-4}
         >
             <MKBox
                 component="section"
@@ -69,6 +109,7 @@ function Prizes({ event }) {
                 py={6}
                 px={{ xs: 2, lg: 0 }}
                 mx={-4}
+                mt={-14}
             >
                 <Container>
                     <Grid container justifyContent="center">
@@ -93,14 +134,10 @@ function Prizes({ event }) {
                         <Grid container justifyContent="flex-start">
                             {prizes.map((prize, index) => (
                                 <Grid item xs={12} md={6} key={index}>
-                                    <MKBox mb={5}>
-                                        <InfoCard
-                                            color={event.colors.warning}
-                                            icon={prize.icon}
-                                            title={prize.name}
-                                            description={prize.description}
-                                        />
-                                    </MKBox>
+                                    <LazyInfoCard
+                                        prize={prize}
+                                        color={event.colors.warning}
+                                    />
                                 </Grid>
                             ))}
                         </Grid>
@@ -111,7 +148,7 @@ function Prizes({ event }) {
                         lg={5}
                         sx={{ ml: "auto", mt: { xs: 3, lg: 0 } }}
                     >
-                        <CenteredCard
+                        <LazyCenteredCard
                             title={
                                 <span
                                     style={{

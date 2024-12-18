@@ -1,7 +1,12 @@
 // Material Kit 2 React components
 import { MKTypography } from "components";
 import events from "../../../events";
-import { carouselImage3, carouselImage4, carouselImage5 } from "assets/images";
+import {
+    carouselImage2,
+    carouselImage3,
+    carouselImage4,
+    carouselImage5,
+} from "assets/images";
 
 const sortedEvents = events
     .filter(
@@ -96,6 +101,16 @@ const nonEventSlides = [
         ),
         description:
             "Porque tenemos claro que no todo es competir. Relájate con nuestro coctelero o juégate unas partiditas nocturnas con los demás participantes, y al día siguiente vacila de tu victoria o descarga tu venganza en la piscina.",
+    },
+    {
+        image: carouselImage2,
+        title: (
+            <MKTypography variant="h1" sx={typographyStyles} color="white">
+                Subiendo como la espuma del mojo-pan
+            </MKTypography>
+        ),
+        description:
+            "Cada día tenemos más participantes, más ilustradores y mas partners sumandos a la causa . ¡No te pierdas la oportunidad de unirte a la fiesta!",
     },
 ];
 

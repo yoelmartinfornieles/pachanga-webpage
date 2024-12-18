@@ -1,5 +1,5 @@
-import { Grid } from "@mui/material";
-import { Header, Statement, TeamMembers } from "sections";
+import React, { lazy, Suspense } from "react";
+import { Grid, Box, CircularProgress } from "@mui/material";
 import { useHashScroll, findEventByName } from "shared";
 import { Section, StyledCard } from "components";
 import { aboutUsBanner } from "../../assets/images";
@@ -9,10 +9,14 @@ import {
     josinProfilePhoto,
 } from "../../assets/images";
 
+const Header = lazy(() => import("sections/Header"));
+const Statement = lazy(() => import("sections/Statement"));
+const TeamMembers = lazy(() => import("sections/TeamMembers"));
+
 const teamBody = `En 2023, un comando compuesto por tres de los mejores hombres del panorama magiquero nacional fue reunido para una misión: llevar la diversión y el gathering a un nivel nunca antes visto. 
 No tardaron en fugarse de la realidad y ponerse manos a la obra.
 Hoy, buscados todavía por hacienda, sobreviven como Pachangueros de fortuna.
-Si tiene usted ganas de echarse unas partiditas, y si los encuentra, quizá pueda contratarlos. O al menos, invitarlos a una cerveza.
+Si tiene usted ganas de echarse unas partiditas, y si los encuentra, quizá pueda convencerlos para jugar. O al menos, invitarlos a una cerveza.
 
 Primero, tenemos a Riquelme, el alma del equipo. Su familia siempre está ahí para echar un cable, ya sea haciendo de anfitriones o montando inverosímiles estructuras de grabación. 
 Son como los Avengers, pero con más sentido común y menos trajes ajustados. 
@@ -56,7 +60,7 @@ const members = [
     {
         id: "josin",
         name: "Josín Pérez López - El Rey de los Kavus",
-        work: "Chief Operation Mánager",
+        work: "Chief Operation Manager",
         image: josinProfilePhoto,
         description: `Cuando no sepas dónde ir, busca a Josín. Cuando no sepas qué hacer, busca a Josín. Cuando en tu corazón solo
         encuentres oscuridad, busca a Josín. Josín es tu guía, Josín es el camino. 
@@ -115,9 +119,24 @@ function AboutUs() {
     const event = findEventByName("Pachanga Tournament IV");
     if (!event) return null;
 
+    const loadingSpinner = (
+        <Box
+            sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                minHeight: "100vh",
+            }}
+        >
+            <CircularProgress />
+        </Box>
+    );
+
     return (
         <>
-            <Header title={`Sobre Nosotros`} image={aboutUsBanner} />
+            <Suspense fallback={loadingSpinner}>
+                <Header title={`Sobre Nosotros`} image={aboutUsBanner} />
+            </Suspense>
             <Grid
                 container
                 justifyContent="center"
@@ -127,7 +146,9 @@ function AboutUs() {
             <StyledCard>
                 <Section id="main" />
                 <Section id="team">
-                    <Statement title="El Equipo" body={teamBody} />
+                    <Suspense fallback={loadingSpinner}>
+                        <Statement title="El Equipo" body={teamBody} />
+                    </Suspense>
                 </Section>
                 <Section
                     id="teammembers"
@@ -137,7 +158,9 @@ function AboutUs() {
                         alignItems: "center",
                     }}
                 >
-                    <TeamMembers members={members} />
+                    <Suspense fallback={loadingSpinner}>
+                        <TeamMembers members={members} />
+                    </Suspense>
                 </Section>
             </StyledCard>
         </>

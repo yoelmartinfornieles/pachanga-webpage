@@ -3,8 +3,8 @@ import FortOutlinedIcon from "@mui/icons-material/FortOutlined";
 import PachangaMainEvent from "layouts/pages/pachangaIV/mainEvent";
 import PachangaStream from "layouts/pages/pachangaIV/stream";
 import PachangaGuests from "layouts/pages/pachangaIV/guests";
-import Commander2MainEvent from "layouts/pages/commanderParadise2/mainEvent";
-import Commander2Guests from "layouts/pages/commanderParadise2/guests";
+/* import Commander2MainEvent from "layouts/pages/commanderParadise2/mainEvent";
+import Commander2Guests from "layouts/pages/commanderParadise2/guests"; */
 import UnderConstruction from "pages/UnderConstruction";
 
 const routes = [
