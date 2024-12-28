@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.232288ba.css",
-    "main.js": "/static/js/main.5dc7647c.js",
+    "main.js": "/static/js/main.4c02d42f.js",
     "static/media/pachangaV.png": "/static/media/pachangaV.82305a1b7fb9c241b9b8.png",
     "static/media/joshua-cairos.jpg": "/static/media/joshua-cairos.1167e83fd057efca9c10.jpg",
     "static/media/commanderParadise2-poster.png": "/static/media/commanderParadise2-poster.de76067078883c6f4c91.png",
@@ -156,10 +156,10 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "static/media/pachanga-white-logo.svg": "/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
     "main.232288ba.css.map": "/static/css/main.232288ba.css.map",
-    "main.5dc7647c.js.map": "/static/js/main.5dc7647c.js.map"
+    "main.4c02d42f.js.map": "/static/js/main.4c02d42f.js.map"
   },
   "entrypoints": [
     "static/css/main.232288ba.css",
-    "static/js/main.5dc7647c.js"
+    "static/js/main.4c02d42f.js"
   ]
 }

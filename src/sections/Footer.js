@@ -76,7 +76,6 @@ function CenteredFooter({ links, socials, light }) {
                         >
                             Pachanga Tournament & YM3.
                         </MKTypography>
-                        .
                     </MKTypography>
                 </Grid>
             </Grid>

@@ -13,7 +13,7 @@ const commanderParadise2Prizes = [
     {
         name: "1499+ pachaPoints en juego",
         description:
-            "Y rellenamos esas duals que le faltan a tu mazo (No seas granuja, éstos no valen en el Yumbo).",
+            "Para que rellenes esas duals que le faltan a tu mazo (No seas granuja, éstos no valen en el Yumbo).",
         icon: <LocalBarTwoTone />,
         image: pachaPoints,
         alt: "pachaPoints",

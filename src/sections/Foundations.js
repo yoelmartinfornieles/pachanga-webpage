@@ -38,6 +38,9 @@ function Foundations({
         setShowMore(!showMore);
     };
 
+    // Reemplazar saltos de línea con <br> para respetar los saltos de línea
+    const formattedFoundations = foundations.replace(/\n/g, "<br>");
+
     return (
         <MKBox
             component="section"
@@ -76,7 +79,7 @@ function Foundations({
                         Bases del torneo
                     </MKTypography>
                     <MKTypography
-                        style={{ whiteSpace: "pre-wrap" }}
+                        component="div"
                         variant="body1"
                         fontWeight="light"
                         color="text"
@@ -93,9 +96,10 @@ function Foundations({
                             overflow: "hidden",
                             mt: -3,
                         }}
-                    >
-                        {foundations}
-                    </MKTypography>
+                        dangerouslySetInnerHTML={{
+                            __html: formattedFoundations,
+                        }}
+                    />
                     {!showMore && foundations.split("\n").length > 10 && (
                         <MKButton
                             color={"dark"}
