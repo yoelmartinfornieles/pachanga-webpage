@@ -188,7 +188,7 @@ function Recordings() {
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/dVE1Y8oGFuM?enablejsapi=1"
-                                    title="Pachanga 2024"
+                                    title="Pachanga 2024 video"
                                     frameBorder="0"
                                     allow="fullscreen"
                                     style={{

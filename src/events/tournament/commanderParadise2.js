@@ -12,7 +12,7 @@ Si hay empate, se reparten los puntos sobrantes y se redondea pa' abajo. Y si un
 Cuando el tiempo se acabe, la partida termina al final del turno del jugador activo. Y si hay efectos de “turnos extra”, se anulan. ¡A jugar a pala!
 Las fundas de tus cartas tienen que estar como nuevas, y la lista de cartas baneadas es la oficial del Concilio. Revisa tu deck antes de venir, que no queremos sorpresas. Y si te pillamos con alguna carta ilegal, prepárate para el paseo de la vergüenza, va a ser peor que el incidente 'Culito Blanco'.
 El mulligan será el “London Mulligan”, y el primero es gratis. ¡Como el WiFi del vecino, pero sin tener que agacharte en la esquina del pasillo para pillar señal!
-Se permiten hasta 20 cartas “proxy”, además de cualquier cantidad de la “reserved list”.
+Se permiten hasta 10 cartas “proxy”, además de cualquier cantidad de la “reserved list”.
 Commander es un formato para charlar y disfrutar (y demasiado a menudo, comer pizza), así que lleva las partidas con buen rollo y no grites mucho, que no estamos en un concierto.
 ¡Y eso es todo, mi gente! Prepárate para un torneo lleno de magia, risas y, sobre todo, diversión a raudales. ¡Que empiece la batalla, y que la suerte esté siempre de tu lado! Porque, seamos honestos, si dependiera de tu habilidad, estarías jugando a las chapas. Bwahahaha.
 `;

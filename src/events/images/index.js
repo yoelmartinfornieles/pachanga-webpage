@@ -6,7 +6,7 @@ import paradise2ndRound from "./paradise2ndRound.webp";
 import pachangaIVGeneralTicket from "./pachangaIV-general-ticket.png";
 import pachangaIVVIPticket from "./pachangaIV-vip-ticket.png";
 import paradise2ndRoundGeneralTicket from "./paradise2ndRound-general-ticket.png";
-import pachangaIVPlaymat from "./pachangaIV-playmat-mayer.jpg";
+import pachangaIVPlaymat from "./pachangaIV-playmat-mayer.png";
 import pachangaIVPlaymatArtist from "./pachangaIV-playmat-artist.png";
 import pachangaIVMaterial from "./pachangaIV-material.png";
 import pachaPoints from "./pachangaIV-points.png";

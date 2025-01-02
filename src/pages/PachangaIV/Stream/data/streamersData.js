@@ -1,4 +1,7 @@
-import { ivanOjedaProfilePhoto } from "../../../../assets/images";
+import {
+    ivanOjedaProfilePhoto,
+    carlosOliverosProfilePhoto,
+} from "../../../../assets/images";
 const streamersData = [
     {
         id: "ivanojeda",
@@ -22,7 +25,7 @@ Así que, si quieres ver a Iván en acción, ¡prepárate para un espectáculo q
     {
         id: "carlosoliveros",
         name: "Carlos Oliveros",
-        image: "https://pbs.twimg.com/profile_images/1708956064182370304/Izp34mzr_400x400.jpg",
+        image: carlosOliverosProfilePhoto,
         position: { color: "error", label: "Carlos Oliveros" },
         description: `Carlos ha estado lanzando hechizos y haciendo jugadas épicas desde 2006. Con un carácter competitivo que haría temblar a cualquier Planeswalker, finalmente logró acceder al Pro Tour en 2017. ¡Sí, lo hizo! Y adivina qué, se encontró con nuestro querido Iván Ojeda. ¡Qué casualidad, eh? 
 Después de un impresionante Top 16 en el Pro Tour Modern Horizons 3, ahora está en camino a Chicago, donde esperamos que no solo se lleve el trofeo, sino también un buen plato de comida. 
