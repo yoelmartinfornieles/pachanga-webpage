@@ -110,9 +110,11 @@ const Hotel = ({
     const color2 = theme.palette[backgroundColor2]?.main || backgroundColor2;
 
     const intro = `El ${event.name} se celebra en el hotel Vistaflor de Maspalomas, donde la experiencia es tan completa como un mazo de cinco colores. 
-Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclusiva para reservar (te la enviaremos por correo, porque, ya sabes, el hotel no abre reservas hasta que el universo lo permita, y el universo dice que la prisa mata, amigo) podrás disfrutar del ambientazo del ${event.name} desde la mañana hasta que el sol se esconda, y quizás hasta altas horas de la madrugada. 
+Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclusiva para reservar (A 110 euros por bungalow/día, con pensión completa, siendo los bungalows de 2 personas) podrás disfrutar del ambientazo del ${event.name} desde la mañana hasta que el sol se esconda, y quizás hasta altas horas de la madrugada. 
 ¿Cómo sino hubiese podido ocurrir el fastuoso 'Incidente culito blanco'? 
-¡Y además, tráete a todos los acompanantes que quieras, tan importante es el gathering como el Magic, mi arma!`;
+El código para realizar la reserva te lo enviaremos por correo, porque, ya sabes, el hotel no abre reservas hasta que el universo lo permita, y el universo dice que la prisa mata, amigo. 
+¡Pero oye, si estás en un apuro y encuentras una oferta irresistible, no te detengas! ¡Ve por ella sin pensarlo dos veces! Nosotros estaremos aquí, apoyando tu decisión de reservar lo que mejor se adapte a tus necesidades. ¡Haz lo que te haga feliz!
+¡Y además, con tu código pueden reservar tantos acompañantes como quieras, jueguen el torneo o no, tan importante es el gathering como el Magic, mi arma!`;
 
     return (
         <MKBox

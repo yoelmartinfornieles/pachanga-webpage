@@ -1,19 +1,23 @@
 import {
     pachangaIVPrizes,
-    pachangaIVPrizesIntro,
+    pachangaIVPrizesCatchPhrase,
+    pachangaIVPrizesDescription,
     pachangaIvPreviousWinnersPhotos,
 } from "./pachangaIV";
 import {
     commanderParadise2Prizes,
-    commanderParadise2PrizesIntro,
     commanderParadise2PreviousWinnersPhotos,
+    commanderParadise2PrizesCatchPhrase,
+    commanderParadise2PrizesDescription,
 } from "./commanderParadise2";
 
 export {
     pachangaIVPrizes,
-    pachangaIVPrizesIntro,
+    pachangaIVPrizesCatchPhrase,
+    pachangaIVPrizesDescription,
     pachangaIvPreviousWinnersPhotos,
     commanderParadise2Prizes,
-    commanderParadise2PrizesIntro,
+    commanderParadise2PrizesDescription,
     commanderParadise2PreviousWinnersPhotos,
+    commanderParadise2PrizesCatchPhrase,
 };

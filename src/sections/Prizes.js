@@ -57,6 +57,8 @@ const LazyCenteredCard = ({ title, description, image, color, opacity }) => {
 };
 
 function Prizes({ event }) {
+    const catchPhrase = event.prizesCatchPhrase;
+    const description = event.prizesDescription;
     const prizes = event.prizes;
     const previousWinnersPhotos = event.previousWinnersPhotos;
     const theme = useTheme();
@@ -164,13 +166,10 @@ function Prizes({ event }) {
                                             : "1.25rem",
                                     }}
                                 >
-                                    ¡Hey, tú! Sí, tú. ¡Deja de procrastinar y
-                                    conviértete en el campeón! O al menos
-                                    intenta no dar mucha pena en el intento.
-                                    ¡Vamos, que no es tan difícil!
+                                    {catchPhrase}
                                 </span>
                             }
-                            description={`No es fácil ser el mejor, ¿verdad? Especialmente en el ${event.name}, donde las distracciones y el entretenimiento son más tentadores que un durum mixto a las 3 a.m. ¿Serás tú el valiente que se mantenga firme y se alce con la victoria en esta edición? O, ya sabes, ¿simplemente te rendirás y te irás a ver Netflix?`}
+                            description={description}
                             image={combinedImages}
                             color="black"
                             opacity={0}

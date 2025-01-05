@@ -14,11 +14,13 @@ import { pachangaIVInfo, commanderParadise2Info } from "./tournament";
 import { pachangaIVGuests, commanderParadise2Guests } from "./guests";
 import {
     pachangaIVPrizes,
-    pachangaIVPrizesIntro,
+    pachangaIVPrizesCatchPhrase,
+    pachangaIVPrizesDescription,
     pachangaIvPreviousWinnersPhotos,
     commanderParadise2Prizes,
-    commanderParadise2PrizesIntro,
+    commanderParadise2PrizesDescription,
     commanderParadise2PreviousWinnersPhotos,
+    commanderParadise2PrizesCatchPhrase,
 } from "./prizes";
 import { pachangaIVTickets, commanderParadise2Tickets } from "./tickets";
 import { vistaflorMaspalomas } from "./hotel";
@@ -46,7 +48,8 @@ const events = [
         foundations: pachangaIVFoundations,
         tickets: pachangaIVTickets,
         prizes: pachangaIVPrizes,
-        prizesIntro: pachangaIVPrizesIntro,
+        prizesCatchPhrase: pachangaIVPrizesCatchPhrase,
+        prizesDescription: pachangaIVPrizesDescription,
         previousWinnersPhotos: pachangaIvPreviousWinnersPhotos,
         colors: pachangaIVColors,
         guests: pachangaIVGuests,
@@ -66,7 +69,8 @@ const events = [
         foundations: commanderParadise2Foundations,
         tickets: commanderParadise2Tickets,
         prizes: commanderParadise2Prizes,
-        prizesIntro: commanderParadise2PrizesIntro,
+        prizesCatchPhrase: commanderParadise2PrizesCatchPhrase,
+        prizesDescription: commanderParadise2PrizesDescription,
         previousWinnersPhotos: commanderParadise2PreviousWinnersPhotos,
         colors: commanderParadise2Colors,
         guests: commanderParadise2Guests,

@@ -19,11 +19,15 @@ const commanderParadise2Prizes = [
         alt: "pachaPoints",
     },
 ];
-const commanderParadise2PrizesIntro = "";
+const commanderParadise2PrizesDescription =
+    "¿Quién dijo que ser el número uno era pan comido? Ay amigo, el Commander Paradise a algunos les puede parecer más duro que Chuck Norris masticando alfileres. ¿Tendrás lo que hay que tener para llevarte el trofeo a casa, o te vas a quedar en el banquillo viendo series hasta que se te acaben las palomitas? ¡Tú decides, campeón!";
+const commanderParadise2PrizesCatchPhrase =
+    "¡Oye, figura! Sí, tú, el que parece que está calculando el maná como si fuera física cuántica. ¡Dale caña y lánzate a por la gloria de tu madrer en el Commander Paradise! O al menos intenta no quedar como un goblin despistado. ¡Venga, que no es para tanto, mi niño!";
 const commanderParadise2PreviousWinnersPhotos = [paradise1Champion];
 
 export {
     commanderParadise2Prizes,
-    commanderParadise2PrizesIntro,
+    commanderParadise2PrizesDescription,
     commanderParadise2PreviousWinnersPhotos,
+    commanderParadise2PrizesCatchPhrase,
 };

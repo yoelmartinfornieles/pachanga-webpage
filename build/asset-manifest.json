@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.232288ba.css",
-    "main.js": "/static/js/main.5c683843.js",
+    "main.js": "/static/js/main.7513e0be.js",
     "static/media/javier-charro-10.png": "/static/media/javier-charro-10.03f1fb991836a76b573a.png",
     "static/media/pachangaV.png": "/static/media/pachangaV.44b4d88d5daf11c3fa0c.png",
     "static/media/josu-solano-6.jpg": "/static/media/josu-solano-6.27dcbf1f6e5a517a1a72.jpg",
@@ -156,10 +156,10 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "static/media/pachanga-white-logo.svg": "/static/media/pachanga-white-logo.ba3ecdbfedc1fb49e15872f4f03ea8a2.svg",
     "main.232288ba.css.map": "/static/css/main.232288ba.css.map",
-    "main.5c683843.js.map": "/static/js/main.5c683843.js.map"
+    "main.7513e0be.js.map": "/static/js/main.7513e0be.js.map"
   },
   "entrypoints": [
     "static/css/main.232288ba.css",
-    "static/js/main.5c683843.js"
+    "static/js/main.7513e0be.js"
   ]
 }

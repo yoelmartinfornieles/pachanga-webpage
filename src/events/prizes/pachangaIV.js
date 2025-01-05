@@ -65,10 +65,15 @@ const pachangaIvPreviousWinnersPhotos = [
     pachangaISealedChampion,
 ];
 
-const pachangaIVPrizesIntro = "";
+const pachangaIVPrizesCatchPhrase = `¡Hey, tú! Sí, tú. ¡Deja de procrastinar y
+        conviértete en el campeón del Pachanga Tournament IV! O al menos
+        intenta no dar mucha pena en el intento.
+        ¡Vamos, que no es tan difícil!`;
+const pachangaIVPrizesDescription = `No es fácil ser el mejor, ¿verdad? Especialmente en el Pachanga, donde las distracciones y el entretenimiento son más tentadores que un durum mixto a las 3 a.m. ¿Serás tú el valiente que se mantenga firme y se alce con la victoria en esta edición? O, ya sabes, ¿simplemente te rendirás y te irás a ver Netflix?`;
 
 export {
     pachangaIVPrizes,
-    pachangaIVPrizesIntro,
     pachangaIvPreviousWinnersPhotos,
+    pachangaIVPrizesCatchPhrase,
+    pachangaIVPrizesDescription,
 };
