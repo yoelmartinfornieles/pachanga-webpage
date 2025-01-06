@@ -11,7 +11,10 @@ import {
 const sortedEvents = events
     .filter(
         (event) =>
-            event.date !== null && event.image !== null && event.name !== null
+            event.date !== null &&
+            event.image !== null &&
+            event.name !== null &&
+            new Date(event.date) >= new Date()
     )
     .sort((a, b) => new Date(a.date) - new Date(b.date));
 
@@ -114,7 +117,6 @@ const nonEventSlides = [
     },
 ];
 
-// Shuffle non-event slides
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));

@@ -1,5 +1,6 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import MKBox from "components/MKBox";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
@@ -49,6 +50,18 @@ export default function App() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
+            <Helmet>
+                <title>Pachanga Tournament</title>
+                <meta
+                    name="description"
+                    content="A Magic: The Gathering tournament in the Canary Islands."
+                />
+                <meta
+                    name="keywords"
+                    content="Magic, Tournament, Canary Islands, Pachanga"
+                />
+                <link rel="canonical" href="https://pachangatournament.com" />
+            </Helmet>
             <MKBox
                 width="100%"
                 sx={{
@@ -74,10 +87,6 @@ export default function App() {
                     <Route
                         path="/presentation"
                         element={<PresentationPage />}
-                    />
-                    <Route
-                        path="/pachangaIV/main-event"
-                        element={<PachangaIVMainEventPage />}
                     />
                     <Route path="/purchase" element={<PurchasePage />} />
                     <Route

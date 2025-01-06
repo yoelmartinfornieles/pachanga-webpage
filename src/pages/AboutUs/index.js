@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Grid, Box, CircularProgress } from "@mui/material";
+import { Helmet } from "react-helmet";
 import { useHashScroll, findEventByName } from "shared";
 import { Section, StyledCard } from "components";
 import { aboutUsBanner } from "../../assets/images";
@@ -134,6 +135,17 @@ function AboutUs() {
 
     return (
         <>
+            <Helmet>
+                <title>Sobre Nosotros - Pachanga Tournament</title>
+                <meta
+                    name="description"
+                    content="Conoce al equipo detrás del Pachanga Tournament, un evento de Magic: The Gathering en las Islas Canarias."
+                />
+                <meta
+                    name="keywords"
+                    content="Magic, Pachanga, Equipo, Torneo, Canarias"
+                />
+            </Helmet>
             <Suspense fallback={loadingSpinner}>
                 <Header title={`Sobre Nosotros`} image={aboutUsBanner} />
             </Suspense>
