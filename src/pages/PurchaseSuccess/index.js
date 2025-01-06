@@ -1,3 +1,5 @@
+import React from "react";
+import { Helmet } from "react-helmet";
 import Card from "@mui/material/Card";
 import { useTheme, styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
@@ -59,6 +61,17 @@ function PurchaseSuccess() {
 
     return (
         <>
+            <Helmet>
+                <title>Compra Completada</title>
+                <meta
+                    name="description"
+                    content="Tu compra se ha completado con éxito. Gracias por tu compra."
+                />
+                <meta
+                    name="keywords"
+                    content="Compra, Éxito, Confirmación, Tienda"
+                />
+            </Helmet>
             <Header title="Compra Completada" image={purchaseSuccessBanner} />
             <Card
                 sx={{

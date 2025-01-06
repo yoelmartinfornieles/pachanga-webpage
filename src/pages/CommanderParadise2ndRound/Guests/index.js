@@ -1,4 +1,6 @@
+import React from "react";
 import { Grid } from "@mui/material";
+import { Helmet } from "react-helmet";
 import { Header, GuestsIntro, Illustrators } from "sections";
 import { useHashScroll, findEventByName } from "shared";
 import { MKBox, Logo, Section, StyledCard } from "components";
@@ -11,6 +13,17 @@ function Guests() {
 
     return (
         <>
+            <Helmet>
+                <title>Invitados - Commander Paradise: 2nd Round</title>
+                <meta
+                    name="description"
+                    content={`Conoce a los invitados especiales del Commander Paradise: 2nd Round.`}
+                />
+                <meta
+                    name="keywords"
+                    content="Magic, Invitados, Commander Paradise, Torneo"
+                />
+            </Helmet>
             <Header
                 fontFamily={event.fontFamily}
                 title={event.name}

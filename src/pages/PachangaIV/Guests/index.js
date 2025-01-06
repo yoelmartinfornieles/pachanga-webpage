@@ -1,3 +1,5 @@
+import React from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import { Header, GuestsIntro, Illustrators } from "sections";
 import { useHashScroll, findEventByName } from "shared";
@@ -11,6 +13,13 @@ function Guests() {
 
     return (
         <>
+            <Helmet>
+                <title>Invitados - Pachanga IV</title>
+                <meta
+                    name="description"
+                    content="Página de Invitados para el Pachanga Tournament IV"
+                />
+            </Helmet>
             <Header
                 fontFamily={event.fontFamily}
                 title={event.name}

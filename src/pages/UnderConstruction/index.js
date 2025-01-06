@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import moment from "moment-timezone";
 import { useMediaQuery } from "@mui/material";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -131,6 +132,17 @@ function UnderConstruction() {
 
     return (
         <>
+            <Helmet>
+                <title>Próximamente</title>
+                <meta
+                    name="description"
+                    content="La página está en construcción. Vuelve pronto para más información."
+                />
+                <meta
+                    name="keywords"
+                    content="Próximamente, Construcción, Evento, Magic"
+                />
+            </Helmet>
             <Header
                 fontFamily={event.fontFamily}
                 title={event.name}

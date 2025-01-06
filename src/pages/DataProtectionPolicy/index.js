@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
@@ -25,6 +26,13 @@ function DataProtectionPolicy() {
 
     return (
         <>
+            <Helmet>
+                <title>{dataProtectionPolicyStatement.title}</title>
+                <meta
+                    name="description"
+                    content="Página de Política de Protección de Datos"
+                />
+            </Helmet>
             <Suspense fallback={loadingSpinner}>
                 <Header
                     title={dataProtectionPolicyStatement.title}

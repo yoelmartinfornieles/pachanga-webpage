@@ -1,4 +1,5 @@
 import { Grid } from "@mui/material";
+import { Helmet } from "react-helmet";
 import { Tournament, Hotel, Foundations, Prizes, Header } from "sections";
 import { MKBox, Logo, Section, StyledCard } from "components";
 import { useHashScroll, findEventByName } from "shared";
@@ -11,6 +12,17 @@ function MainEvent() {
 
     return (
         <>
+            <Helmet>
+                <title>Evento Principal - Commander Paradise: 2nd Round</title>
+                <meta
+                    name="description"
+                    content={`Detalles del evento principal del Commander Paradise: 2nd Round, incluyendo torneo, hotel y premios.`}
+                />
+                <meta
+                    name="keywords"
+                    content="Magic, Evento Principal, Commander Paradise, Torneo"
+                />
+            </Helmet>
             <Header
                 fontFamily={event.fontFamily}
                 title={event.name}

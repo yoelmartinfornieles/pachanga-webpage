@@ -1,3 +1,5 @@
+import React from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import { Tournament, Hotel, Foundations, Prizes, Header } from "sections";
 import { MKBox, Logo, Section, StyledCard } from "components";
@@ -11,6 +13,13 @@ function MainEvent() {
 
     return (
         <>
+            <Helmet>
+                <title>Evento Principal - Pachanga IV</title>
+                <meta
+                    name="description"
+                    content={`Detalles del evento principal del Pachanga IV, incluyendo torneo, hotel y premios.`}
+                />
+            </Helmet>
             <Header
                 fontFamily={event.fontFamily}
                 title={event.name}

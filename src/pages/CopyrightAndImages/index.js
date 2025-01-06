@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Grid } from "@mui/material";
+import { Helmet } from "react-helmet";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import { Section, StyledCard } from "components";
@@ -25,6 +26,17 @@ function CopyrightAndImages() {
 
     return (
         <>
+            <Helmet>
+                <title>Copyright e Imágenes</title>
+                <meta
+                    name="description"
+                    content="Información sobre derechos de autor y uso de imágenes en nuestro sitio web."
+                />
+                <meta
+                    name="keywords"
+                    content="Copyright, Imágenes, Derechos de Autor"
+                />
+            </Helmet>
             <Suspense fallback={loadingSpinner}>
                 <Header
                     title={copyrightAndImagesDisclaimer.title}

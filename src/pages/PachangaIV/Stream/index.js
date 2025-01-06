@@ -1,3 +1,5 @@
+import React from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import { Header, Streamers, Recordings, Streaming } from "sections";
 import { MKBox, Logo, Section, StyledCard } from "components";
@@ -12,6 +14,13 @@ function Stream() {
 
     return (
         <>
+            <Helmet>
+                <title>Streaming - Pachanga IV</title>
+                <meta
+                    name="description"
+                    content="Página de Streaming para el Pachanga Tournament IV"
+                />
+            </Helmet>
             <Header
                 fontFamily={event.fontFamily}
                 title={event.name}
