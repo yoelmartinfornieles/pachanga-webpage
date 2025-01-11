@@ -1,5 +1,6 @@
-import carouselImage3 from "./carousel-3.jpg";
+import carouselImage1 from "./carousel-1.jpg";
 import carouselImage2 from "./carousel-2.jpg";
+import carouselImage3 from "./carousel-3.jpg";
 import carouselImage4 from "./carousel-4.png";
 import carouselImage5 from "./carousel-5.png";
 import pachangaRotatingCardBgFront from "./pachanga-rotating-card-bg-front.jpeg";
@@ -24,6 +25,7 @@ export {
     riquelmeProfilePhoto,
     ivanOjedaProfilePhoto,
     carlosOliverosProfilePhoto,
+    carouselImage1,
     carouselImage2,
     carouselImage3,
     carouselImage4,

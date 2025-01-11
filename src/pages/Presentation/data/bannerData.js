@@ -2,6 +2,7 @@
 import { MKTypography } from "components";
 import events from "../../../events";
 import {
+    carouselImage1,
     carouselImage2,
     carouselImage3,
     carouselImage4,
@@ -65,6 +66,16 @@ const createEventTitle = (event, fontFamily) => (
 );
 
 const nonEventSlides = [
+    {
+        image: carouselImage1,
+        title: (
+            <MKTypography variant="h1" sx={typographyStyles} color="white">
+                Hotel para el Commander Paradise ya disponible
+            </MKTypography>
+        ),
+        description:
+            "La oferta del hotel está más viva que un zombi con prisa, activa del 8 de enero al 22 de mayo de 2025. Consigue tu bungalow por solo 110 euros al día por persona, con pensión completa.",
+    },
     {
         image: carouselImage3,
         title: (

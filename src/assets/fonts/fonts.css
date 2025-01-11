@@ -6,3 +6,23 @@
 body {
     font-family: "Digital-7", sans-serif;
 }
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #241965, 0 0 10px #241965, 0 0 15px #241965,
+            0 0 20px #241965, 0 0 25px #241965;
+    }
+    to {
+        text-shadow: 0 0 10px #b73d6e, 0 0 20px #b73d6e, 0 0 30px #b73d6e,
+            0 0 40px #b73d6e, 0 0 50px #b73d6e;
+    }
+}

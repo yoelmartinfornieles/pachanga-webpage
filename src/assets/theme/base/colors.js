@@ -24,8 +24,8 @@ const themeColors = {
     },
 
     primary: {
-        main: "#e91e63",
-        focus: "#e91e63",
+        main: "#325A64",
+        focus: "#325A64",
     },
 
     secondary: {

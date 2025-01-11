@@ -72,6 +72,33 @@ Termina el día disfrutando de la terracita y de la piscina, porque en Vistaflor
             url: "https://hotelesvistaflor.com/bungalowsvistaflor/",
         },
     ],
+    offers: {
+        "Commander Paradise: 2nd Round": {
+            intro: "¡Paracaaaaaas! ¡La oferta del hotel ya está disponible! Hemos reservado la siguientes estancias exclusivas para los participantes del torneo:",
+            code: "PACHANGAMAYO2025",
+            activeDates:
+                "El código estará activo desde el 08 de enero hasta el 22 de mayo de 2025. ¡No te duermas en los laureles! ",
+            rooms: [
+                {
+                    name: "Bungalow Standard",
+                    description:
+                        "3 adultos máximo, 40 disponibles, ¡como los puntos de vida que te voy a quitar! ",
+                    price: "110 euros por cada 2 personas/día, con pensión completa. ¡Vamos, que te sale más barato que un mazo de cartas! ",
+                },
+                {
+                    name: "Bungalow Two Bedroom",
+                    description:
+                        "4 adultos máximo, 6 disponibles, por si quieres invitar a tus colegas planeswalkers",
+                    price: "110 euros por cada 2 personas/día, con pensión completa. ¡Es un chollo, más barato que jugar un Faithless looting!",
+                },
+            ],
+            cancellationConditions:
+                "Las cancelaciones realizadas 33 días antes de la llegada no serán reembolsables. Si reservas hoy, el periodo de cancelación con gastos comenzará el 20 de abril de 2025. ¡Así que no te rajes a última hora, amig@!",
+            purchaseLink:
+                "https://direct-book.com/properties/hotelvistaflordirect?locale=es&checkInDate=2025-05-23&checkOutDate=2025-05-25&promocode=PACHANGAMAYO2025&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=EUR&trackPage=yes",
+        },
+        "Pachanga Tournament IV": null,
+    },
 };
 
 export { vistaflorMaspalomas };
