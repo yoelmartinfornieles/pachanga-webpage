@@ -54,19 +54,14 @@ const HotelPresentation = ({ name, intro, hotel, color, isMobile }) => {
 
     return (
         <Container>
-            <Grid
-                container
-                justifyContent="center"
-                alignItems="center"
-                spacing={3}
-            >
+            <Grid container justifyContent="center" alignItems="center">
                 <Grid item xs={12}>
                     <MKTypography
                         variant="h1"
                         color="white"
                         gutterBottom
                         sx={{
-                            textAlign: "left",
+                            textAlign: "center",
                             fontSize: headingFontSize,
                         }}
                     >
@@ -86,7 +81,7 @@ const HotelPresentation = ({ name, intro, hotel, color, isMobile }) => {
                             padding: 0,
                             margin: 0,
                             fontSize: bodyFontSize,
-                            mb: 0,
+                            mb: 3,
                         }}
                     >
                         {intro}
@@ -151,6 +146,7 @@ const HotelOffer = ({
                            0 0 20px ${theme.palette[mainColor].main}, 
                            0 0 25px ${theme.palette[mainColor].main}`,
               animation: "neon 1.5s ease-in-out infinite alternate",
+              filter: "brightness(1.5)",
           }
         : {};
 
@@ -198,18 +194,18 @@ const HotelOffer = ({
                         }}
                     >
                         <div>
+                            - NOTICIAS FRESQUITAS - NOTICIAS FRESQUITAS -
                             NOTICIAS FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
                             FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
                             FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
                             FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
                             FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
                             FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
-                            FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
-                            FRESQUITAS
+                            FRESQUITAS -
                         </div>
                         <div>
+                            - NOTICIAS FRESQUITAS - NOTICIAS FRESQUITAS -
                             NOTICIAS FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
-                            FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
                             FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
                             FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
                             FRESQUITAS - NOTICIAS FRESQUITAS - NOTICIAS
@@ -536,7 +532,7 @@ const Hotel = ({
     const color2 = theme.palette[backgroundColor2]?.main || backgroundColor2;
 
     const intro = `El ${event.name} se celebra en el hotel Vistaflor de Maspalomas, donde la experiencia es tan completa como un mazo de cinco colores. 
-Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclusiva para reservar (A 110 euros por bungalow/día, con pensión completa, siendo los bungalows de 2 personas) podrás disfrutar del ambientazo del ${event.name} desde la mañana hasta que el sol se esconda, y quizás hasta altas horas de la madrugada. 
+Lo mejor de todo es que, si te alojas con nosotros y aprovechas la oferta exclusiva para reservar podrás disfrutar del ambientazo del ${event.name} desde la mañana hasta que el sol se esconda, y quizás hasta altas horas de la madrugada. 
 ¿Cómo sino hubiese podido ocurrir el fastuoso 'Incidente culito blanco'? 
 El código para realizar la reserva te lo enviaremos por correo, porque, ya sabes, el hotel no abre reservas hasta que el universo lo permita, y el universo dice que la prisa mata, amigo. 
 ¡Pero oye, si estás en un apuro y encuentras una oferta irresistible, no te detengas! ¡Ve por ella sin pensarlo dos veces! Nosotros estaremos aquí, apoyando tu decisión de reservar lo que mejor se adapte a tus necesidades. ¡Haz lo que te haga feliz!
@@ -551,7 +547,6 @@ El código para realizar la reserva te lo enviaremos por correo, porque, ya sabe
             py={6}
             px={{ xs: 2, md: 0 }}
             mx={-4}
-            mt={-8}
             sx={{
                 background: `linear-gradient(${gradientAngle}deg, ${theme.functions.rgba(
                     color1,

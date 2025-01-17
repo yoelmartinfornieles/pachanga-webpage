@@ -106,6 +106,10 @@ CenteredFooter.defaultProps = {
             name: "Política de Protección de Datos",
         },
         {
+            href: "/terms-and-conditions",
+            name: "Términos y condiciones",
+        },
+        {
             href: "/copyright-and-images",
             name: "Copyright e imágenes",
         },

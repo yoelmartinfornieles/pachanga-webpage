@@ -4,7 +4,7 @@ const commanderParadise2Tickets = [
     {
         name: "Entrada General",
         description:
-            "Entrada General para el Main Event. Da derecho al uso de las instalaciones.",
+            "Entrada para el evento. El hotel se ha de reservar por separado.",
         image: paradise2ndRoundGeneralTicket,
         price: "50",
         stripeLink: "https://buy.stripe.com/3cs7tP3th7X6gGQ8wx",

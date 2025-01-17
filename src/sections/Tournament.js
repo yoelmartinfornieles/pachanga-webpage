@@ -81,7 +81,7 @@ function Tournament({
                                 : FONT_SIZE_DESKTOP_HEADING,
                         }}
                     >
-                        El torneo
+                        El Torneo
                     </MKTypography>
                     <MKTypography
                         style={{ whiteSpace: "pre-wrap" }}

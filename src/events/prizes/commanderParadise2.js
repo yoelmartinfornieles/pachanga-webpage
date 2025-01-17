@@ -3,12 +3,12 @@ import { paradise1Trophy, pachaPoints, paradise1Champion } from "../images";
 
 const commanderParadise2Prizes = [
     {
-        name: "Trofeo Commnader Paradise 2nd Round Champion",
+        name: "Trofeo Commander Paradise 2nd Round Champion",
         description:
             "Sólo los Comandantes más dominantes pueden poseer este trofeo ¿Conseguirás la gloria?",
         icon: <EmojiEventsTwoTone />,
         image: paradise1Trophy,
-        alt: "Trofeo Commnader Paradise 2nd Round Champion",
+        alt: "Trofeo Commander Paradise 2nd Round Champion",
     },
     {
         name: "1499+ pachaPoints en juego",

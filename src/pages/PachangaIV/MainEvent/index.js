@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
-import { Tournament, Hotel, Foundations, Prizes, Header } from "sections";
+import { Tournament, Foundations, Prizes, Header } from "sections";
 import { MKBox, Logo, Section, StyledCard } from "components";
 import { useHashScroll, findEventByName } from "shared";
 
@@ -17,7 +17,7 @@ function MainEvent() {
                 <title>Evento Principal - Pachanga IV</title>
                 <meta
                     name="description"
-                    content={`Detalles del evento principal del Pachanga IV, incluyendo torneo, hotel y premios.`}
+                    content={`Detalles del evento principal del Pachanga IV, incluyendo torneo, bases y premios.`}
                 />
             </Helmet>
             <Header
@@ -45,18 +45,6 @@ function MainEvent() {
                     <Tournament
                         info={event.info}
                         poster={event.posters[0]}
-                        backgroundColor1="black"
-                        backgroundColor2="cerulean"
-                        opacity1={0}
-                        opacity2={0}
-                        gradient1={98}
-                        gradient2={100}
-                        gradientAngle={180}
-                    />
-                </Section>
-                <Section id="hotel">
-                    <Hotel
-                        event={event}
                         backgroundColor1="black"
                         backgroundColor2="cerulean"
                         opacity1={0}

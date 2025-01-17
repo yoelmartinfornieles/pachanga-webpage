@@ -11,6 +11,7 @@ import purchaseBanner from "./purchase-banner.jpg";
 import dataProtectionPolicyBanner from "./dataProtectionPolicy-banner.jpg";
 import purchaseSuccessBanner from "./purchaseSuccess-banner.png";
 import copyrightAndImagesBanner from "./copyrightAndImages-banner.png";
+import termsAndConditionsBanner from "./termsAndConditionsBanner.jpg";
 import aboutUsBanner from "./aboutUs-banner.jpg";
 import comingSoonBg from "./bg-coming-soon.webp";
 import carlosOliverosProfilePhoto from "./carlos-oliveros.jpg";
@@ -38,6 +39,7 @@ export {
     purchaseSuccessBanner,
     copyrightAndImagesBanner,
     dataProtectionPolicyBanner,
+    termsAndConditionsBanner,
     aboutUsBanner,
     comingSoonBg,
 };

@@ -70,11 +70,11 @@ const nonEventSlides = [
         image: carouselImage1,
         title: (
             <MKTypography variant="h1" sx={typographyStyles} color="white">
-                Hotel para el Commander Paradise ya disponible
+                Hotel para el Paradise ya disponible
             </MKTypography>
         ),
         description:
-            "La oferta del hotel está más viva que un zombi con prisa, activa del 8 de enero al 22 de mayo de 2025. Consigue tu bungalow por solo 110 euros al día por persona, con pensión completa.",
+            "La oferta del hotel está más viva que un zombi con prisa, activa del 8 de enero al 22 de mayo de 2025. Consigue tu bungalow por solo 110€/día por cada 2 personas, con pensión completa.",
     },
     {
         image: carouselImage3,
@@ -124,7 +124,7 @@ const nonEventSlides = [
             </MKTypography>
         ),
         description:
-            "Cada día tenemos más participantes, más ilustradores y mas partners sumandos a la causa . ¡No te pierdas la oportunidad de unirte a la fiesta!",
+            "Cada día tenemos más participantes, más ilustradores y mas partners sumándose a la causa. ¡No te pierdas la oportunidad de unirte a la fiesta!",
     },
 ];
 

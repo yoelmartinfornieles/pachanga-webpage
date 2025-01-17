@@ -1,10 +1,14 @@
 import Icon from "@mui/material/Icon";
 import FortOutlinedIcon from "@mui/icons-material/FortOutlined";
-import PachangaMainEvent from "layouts/pages/pachangaIV/mainEvent";
-import PachangaStream from "layouts/pages/pachangaIV/stream";
-import PachangaGuests from "layouts/pages/pachangaIV/guests";
-import Commander2MainEvent from "layouts/pages/commanderParadise2/mainEvent";
-import Commander2Guests from "layouts/pages/commanderParadise2/guests";
+import {
+    PachangaIVMainEventPage,
+    PachangaIVHotelInfoPage,
+    PachangaIVGuestsPage,
+    PachangaIVStreamPage,
+    CommanderParadise2MainEventPage,
+    CommanderParadise2HotelInfoPage,
+    CommanderParadise2GuestsPage,
+} from "layouts/pages";
 import UnderConstruction from "pages/UnderConstruction";
 
 const routes = [
@@ -20,22 +24,27 @@ const routes = [
                     {
                         name: "el torneo",
                         route: "/pachangaIV/main-event",
-                        component: <PachangaMainEvent />,
-                    },
-                    {
-                        name: "el hotel",
-                        route: "/pachangaIV/main-event#hotel",
-                        component: <PachangaMainEvent />,
+                        component: <PachangaIVMainEventPage />,
                     },
                     {
                         name: "bases",
                         route: "/pachangaIV/main-event#foundations",
-                        component: <PachangaMainEvent />,
+                        component: <PachangaIVMainEventPage />,
                     },
                     {
                         name: "premios",
                         route: "/pachangaIV/main-event#prizes",
-                        component: <PachangaMainEvent />,
+                        component: <PachangaIVMainEventPage />,
+                    },
+                ],
+            },
+            {
+                name: "hotel",
+                collapse: [
+                    {
+                        name: "el hotel",
+                        route: "/pachangaIV/hotel",
+                        component: <PachangaIVHotelInfoPage />,
                     },
                 ],
             },
@@ -45,22 +54,22 @@ const routes = [
                     {
                         name: "Streaming",
                         route: "/pachangaIV/stream",
-                        component: <PachangaStream />,
+                        component: <PachangaIVStreamPage />,
                     },
                     {
                         name: "Iván Ojeda",
                         route: "/pachangaIV/stream#ivanojeda",
-                        component: <PachangaStream />,
+                        component: <PachangaIVStreamPage />,
                     },
                     {
                         name: "Carlos Oliveros",
                         route: "/pachangaIV/stream#carlosoliveros",
-                        component: <PachangaStream />,
+                        component: <PachangaIVStreamPage />,
                     },
                     {
                         name: "Grabaciones",
                         route: "/pachangaIV/stream#recordings",
-                        component: <PachangaStream />,
+                        component: <PachangaIVStreamPage />,
                     },
                 ],
             },
@@ -70,37 +79,37 @@ const routes = [
                     {
                         name: "invitados",
                         route: "/pachangaIV/guests",
-                        component: <PachangaGuests />,
+                        component: <PachangaIVGuestsPage />,
                     },
                     {
                         name: "josu solano",
                         route: "/pachangaIV/guests#josusolano",
-                        component: <PachangaGuests />,
+                        component: <PachangaIVGuestsPage />,
                     },
                     {
                         name: "fran garces",
                         route: "/pachangaIV/guests#frangarces",
-                        component: <PachangaGuests />,
+                        component: <PachangaIVGuestsPage />,
                     },
                     {
                         name: "joshua cairos",
                         route: "/pachangaIV/guests#joshuacairos",
-                        component: <PachangaGuests />,
+                        component: <PachangaIVGuestsPage />,
                     },
                     {
                         name: "edgar sánchez hidalgo",
                         route: "/pachangaIV/guests#edgarsanchez",
-                        component: <PachangaGuests />,
+                        component: <PachangaIVGuestsPage />,
                     },
                     {
                         name: "martin de diego",
                         route: "/pachangaIV/guests#martindediego",
-                        component: <PachangaGuests />,
+                        component: <PachangaIVGuestsPage />,
                     },
                     {
                         name: "javier charro",
                         route: "/pachangaIV/guests#javiercharro",
-                        component: <PachangaGuests />,
+                        component: <PachangaIVGuestsPage />,
                     },
                 ],
             },
@@ -130,22 +139,27 @@ const routes = [
                     {
                         name: "el torneo",
                         route: "/commanderParadise2ndRound/main-event",
-                        component: <Commander2MainEvent />,
-                    },
-                    {
-                        name: "el hotel",
-                        route: "/commanderParadise2ndRound/main-event#hotel",
-                        component: <Commander2MainEvent />,
+                        component: <CommanderParadise2MainEventPage />,
                     },
                     {
                         name: "bases",
                         route: "/commanderParadise2ndRound/main-event#foundations",
-                        component: <Commander2MainEvent />,
+                        component: <CommanderParadise2MainEventPage />,
                     },
                     {
                         name: "premios",
                         route: "/commanderParadise2ndRound/main-event#prizes",
-                        component: <Commander2MainEvent />,
+                        component: <CommanderParadise2MainEventPage />,
+                    },
+                ],
+            },
+            {
+                name: "hotel",
+                collapse: [
+                    {
+                        name: "el hotel",
+                        route: "/commanderParadise2ndRound/hotel",
+                        component: <CommanderParadise2HotelInfoPage />,
                     },
                 ],
             },
@@ -155,17 +169,17 @@ const routes = [
                     {
                         name: "invitados",
                         route: "/commanderParadise2ndRound/guests",
-                        component: <Commander2Guests />,
+                        component: <CommanderParadise2GuestsPage />,
                     },
                     {
                         name: "fran garces",
                         route: "/commanderParadise2ndRound/guests#frangarces",
-                        component: <Commander2Guests />,
+                        component: <CommanderParadise2GuestsPage />,
                     },
                     {
                         name: "javier charro",
                         route: "/commanderParadise2ndRound/guests#javiercharro",
-                        component: <Commander2Guests />,
+                        component: <CommanderParadise2GuestsPage />,
                     },
                 ],
             },

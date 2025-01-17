@@ -11,7 +11,7 @@ import {
     PurchasePage,
     PurchaseSuccessPage,
     PresentationPage,
-    PachangaIVMainEventPage,
+    TermsAndConditionsPage,
     DataProtectionPolicyPage,
     AboutUsPage,
     CopyrightAndImagesPage,
@@ -96,6 +96,10 @@ export default function App() {
                     <Route
                         path="/data-protection-policy"
                         element={<DataProtectionPolicyPage />}
+                    />{" "}
+                    <Route
+                        path="/terms-and-conditions"
+                        element={<TermsAndConditionsPage />}
                     />{" "}
                     <Route
                         path="/copyright-and-images"

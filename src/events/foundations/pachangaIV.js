@@ -1,6 +1,5 @@
 const pachangaIVFoundations = `
 Formato del torneo:
-
 Día 1: Formato Suizo 32 jugadores a elegir entre Modern, Estándar, Legacy. 
 Día 2: Formato Modern. Suizo + Top
 Día 3: Formato Suizo 32 jugadores a elegir entre Modern, Estándar, Legacy, Vintage. 
@@ -41,14 +40,14 @@ Asegúrate de conocer las reglas de conducta del jugador antes de participar en 
 Premios:
 Los premios pueden estar sujetos a cambios según el nivel de participación.
 
-POLÍTICAS DEL COMPLEJO:
+Políticas del complejo:
 Se ruega respetar las normas de uso de las instalaciones y/o servicios indicados en los carteles informativos del establecimiento. El uso de la piscina es exclusivo para los jugadores del Pachanga Tournament y los huéspedes.
 Las visitas NO están permitidas; no se permitirá el acceso a personas que no estén registradas en el hotel.
 El complejo y la organización se reservan el derecho de admisión.
 El Check-in se efectúa a partir de las 14:00 y el Check-out de 8:00 a 12:00.
 No se permiten mascotas en el hotel.
 
-CÓDIGO DE CONDUCTA:
+Código de conducta:
 Respeto: Muestra respeto hacia tus oponentes, jueces, espectadores y organizadores del evento. Trata a todos con cortesía y evita comentarios ofensivos o despectivos.
 Comunicación: Comunícate de manera clara y educada. Asegúrate de que tus oponentes entiendan tus jugadas y pregúntales si tienes dudas sobre las suyas.
 Limpieza y orden: Mantén tu área de juego limpia y ordenada. Asegúrate de que tus cartas estén en buen estado y que tu mazo esté bien mezclado.
@@ -59,6 +58,33 @@ Intimidación: No intimides ni acoses a tus oponentes. No está permitido hacer 
 Cumplimiento de las reglas: Cumple con las reglas del torneo y con las restricciones del formato. Si tienes alguna duda sobre las reglas, pregunta al juez del torneo o al organizador del evento.
 Modo de juego justo: Juega de manera justa y sin engaños. No te aproveches de las reglas ambiguas o de los errores de tus oponentes. Si detectas un error en la partida, informa al juez del torneo o al organizador del evento.
 Espíritu deportivo: Participa en el torneo con espíritu deportivo. Felicita a tus oponentes por las partidas ganadas y muestra respeto por sus habilidades de juego. Celebra las victorias con modestia y las derrotas con elegancia.
+
+Compra de Entradas:
+Las entradas para el Pachanga Tournament/Commander Paradise pueden adquirirse exclusivamente a través de nuestra página web oficial. Una vez completada la compra, recibirás una confirmación por correo electrónico con tu entrada electrónica.
+Es responsabilidad del comprador verificar que la información proporcionada durante la compra es correcta. La organización no se hace responsable de errores en la información proporcionada por el comprador.
+
+Política de Reembolsos:
+Las entradas adquiridas para el Pachanga Tournament/Commander Paradise son no reembolsables. Sin embargo, en caso de fuerza mayor, la organización se reserva el derecho de decidir sobre la posibilidad de reembolsos.
+Se considera fuerza mayor cualquier evento fuera del control razonable de la organización, incluyendo pero no limitado a desastres naturales, pandemias, actos de terrorismo, o cualquier otra circunstancia que haga imposible la realización del evento.
+
+Cambios y Cancelaciones:
+La organización se reserva el derecho de cambiar la fecha, la ubicación o cancelar el evento por razones justificadas. En caso de cancelación, se notificará a los asistentes a la mayor brevedad posible.
+Los cambios o cancelaciones se comunicarán a través del correo electrónico proporcionado durante la compra y se publicarán en nuestra página web oficial.
+
+Responsabilidad:
+La organización no se hace responsable de pérdidas, daños o lesiones sufridas durante el evento, excepto en casos de negligencia grave por parte de la organización.
+
+Protección de Datos:
+Durante el proceso de compra, recopilamos datos personales como nombre, dirección de correo electrónico y detalles de pago. Estos datos se utilizan exclusivamente para procesar la compra y gestionar el evento.
+Nos comprometemos a proteger la privacidad de nuestros asistentes y a cumplir con las leyes de protección de datos aplicables. No compartiremos tus datos personales con terceros sin tu consentimiento, salvo cuando sea necesario para la realización del evento.
+
+Propiedad Intelectual:
+Al asistir al evento, consientes que la organización pueda tomar fotografías y videos durante el evento y utilizarlos con fines promocionales.
+Todos los derechos de propiedad intelectual relacionados con el evento, incluyendo pero no limitado a logos, marcas y contenido promocional, son propiedad de la organización o de sus respectivos propietarios.
+
+Acceso al Evento:
+Para ingresar al evento, los asistentes deben presentar su entrada electrónica y una identificación válida con foto. La entrada es personal e intransferible.
+Está prohibido ingresar al evento con armas, drogas, sustancias ilegales, o cualquier otro objeto que la organización considere peligroso.
 
 Para más información, podrás contactar por:
 INSTAGRAM: @pachangatournament

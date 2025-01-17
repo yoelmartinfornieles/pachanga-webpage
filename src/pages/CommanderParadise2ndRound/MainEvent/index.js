@@ -16,7 +16,7 @@ function MainEvent() {
                 <title>Evento Principal - Commander Paradise: 2nd Round</title>
                 <meta
                     name="description"
-                    content={`Detalles del evento principal del Commander Paradise: 2nd Round, incluyendo torneo, hotel y premios.`}
+                    content={`Detalles del evento principal del Commander Paradise: 2nd Round, incluyendo torneo, bases y premios.`}
                 />
                 <meta
                     name="keywords"
@@ -48,18 +48,6 @@ function MainEvent() {
                     <Tournament
                         info={event.info}
                         poster={event.posters[0]}
-                        backgroundColor1="black"
-                        backgroundColor2="cerulean"
-                        opacity1={0}
-                        opacity2={0}
-                        gradient1={98}
-                        gradient2={100}
-                        gradientAngle={180}
-                    />
-                </Section>
-                <Section id="hotel">
-                    <Hotel
-                        event={event}
                         backgroundColor1="black"
                         backgroundColor2="cerulean"
                         opacity1={0}

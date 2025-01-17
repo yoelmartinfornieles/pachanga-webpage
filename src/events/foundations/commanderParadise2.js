@@ -1,21 +1,15 @@
 const commanderParadise2Foundations = `<br>
 Cada jornada tendrá un número de rondas sujeto a la asistencia de los jugadores, pero la organización se reserva el derecho de ajustar las siguientes recomendaciones del Anexo Multijugador como mejor le parezca:
-
 - Para 25 a 32 jugadores, se jugarán un mínimo de 4 rondas suizas, y los 16 mejores jugadores pasarán a los playoffs.
 - Para 33 a 64 jugadores, se jugarán un mínimo de 5 rondas suizas, y los 16 mejores jugadores pasarán a los playoffs.
 - Para 65 a 128 jugadores, se jugarán un mínimo de 6 rondas suizas, y los 16 mejores jugadores pasarán a los playoffs.
 - Para 129 a 256 jugadores, se jugarán un mínimo de 7 rondas suizas, y los 40 mejores jugadores pasarán a los playoffs.
-
 En la jornada del domingo se disputará una única mesa de 4 jugadores que se encuentren en el top en cuanto a puntuaciones.
-
 Los jugadores se sentarán en su mesa según el orden de mesa en Topdeck, en sentido de las agujas del reloj.
-
 Para la organización de las puntuaciones y rondas suizas del torneo se usará la herramienta Topdeck.gg. Recomendamos a los jugadores que se creen una cuenta gratuita (en menos de 1 minuto) para poder registrarse y comprobar sus mesas o puntuaciones del torneo.
-
 Recuerda que no se permite asistencia a jugadores fuera de la partida. Cuando haya una partida jugando, por favor, no des ningún "consejo" o "señal" a los jugadores en la mesa.
 
 Puntuaciones:
-
 El sistema de puntos para el torneo será el siguiente:
 
 1 – 4 puntos
@@ -26,25 +20,18 @@ El sistema de puntos para el torneo será el siguiente:
 En el caso de mesa de 3 jugadores, las puntuaciones se distribuirían de igual manera: 4/3/2.
 En caso de empate, se sumará el total de puntos restantes de las posiciones y se dividirá a partes iguales redondeando hacia abajo. 
 Cuando un jugador gane al resto en el mismo turno, el resto de jugadores continuará la partida para determinar el resto de posiciones. En este caso, las vidas se mantendrán igual a las del inicio del jugador ganador. 
-
 Ejemplos de empate:
 Un jugador gana, se le otorgan 4 puntos. El resto de jugadores empata: 3+2+1= 6 puntos. Cada jugador se llevará 2 puntos.
 Todos los jugadores empatan: 4 + 3 + 2 + 1= 10 puntos. Cada jugador se lleva 2 puntos.
-
 Al acabar el temporizador, la partida acaba cuando finalice el turno del jugador activo. Si, una vez acabado el temporizador, hubiera algún efecto que fuera a conceder "turnos extra" al jugador activo, ese efecto se anularía.
 
 Deck:
-
 Las fundas del deck deberán estar en buen estado (sin puntas dobladas ni marcas de algún tipo).
-
 La lista de cartas baneadas del evento será la oficial de Magic: The Gathering. Banned List. Procura revisar tu deck antes del evento.
-
 El mulligan utilizado en el evento será el oficial "London Mulligan" de Magic: The Gathering. El primer mulligan es gratuito.
-
 Se permitirá un máximo de 10 cartas "proxy" además de cualquier cantidad de la "reserved list". (Reserved list + 10).
 
 Código de conducta:
-
 Además de las reglas definidas en MTR - 5.4 - Conducta antideportiva, también se aplican las siguientes reglas:
 Se espera que los jugadores fomenten una comunidad acogedora y tolerante. No se tolerará la discriminación por discapacidad, raza, género, identidad sexual, religión o cualquier otra característica física, cultural o social.
 Esperamos que todos nuestros jugadores se comporten con espíritu deportivo en todo momento. Esto incluye, entre otros, cortesía tanto al ganar como al perder, respeto hacia sus oponentes y comportarse de manera justa, amable y razonable.
@@ -63,10 +50,37 @@ Modo de juego justo: Juega de manera justa y sin engaños. No te aproveches de l
 Espíritu deportivo: Participa en el torneo con espíritu deportivo. Felicita a tus oponentes por las partidas ganadas y muestra respeto por sus habilidades de juego. Celebra las victorias con modestia y las derrotas con elegancia.
 
 Otros: 
-
 La organización del evento se reserva el derecho a aplicar la penalización que considere por las infracciones que se puedan suceder en cuanto a errores del deck, errores de juego o conductas antideportivas. Pudiendo, en caso de considerarlo necesario, expulsar del torneo y/o solicitar la expulsión del recinto al jugador. 
-
 ¡Nuestros jueces están aquí para ayudarte! Si ves alguna jugada que no entiendes, es extraña o fuera de lugar, llama a un juez. Si tienes alguna pregunta sobre las reglas, llama a un juez. 
+
+Compra de Entradas:
+Las entradas para el Pachanga Tournament/Commander Paradise pueden adquirirse exclusivamente a través de nuestra página web oficial. Una vez completada la compra, recibirás una confirmación por correo electrónico con tu entrada electrónica.
+Es responsabilidad del comprador verificar que la información proporcionada durante la compra es correcta. La organización no se hace responsable de errores en la información proporcionada por el comprador.
+
+Política de Reembolsos:
+Las entradas adquiridas para el Pachanga Tournament/Commander Paradise son no reembolsables. Sin embargo, en caso de fuerza mayor, la organización se reserva el derecho de decidir sobre la posibilidad de reembolsos.
+Se considera fuerza mayor cualquier evento fuera del control razonable de la organización, incluyendo pero no limitado a desastres naturales, pandemias, actos de terrorismo, o cualquier otra circunstancia que haga imposible la realización del evento.
+
+Cambios y Cancelaciones:
+La organización se reserva el derecho de cambiar la fecha, la ubicación o cancelar el evento por razones justificadas. En caso de cancelación, se notificará a los asistentes a la mayor brevedad posible.
+Los cambios o cancelaciones se comunicarán a través del correo electrónico proporcionado durante la compra y se publicarán en nuestra página web oficial.
+
+Responsabilidad:
+La organización no se hace responsable de pérdidas, daños o lesiones sufridas durante el evento, excepto en casos de negligencia grave por parte de la organización.
+
+Protección de Datos:
+Durante el proceso de compra, recopilamos datos personales como nombre, dirección de correo electrónico y detalles de pago. Estos datos se utilizan exclusivamente para procesar la compra y gestionar el evento.
+Nos comprometemos a proteger la privacidad de nuestros asistentes y a cumplir con las leyes de protección de datos aplicables. No compartiremos tus datos personales con terceros sin tu consentimiento, salvo cuando sea necesario para la realización del evento.
+
+Propiedad Intelectual:
+Al asistir al evento, consientes que la organización pueda tomar fotografías y videos durante el evento y utilizarlos con fines promocionales.
+Todos los derechos de propiedad intelectual relacionados con el evento, incluyendo pero no limitado a logos, marcas y contenido promocional, son propiedad de la organización o de sus respectivos propietarios.
+
+Acceso al Evento:
+Para ingresar al evento, los asistentes deben presentar su entrada electrónica y una identificación válida con foto. La entrada es personal e intransferible.
+Está prohibido ingresar al evento con armas, drogas, sustancias ilegales, o cualquier otro objeto que la organización considere peligroso.
+
+Contacto:
 
 Para más información, podrás contactar por:
 INSTAGRAM: @pachangatournament
